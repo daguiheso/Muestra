@@ -10,5 +10,8 @@
     "url": "https://dhfrontend@bitbucket.org/dhfrontend/template-latinvestco.git"
   },
   "author": "DanielHernandez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
 }
