@@ -12,6 +12,8 @@
   "author": "DanielHernandez",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "laravel-elixir": "^0.13.1",
+    "less": "^2.4.0"
   }
 }
