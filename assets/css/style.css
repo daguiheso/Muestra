@@ -6488,12 +6488,29 @@ button.close {
   padding-left: 10px;
 }
 body {
-  margin-top: 80px;
-  margin-left: 10px;
+  margin: 90px 50px 0 50px;
 }
 .pad0-panel {
   padding-right: 0;
   padding-left: 0;
+}
+.panel-latinvestco {
+  border-color: #0f5003;
+}
+.panel-latinvestco > .panel-heading {
+  color: #ffffff;
+  background-color: #0f5003;
+  border-color: #0f5003;
+}
+.panel-latinvestco > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #0f5003;
+}
+.panel-latinvestco > .panel-heading .badge {
+  color: #0f5003;
+  background-color: #ffffff;
+}
+.panel-latinvestco > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #0f5003;
 }
 
 /*# sourceMappingURL=style.css.map */

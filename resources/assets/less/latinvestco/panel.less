@@ -1,0 +1,23 @@
+.pad0-panel {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.panel-latinvestco {
+  border-color: @color-latinvestco;
+  > .panel-heading {
+    color: @color-header-title;
+    background-color: @color-latinvestco;
+    border-color: @color-latinvestco;
+    + .panel-collapse > .panel-body {
+      border-top-color: @color-latinvestco;
+    }
+    .badge {
+      color: @color-latinvestco;
+      background-color: @color-header-title;
+    }
+  }
+  > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: @color-latinvestco;
+  }
+}
