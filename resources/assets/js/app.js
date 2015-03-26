@@ -2,6 +2,7 @@
 
 	$(function(){
 		var table = $('#dataTable').dataTable({
+	    "dom": 'C<"clear">lfrtip',
 			language: {
 			    "emptyTable":     "Datos en la tabla no validos",
 			    "info":           "_START_ / _END_ of _TOTAL_ entries",
@@ -23,7 +24,7 @@
 			    "aria": {
 			        "sortAscending":  ": activate to sort column ascending",
 			        "sortDescending": ": activate to sort column descending"
-			    }
+			    },
 			}
 		});
 		var table2 = $('#dataTable2').dataTable({
@@ -73,7 +74,7 @@
                 {
                   "sExtends":    "collection",
                   "sButtonText": "Guardar",
-                  "mColumns": [ 0, 1, 4 ],
+                  // "mColumns": [ 0, 1, 4 ],
                   "aButtons":    [ "csv", "xls", "pdf" ]
                 }
             ]
