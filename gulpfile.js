@@ -10,6 +10,7 @@ elixir(function(mix) {
     	"libs/datatable/jquery.dataTables.js",
     	"libs/datatable/extensions/TableTools/dataTables.tableTools.js",
     	"libs/datatable/extensions/Colvis/dataTables.colVis.js",
+    	"libs/bootstrap/dataTables.bootstrap.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
