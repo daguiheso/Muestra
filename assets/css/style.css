@@ -6748,15 +6748,20 @@ button.close {
 }
 .header {
   background: #0f5003;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
   color: #ffffff;
   padding-left: 10px;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  position: fixed;
 }
-body {
-  margin: 90px 50px 0 50px;
+.content {
+  margin-left: 20rem;
+  padding: 2rem;
+}
+.content-tables {
+  width: 80%;
+  margin: 0 auto;
 }
 .ml {
   margin-left: 1em;
