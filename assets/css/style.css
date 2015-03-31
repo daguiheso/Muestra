@@ -6749,15 +6749,17 @@ button.close {
 .header {
   background: #0f5003;
   color: #ffffff;
-  padding-left: 10px;
   bottom: 0;
   top: 0;
   width: 200px;
   position: fixed;
 }
+.name {
+  text-align: center;
+  margin-bottom: 100px;
+}
 .content {
-  margin-left: 20rem;
-  padding: 2rem;
+  padding: 7rem 7rem 7rem 26rem;
 }
 .content-tables {
   width: 80%;
