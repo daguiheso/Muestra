@@ -33,6 +33,7 @@
 			},
 			"scrollY": "300px"
 		});
+
 		var table2 = $('#dataTable2').dataTable({
 			language: {
 		    "emptyTable":     "Datos en la tabla no validos",
@@ -81,6 +82,7 @@
         ]
     	}
 		});
+
 		var table3 = $('#dataTable3').DataTable( {
 			language: {
 		    "emptyTable":     "Datos en la tabla no validos",
@@ -129,6 +131,58 @@
 			]
 		});
 		new $.fn.dataTable.FixedColumns( table3 );
+
+		var table4 = $('#dataTable4').DataTable( {
+			language: {
+		    "emptyTable":     "Datos en la tabla no validos",
+		    "info":           "_START_ / _END_ of _TOTAL_ entries",
+		    "infoEmpty":      "Showing 0 to 0 of 0 entries",
+		    "infoFiltered":   "(filtered from _MAX_ total entries)",
+		    "infoPostFix":    "",
+		    "thousands":      ",",
+		    "lengthMenu":     "Show _MENU_ entries",
+		    "loadingRecords": "Cargando...",
+		    "processing":     "Procesando...",
+		    "search":         "Busqueda:",
+		    "zeroRecords":    "No matching records found",
+		    "paginate": {
+	        "first":      "First",
+	        "last":       "Last",
+	        "next":       "Siguiente",
+	        "previous":   "Anterior"
+		    },
+		    "aria": {
+	        "sortAscending":  ": activate to sort column ascending",
+	        "sortDescending": ": activate to sort column descending"
+		    }
+			},
+      "dom": "Cfrtip",
+      "scrollY": "400px",
+      "scrollX": true,
+      "scrollCollapse": true,
+      "paging": false,
+			"columns": [
+		    { "width": "25%" },
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null,
+		    null
+			]
+		});
+		new $.fn.dataTable.FixedColumns( table4, {
+        leftColumns: 1,
+        rightColumns: 1
+    });
 	});
 	
 /*
@@ -181,20 +235,19 @@
 	      ]
 	    });
 	});
-    function getvalue(val){
+  function getvalue(val) {
 		if(val == 0){
-		return "VE/EBIDDA";
+			return "VE/EBIDDA";
 		}
-		if(val == 90){
-		return "VE/VENTAS";
+			if(val == 90){
+			return "VE/VENTAS";
 		}
 		if(val == 180){
-		return "VE/ACTIVOS";
+			return "VE/ACTIVOS";
 		}
 		if(val == 270){
-		return "VE/VALOR ACTIVOS";
+			return "VE/VALOR ACTIVOS";
 		}
-		//return val;
 	}; 
 
 	$('#container2').highcharts({
@@ -204,7 +257,7 @@
 	        },
 
 	        title: {
-	            text: 'Grafica modificada'
+	            text: 'Grafica Spider'
 	        },
 
 	        pane: {
@@ -258,6 +311,76 @@
 	        }]
 	    });
 	
+	$('#container3').highcharts({
+	        chart: {
+	            type: 'pie',
+	            options3d: {
+	                enabled: true,
+	                alpha: 45
+	            }
+	        },
+	        title: {
+	            text: 'D PIE'
+	        },
+	        subtitle: {
+	            text: '3D PIE'
+	        },
+	        plotOptions: {
+	            pie: {
+	                innerSize: 100,
+	                depth: 45
+	            }
+	        },
+	        series: [{
+	            name: 'Delivered amount',
+	            data: [
+	                ['Bananas', 8],
+	                ['Kiwi', 3],
+	                ['Mixed nuts', 1],
+	                ['Oranges', 6],
+	                ['Apples', 8],
+	                ['Pears', 4],
+	                ['Clementines', 4],
+	                ['Reddish (bag)', 1],
+	                ['Grapes (bunch)', 1]
+	            ]
+	        }]
+	    });
+	$('#container4').highcharts({
+	        chart: {
+	            type: 'column',
+	            margin: 75,
+	            options3d: {
+	                enabled: true,
+	                alpha: 10,
+	                beta: 25,
+	                depth: 70
+	            }
+	        },
+	        title: {
+	            text: '3D Barras'
+	        },
+	        subtitle: {
+	            text: 'Notice the difference between a 0 value and a null point'
+	        },
+	        plotOptions: {
+	            column: {
+	                depth: 25
+	            }
+	        },
+	        xAxis: {
+	            categories: Highcharts.getOptions().lang.shortMonths
+	        },
+	        yAxis: {
+	            title: {
+	                text: null
+	            }
+	        },
+	        series: [{
+	            name: 'Sales',
+	            data: [2, 3, null, 4, 0, 5, 1, 4, 6, 3]
+	        }]
+	    });
 
 })();
 

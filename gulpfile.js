@@ -14,7 +14,8 @@ elixir(function(mix) {
         "libs/bootstrap/dataTables.bootstrap.js",
         "libs/highcharts/highcharts.js",
         "libs/highcharts/highcharts-more.js",
-    	"libs/highcharts/modules/exporting.js",
+    	"libs/highcharts/highcharts-3d.js",
+        "libs/highcharts/modules/exporting.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
