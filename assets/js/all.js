@@ -33158,6 +33158,60 @@ i),d.exportMenuWidth=i.offsetWidth,d.exportMenuHeight=i.offsetHeight;a={display:
 	        }]
 	    });
 
+	$('#container5').highcharts({
+
+	        chart: {
+	            type: 'column',
+	            options3d: {
+	                enabled: true,
+	                alpha: 0,
+	                beta: 0,
+	                viewDistance: 10
+	            },
+	            marginTop: 80,
+	            marginRight: 40
+	        },
+
+	        title: {
+	            text: 'Grafica de Tarro'
+	        },
+
+	        xAxis: {
+	            categories: ['Ingresos', 'Costos', 'Gastos Operación', 'EBITDA', 'Impuestos', 'Capital de Trabajo', 'Otros', 'CAPEX', 'FCL']
+	        },
+
+	        yAxis: {
+	            allowDecimals: false,
+	            min: 0,
+	            title: {
+	                text: 'Number of fruits'
+	            }
+	        },
+
+	        tooltip: {
+	            headerFormat: '<b>{point.key}</b><br>',
+	            pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y} / {point.stackTotal}'
+	        },
+
+	        plotOptions: {
+	            column: {
+	                stacking: 'normal',
+	                depth: 10
+	            }
+	        },
+
+	        series: [{
+	            name: 'Col1',
+	            data: [100, 86.2, 5.4, 8.3, 2.5, 1.7, -0.7, 1.1, 3.8],
+	            stack: 'male'            
+	        }, {
+	            name: 'Col2',
+	            data: [0, 13.8, 8.3, 0, 5.9, 4.2, 5.0, 3.8, 0],
+	            stack: 'male',
+	            color: 'white'
+	        }]
+	    });
+
 })();
 
 
