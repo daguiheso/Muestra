@@ -432,7 +432,7 @@
 	            name: 'Col2',
 	            data: [0, 13.8, 8.3, 0, 5.9, 4.2, 5.0, 3.8, 0],
 	            stack: 'male',
-	            color: 'gray'
+	            color: 'white'
 	        }]
 	    });
 
