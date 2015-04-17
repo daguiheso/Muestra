@@ -427,12 +427,12 @@
 	        series: [{
 	            name: 'Col1',
 	            data: [100, 86.2, 5.4, 8.3, 2.5, 1.7, -0.7, 1.1, 3.8],
-	            stack: 'male'            
+	            stack: 'male',            
 	        }, {
 	            name: 'Col2',
 	            data: [0, 13.8, 8.3, 0, 5.9, 4.2, 5.0, 3.8, 0],
 	            stack: 'male',
-	            color: 'white'
+	            color: 'gray'
 	        }]
 	    });
 
