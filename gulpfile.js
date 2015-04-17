@@ -13,6 +13,7 @@ elixir(function(mix) {
     	"libs/datatable/extensions/FixedColumns/dataTables.fixedColumns.js",
         "libs/bootstrap/dataTables.bootstrap.js",
         "libs/highcharts/highcharts.js",
+        "libs/highcharts/highcharts-more.js",
     	"libs/highcharts/modules/exporting.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");

@@ -137,50 +137,128 @@
 
 */
 	$(function () {
-    $('#container').highcharts({
-      title: {
-        text: 'Grafica para Indicadores',
-        x: -20 
-      },        
-      xAxis: {
-        title: {
-            text: 'Años'
-        },
-        categories: ['2009', '2010', '2011', '2012', '2013']
-      },
-      yAxis: {
-        title: {
-            text: 'Prueba'
-        },
-        plotLines: [{
-            value: 0,
-            width: 1,
-            color: '#808080'
-        }]
-      },
-      tooltip: {
-        valueSuffix: ''
-      },
-      legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle',
-        borderWidth: 0
-      },
-      series: [
-        {
-            name: 'Entidad',
-            type: 'spline',
-            data: [0, 8, 84, -26, 18]
-        },
-        {
-            name: 'Sector',
-            type: 'spline',
-            data: [21, 30, 22, 9, 2]
-        }
-      ]
-    });
+	    $('#container').highcharts({
+	      title: {
+	        text: 'Grafica para Indicadores',
+	        x: -20 
+	      },        
+	      xAxis: {
+	        title: {
+	            text: 'Años'
+	        },
+	        categories: ['2009', '2010', '2011', '2012', '2013']
+	      },
+	      yAxis: {
+	        title: {
+	            text: 'Prueba'
+	        },
+	        plotLines: [{
+	            value: 0,
+	            width: 1,
+	            color: '#808080'
+	        }]
+	      },
+	      tooltip: {
+	        valueSuffix: ''
+	      },
+	      legend: {
+	        layout: 'vertical',
+	        align: 'right',
+	        verticalAlign: 'middle',
+	        borderWidth: 0
+	      },
+	      series: [
+	        {
+	            name: 'Entidad',
+	            type: 'spline',
+	            data: [0, 8, 84, -26, 18]
+	        },
+	        {
+	            name: 'Sector',
+	            type: 'spline',
+	            data: [21, 30, 22, 9, 2]
+	        }
+	      ]
+	    });
 	});
+    function getvalue(val){
+		if(val == 0){
+		return "VE/EBIDDA";
+		}
+		if(val == 90){
+		return "VE/VENTAS";
+		}
+		if(val == 180){
+		return "VE/ACTIVOS";
+		}
+		if(val == 270){
+		return "VE/VALOR ACTIVOS";
+		}
+		//return val;
+	}; 
+
+	$('#container2').highcharts({
+
+	        chart: {
+	            polar: true
+	        },
+
+	        title: {
+	            text: 'Grafica modificada'
+	        },
+
+	        pane: {
+	            startAngle: 0,
+	            endAngle: 360,
+	            size: '120%'
+	        },
+
+        
+			//
+			
+			//
+	        xAxis: {
+	            tickInterval: 90,
+	            min: 0,
+	            max: 360,
+	            labels: {
+	                formatter: function () {
+	                    return getvalue(this.value);
+	                }
+	            },
+				lineWidth: 0
+	        },
+
+	        yAxis: {
+	            min: 0,
+				gridLineWidth: 0
+	        },
+
+	        plotOptions: {
+	            series: {
+	                pointStart: 0,
+	                pointInterval: 90
+	            },
+	            column: {
+	                pointPadding: 0,
+	                groupPadding: 0
+	            }
+	        },
+
+	        series: [
+	           {
+	            type: 'line',
+	            name: 'Empresa1',
+	            data: [50, 20, 20, 12]
+	        }, 
+	            {
+	            type: 'line',
+	            name: 'Line',
+	            data: [40, 25, 18, 24]
+	        }]
+	    });
+	
+
 })();
 
 
