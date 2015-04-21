@@ -107,7 +107,20 @@
 	        "sortDescending": ": activate to sort column descending"
 		    }
 			},
-      "dom": "Cfrtip",
+      dom: 'C<"clear">lfrtip',
+  		colVis: {
+  			exclude: [],
+  			groups: [
+  				{
+  					title: "2013-2017",
+  					columns: [ 3, 4, 5, 6, 7 ]
+  				},
+  				{
+  					title: "2018-2022",
+  					columns: [ 8, 9, 10, 11, 12 ]
+  				}
+  			]
+  		},
       "scrollY": "400px",
       "scrollX": true,
       "scrollCollapse": true,
