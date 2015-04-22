@@ -1,11 +1,11 @@
 (function(){
-
 /*
 	
 	DATA - TABLES 
 
 */
-	$(function(){
+	$(function() {
+
 		var table = $('#dataTable').dataTable({
 	    "dom": 'C<"clear">lfrtip',
 			language: {
@@ -183,6 +183,7 @@
         leftColumns: 1,
         rightColumns: 1
     });
+
 	});
 	
 /*
@@ -251,65 +252,57 @@
 	}; 
 
 	$('#container2').highcharts({
+    chart: {
+        polar: true
+    },
 
-	        chart: {
-	            polar: true
-	        },
+    title: {
+        text: 'Grafica Spider'
+    },
 
-	        title: {
-	            text: 'Grafica Spider'
-	        },
-
-	        pane: {
-	            startAngle: 0,
-	            endAngle: 360,
-	            size: '120%'
-	        },
-
-        
-			//
-			
-			//
-	        xAxis: {
-	            tickInterval: 90,
-	            min: 0,
-	            max: 360,
-	            labels: {
-	                formatter: function () {
-	                    return getvalue(this.value);
-	                }
-	            },
+    pane: {
+        startAngle: 0,
+        endAngle: 360,
+        size: '120%'
+    },        
+    xAxis: {
+        tickInterval: 90,
+        min: 0,
+        max: 360,
+        labels: {
+            formatter: function () {
+                return getvalue(this.value);
+            }
+    		},
 				lineWidth: 0
-	        },
-
-	        yAxis: {
-	            min: 0,
+    },
+    yAxis: {
+        min: 0,
 				gridLineWidth: 0
-	        },
-
-	        plotOptions: {
-	            series: {
-	                pointStart: 0,
-	                pointInterval: 90
-	            },
-	            column: {
-	                pointPadding: 0,
-	                groupPadding: 0
-	            }
-	        },
-
-	        series: [
-	           {
-	            type: 'line',
-	            name: 'Empresa1',
-	            data: [50, 20, 20, 12]
-	        }, 
-	            {
-	            type: 'line',
-	            name: 'Line',
-	            data: [40, 25, 18, 24]
-	        }]
-	    });
+    },
+    plotOptions: {
+        series: {
+            pointStart: 0,
+            pointInterval: 90
+        },
+        column: {
+            pointPadding: 0,
+            groupPadding: 0
+        }
+    },
+    series: [
+      {
+        type: 'line',
+        name: 'Empresa1',
+        data: [50, 20, 20, 12]
+    	}, 
+      {
+        type: 'line',
+        name: 'Line',
+        data: [40, 25, 18, 24]
+      }
+    ]
+	});
 	
 	$('#container3').highcharts({
 	        chart: {
@@ -345,7 +338,7 @@
 	                ['Grapes (bunch)', 1]
 	            ]
 	        }]
-	    });
+	});
 	$('#container4').highcharts({
 	        chart: {
 	            type: 'column',
@@ -380,7 +373,7 @@
 	            name: 'Sales',
 	            data: [2, 3, null, 4, 0, 5, 1, 4, 6, 3]
 	        }]
-	    });
+	});
 
 	$('#container5').highcharts({
 
@@ -434,7 +427,13 @@
 	            stack: 'male',
 	            color: 'white'
 	        }]
-	    });
+	});
+
+	$(function () {
+		$('html').each(function(i, block) {
+	   hljs.highlightBlock(block);
+	 });
+	})
 
 })();
 

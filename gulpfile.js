@@ -16,6 +16,7 @@ elixir(function(mix) {
         "libs/highcharts/highcharts-more.js",
     	"libs/highcharts/highcharts-3d.js",
         "libs/highcharts/modules/exporting.js",
+        "libs/highlight/highlight.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
