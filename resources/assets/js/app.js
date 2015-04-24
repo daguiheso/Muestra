@@ -1,11 +1,11 @@
 (function(){
-
 /*
 	
 	DATA - TABLES 
 
 */
-	$(function(){
+	$(function() {
+
 		var table = $('#dataTable').dataTable({
 	    "dom": 'C<"clear">lfrtip',
 			language: {
@@ -196,6 +196,7 @@
         leftColumns: 1,
         rightColumns: 1
     });
+
 	});
 	
 /*
@@ -264,65 +265,57 @@
 	}; 
 
 	$('#container2').highcharts({
+    chart: {
+        polar: true
+    },
 
-	        chart: {
-	            polar: true
-	        },
+    title: {
+        text: 'Grafica Spider'
+    },
 
-	        title: {
-	            text: 'Grafica Spider'
-	        },
-
-	        pane: {
-	            startAngle: 0,
-	            endAngle: 360,
-	            size: '120%'
-	        },
-
-        
-			//
-			
-			//
-	        xAxis: {
-	            tickInterval: 90,
-	            min: 0,
-	            max: 360,
-	            labels: {
-	                formatter: function () {
-	                    return getvalue(this.value);
-	                }
-	            },
+    pane: {
+        startAngle: 0,
+        endAngle: 360,
+        size: '120%'
+    },        
+    xAxis: {
+        tickInterval: 90,
+        min: 0,
+        max: 360,
+        labels: {
+            formatter: function () {
+                return getvalue(this.value);
+            }
+    		},
 				lineWidth: 0
-	        },
-
-	        yAxis: {
-	            min: 0,
+    },
+    yAxis: {
+        min: 0,
 				gridLineWidth: 0
-	        },
-
-	        plotOptions: {
-	            series: {
-	                pointStart: 0,
-	                pointInterval: 90
-	            },
-	            column: {
-	                pointPadding: 0,
-	                groupPadding: 0
-	            }
-	        },
-
-	        series: [
-	           {
-	            type: 'line',
-	            name: 'Empresa1',
-	            data: [50, 20, 20, 12]
-	        }, 
-	            {
-	            type: 'line',
-	            name: 'Line',
-	            data: [40, 25, 18, 24]
-	        }]
-	    });
+    },
+    plotOptions: {
+        series: {
+            pointStart: 0,
+            pointInterval: 90
+        },
+        column: {
+            pointPadding: 0,
+            groupPadding: 0
+        }
+    },
+    series: [
+      {
+        type: 'line',
+        name: 'Empresa1',
+        data: [50, 20, 20, 12]
+    	}, 
+      {
+        type: 'line',
+        name: 'Line',
+        data: [40, 25, 18, 24]
+      }
+    ]
+	});
 	
 	$('#container3').highcharts({
 	        chart: {
@@ -358,7 +351,7 @@
 	                ['Grapes (bunch)', 1]
 	            ]
 	        }]
-	    });
+	});
 	$('#container4').highcharts({
 	        chart: {
 	            type: 'column',
@@ -393,7 +386,7 @@
 	            name: 'Sales',
 	            data: [2, 3, null, 4, 0, 5, 1, 4, 6, 3]
 	        }]
-	    });
+	});
 
 	$('#container5').highcharts({
 
@@ -447,7 +440,183 @@
 	            stack: 'male',
 	            color: 'white'
 	        }]
-	    });
+	});
+
+	$(function () {
+		$('pre code').each(function(i, block) {
+	   hljs.highlightBlock(block);
+	 });
+	})
+
+	$(function () {
+		var radarChartData = {
+				labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+				datasets: [
+					{
+						label: "My First dataset",
+						fillColor: "rgba(220,220,220,0.2)",
+						strokeColor: "rgba(220,220,220,1)",
+						pointColor: "rgba(220,220,220,1)",
+						pointStrokeColor: "#fff",
+						pointHighlightFill: "#fff",
+						pointHighlightStroke: "rgba(220,220,220,1)",
+						data: [65,59,90,81,56,55,40]
+					},
+					{
+						label: "My Second dataset",
+						fillColor: "rgba(151,187,205,0.2)",
+						strokeColor: "rgba(151,187,205,1)",
+						pointColor: "rgba(151,187,205,1)",
+						pointStrokeColor: "#fff",
+						pointHighlightFill: "#fff",
+						pointHighlightStroke: "rgba(151,187,205,1)",
+						data: [28,48,40,19,96,27,100]
+					}
+				]
+			};
+
+			myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+					responsive: true
+			});
+
+			Chart.defaults.global = {
+			    // Boolean - Whether to animate the chart
+			    animation: true,
+
+			    // Number - Number of animation steps
+			    animationSteps: 60,
+
+			    // String - Animation easing effect
+			    // Possible effects are:
+			    // [easeInOutQuart, linear, easeOutBounce, easeInBack, easeInOutQuad,
+			    //  easeOutQuart, easeOutQuad, easeInOutBounce, easeOutSine, easeInOutCubic,
+			    //  easeInExpo, easeInOutBack, easeInCirc, easeInOutElastic, easeOutBack,
+			    //  easeInQuad, easeInOutExpo, easeInQuart, easeOutQuint, easeInOutCirc,
+			    //  easeInSine, easeOutExpo, easeOutCirc, easeOutCubic, easeInQuint,
+			    //  easeInElastic, easeInOutSine, easeInOutQuint, easeInBounce,
+			    //  easeOutElastic, easeInCubic]
+			    animationEasing: "easeOutQuart",
+
+			    // Boolean - If we should show the scale at all
+			    showScale: true,
+
+			    // Boolean - If we want to override with a hard coded scale
+			    scaleOverride: false,
+
+			    // ** Required if scaleOverride is true **
+			    // Number - The number of steps in a hard coded scale
+			    scaleSteps: null,
+			    // Number - The value jump in the hard coded scale
+			    scaleStepWidth: null,
+			    // Number - The scale starting value
+			    scaleStartValue: null,
+
+			    // String - Colour of the scale line
+			    scaleLineColor: "rgba(0,0,0,.1)",
+
+			    // Number - Pixel width of the scale line
+			    scaleLineWidth: 1,
+
+			    // Boolean - Whether to show labels on the scale
+			    scaleShowLabels: true,
+
+			    // Interpolated JS string - can access value
+			    scaleLabel: "<%=value%>",
+
+			    // Boolean - Whether the scale should stick to integers, not floats even if drawing space is there
+			    scaleIntegersOnly: true,
+
+			    // Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+			    scaleBeginAtZero: false,
+
+			    // String - Scale label font declaration for the scale label
+			    scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+
+			    // Number - Scale label font size in pixels
+			    scaleFontSize: 12,
+
+			    // String - Scale label font weight style
+			    scaleFontStyle: "normal",
+
+			    // String - Scale label font colour
+			    scaleFontColor: "#666",
+
+			    // Boolean - whether or not the chart should be responsive and resize when the browser does.
+			    responsive: false,
+
+			    // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+			    maintainAspectRatio: true,
+
+			    // Boolean - Determines whether to draw tooltips on the canvas or not
+			    showTooltips: true,
+
+			    // Function - Determines whether to execute the customTooltips function instead of drawing the built in tooltips (See [Advanced - External Tooltips](#advanced-usage-custom-tooltips))
+			    customTooltips: false,
+
+			    // Array - Array of string names to attach tooltip events
+			    tooltipEvents: ["mousemove", "touchstart", "touchmove"],
+
+			    // String - Tooltip background colour
+			    tooltipFillColor: "rgba(0,0,0,0.8)",
+
+			    // String - Tooltip label font declaration for the scale label
+			    tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+
+			    // Number - Tooltip label font size in pixels
+			    tooltipFontSize: 22,
+
+			    // String - Tooltip font weight style
+			    tooltipFontStyle: "normal",
+
+			    // String - Tooltip label font colour
+			    tooltipFontColor: "#fff",
+
+			    // String - Tooltip title font declaration for the scale label
+			    tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+
+			    // Number - Tooltip title font size in pixels
+			    tooltipTitleFontSize: 14,
+
+			    // String - Tooltip title font weight style
+			    tooltipTitleFontStyle: "bold",
+
+			    // String - Tooltip title font colour
+			    tooltipTitleFontColor: "#fff",
+
+			    // Number - pixel width of padding around tooltip text
+			    tooltipYPadding: 6,
+
+			    // Number - pixel width of padding around tooltip text
+			    tooltipXPadding: 6,
+
+			    // Number - Size of the caret on the tooltip
+			    tooltipCaretSize: 8,
+
+			    // Number - Pixel radius of the tooltip border
+			    tooltipCornerRadius: 6,
+
+			    // Number - Pixel offset from point x to tooltip edge
+			    tooltipXOffset: 10,
+
+			    // String - Template string for single tooltips
+			    tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
+
+			    // String - Template string for multiple tooltips
+			    multiTooltipTemplate: "<%= value %>",
+
+			    // Function - Will fire on animation progression.
+			    onAnimationProgress: function(){},
+
+			    // Function - Will fire on animation completion.
+			    onAnimationComplete: function(){}
+			},
+			{
+				scaleShowLine : true,
+				angleShowLineOut : false,
+				angleLineWidth : 5,
+				pointLabelFontSize : 20
+			}
+	})
 
 })();
 
