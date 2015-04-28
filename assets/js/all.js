@@ -33532,6 +33532,21 @@ https://highlightjs.org/
 }));
 (function(){
 	hljs.initHighlightingOnLoad();
+
+	var $main = $("#main"),
+	    $btnmain = $("#btn-main");
+	    
+	function mostrarMenu() {
+	    $main.animate({
+	    	width: "30%",
+	    	width: "100%"
+	    });
+	    return false;
+	}   
+
+	// Eventos
+	$btnmain.click(mostrarMenu);
+
 /*
 	
 	DATA - TABLES 
@@ -33993,8 +34008,6 @@ https://highlightjs.org/
 	            color: 'white'
 	        }]
 	});
-
-	
 })();
 
 
