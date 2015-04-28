@@ -40682,6 +40682,25 @@ https://highlightjs.org/
         rightColumns: 1
     });
 
+  	var table5 = $('#dataTable5').dataTable({
+  		language: {
+  	    "emptyTable":     "Datos en la tabla no validos",
+  	    "info":           "_START_ / _END_ of _TOTAL_ entries",
+  	    "infoEmpty":      "Showing 0 to 0 of 0 entries",
+  	    "infoFiltered":   "(filtered from _MAX_ total entries)",
+  	    "infoPostFix":    "",
+  	    "thousands":      ",",
+  	    "lengthMenu":     "Show _MENU_ entries",
+  	    "loadingRecords": "Cargando...",
+  	    "processing":     "Procesando...",
+  	    "search":         "Busqueda:",
+  	    "zeroRecords":    "No matching records found"  	    
+  		},
+  		"paging": false,
+  		"ordering": false
+  		//,
+  		//"scrollY": "300px"
+  	});
 	});
 	
 /*

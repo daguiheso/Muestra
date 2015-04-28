@@ -6836,6 +6836,12 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+tr > td {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
 table.dataTable {
   margin: 0 auto;
   clear: both;
