@@ -14,6 +14,8 @@ elixir(function(mix) {
         "libs/bootstrap/dataTables.bootstrap.js",
         "libs/highlight/highlight.js",
         "libs/d3/d3.js",
+        "libs/d3/radial/RadarCharts.js",
+        "libs/d3/radial/script.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
