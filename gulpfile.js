@@ -13,6 +13,7 @@ elixir(function(mix) {
     	"libs/datatable/extensions/FixedColumns/dataTables.fixedColumns.js",
         "libs/bootstrap/dataTables.bootstrap.js",
         "libs/highlight/highlight.js",
+        "libs/d3/d3.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
