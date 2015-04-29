@@ -2,18 +2,29 @@
 	hljs.initHighlightingOnLoad();
 
 	var $main = $("#main"),
-	    $btnmain = $("#btn-main");
+	    $btnexpmain = $("#btn-exp-main"),
+	    $btncollapmain = $("#btn-collap-main");
 	    
-	function mostrarMenu() {
+	function collapsedMenu() { // VERDE
 	    $main.animate({
-	    	width: "30%",
+	    	width: "30%"
+	    });
+	    $btnexpmain.show();
+	    $btncollapmain.hide();
+	    return false;
+	} 
+	function expandMenu() {  // ROJO
+	    $main.animate({
 	    	width: "100%"
 	    });
+	    $btncollapmain.show();
+	    $btnexpmain.hide();
 	    return false;
-	}   
+	}     
 
 	// Eventos
-	$btnmain.click(mostrarMenu);
+	$btnexpmain.click(expandMenu);
+	$btncollapmain.click(collapsedMenu);
 
 /*
 	

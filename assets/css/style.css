@@ -6830,6 +6830,18 @@ button.close {
 .main ul li a {
   color: white;
 }
+.btn-main {
+  position: absolute;
+  font-size: 2rem;
+  left: 5rem;
+  line-height: 50px;
+}
+.is-active {
+  display: block;
+}
+.is-desactive {
+  display: none;
+}
 tr > td {
   text-align: right;
 }
