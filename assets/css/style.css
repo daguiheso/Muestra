@@ -6826,6 +6826,10 @@ button.close {
 }
 .main {
   background: #6161CF;
+  width: 190px;
+  position: absolute;
+  top: 5.2rem;
+  bottom: 0;
 }
 .main ul li a {
   color: white;

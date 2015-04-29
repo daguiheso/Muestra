@@ -3,22 +3,29 @@
 
 	var $main = $("#main"),
 	    $btnexpmain = $("#btn-exp-main"),
-	    $btncollapmain = $("#btn-collap-main");
+	    $btncollapmain = $("#btn-collap-main"),
+	    $content = $("#content");
 	    
 	function collapsedMenu() { // VERDE
 	    $main.animate({
-	    	width: "30%"
+	    	width: "60px"
 	    });
 	    $btnexpmain.show();
 	    $btncollapmain.hide();
+	    $content.animate({
+	    	marginLeft: "60px"
+	    })
 	    return false;
 	} 
 	function expandMenu() {  // ROJO
 	    $main.animate({
-	    	width: "100%"
+	    	width: "190px"
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();
+	    $content.animate({
+	    	marginLeft: "190px"
+	    })
 	    return false;
 	}     
 
