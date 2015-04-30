@@ -32,7 +32,7 @@ var mycfg = {
   levels: 4,
   maxValue: 0,
   radians: 2 * Math.PI,
-  opacityArea: 0.2,
+  opacityArea: 0,
   ToRight: 10,
   TranslateX: 80,
   TranslateY: 30,
