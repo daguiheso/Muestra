@@ -42904,6 +42904,7 @@ var legend = svg.append("g")
 
 	hljs.initHighlightingOnLoad();
 
+	// Cerrar / Expandir Menu
 	var $main = $("#main"),
 	    $btnexpmain = $("#btn-exp-main"),
 	    $btncollapmain = $("#btn-collap-main"),
@@ -42931,10 +42932,18 @@ var legend = svg.append("g")
 	    })
 	    return false;
 	}     
-
+	// Efecto acordion
+	var $elements = $(".tr-collapsed"),
+			$btnCollapsed = $("#btn-collapsed"),
+			$ocultar = $('.ocultar');
+	    
+	function collapsedElements() {
+	    $elements.slideToggle();
+	    $ocultar.css(	"display", "none" );
+	    return false;
+	} 	    
 	// Eventos
-	$btnexpmain.click(expandMenu);
-	$btncollapmain.click(collapsedMenu);
+	$btnCollapsed.click(collapsedElements);
 
 /*
 	

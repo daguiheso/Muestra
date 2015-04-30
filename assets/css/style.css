@@ -6767,6 +6767,8 @@ button.close {
 }
 .navbar-pipoca {
   margin-bottom: 0;
+  position: relative;
+  z-index: 999;
 }
 .ml {
   margin-left: 1em;
@@ -6827,9 +6829,10 @@ button.close {
 .main {
   background: #6161CF;
   width: 190px;
-  position: absolute;
-  top: 5.2rem;
+  position: fixed;
+  top: 0;
   bottom: 0;
+  padding-top: 8rem;
 }
 .main ul li a {
   color: white;
@@ -6845,6 +6848,9 @@ button.close {
 }
 .is-desactive {
   display: none;
+}
+#content {
+  margin-left: 190px;
 }
 tr > td {
   text-align: right;

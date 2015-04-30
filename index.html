@@ -58,7 +58,7 @@
   -->
       <legend>Tabla - Paginación</legend>
       <div class="content-tables">
-        <table id="dataTable" class="display">
+        <table id="dataTable" class="table table-striped table-bordered display">
           <thead>
             <tr>
               <th>Name</th>
@@ -1202,95 +1202,100 @@
       </div>
       <legend>Tabla - Show / Hide</legend>
       <div class="content-tables">
+      	<a id="btn-collapsed" href="">ocultar/mostrar</a>
         <table id="dataTable5" class="stripe row-border order-column">
           <thead>
             <tr>Flujos de Caja Libre Descontados</tr>
             <tr>
               <th>Año</th>
-              <th>FCL<br> (MMM COP)</th>
-              <th>Descerro</th>
+              <th class="ocultar">FCL<br> (MMM COP)</th>
+              <th class="ocultar">Deflactor</th>
               <th>Valor<br> Presente</th>
               <th>%</th>
             </tr>
           </thead>
           <tbody>
-          <div class="collapse" id="ocultando">
-          kfkphmrkhmdfhfñ
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2014</td>
                 <td>1.8</td>
                 <td>1.1</td>
                 <td>1.6</td>
                 <td>4%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2015</td>
                 <td>2.7</td>
                 <td>1.2</td>
                 <td>2.2</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2016</td>
                 <td>3.9</td>
                 <td>1.4</td>
                 <td>2.8</td>
                 <td>6%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2017</td>
                 <td>3.3</td>
                 <td>1.6</td>
                 <td>2.1</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2018</td>
                 <td>4.1</td>
                 <td>1.8</td>
                 <td>2.3</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2019</td>
                 <td>4.8</td>
                 <td>2.0</td>
                 <td>2.4</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2020</td>
                 <td>5.2</td>
                 <td>2.2</td>
                 <td>2.3</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2021</td>
                 <td>5.6</td>
                 <td>2.5</td>
                 <td>2.2</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2022</td>
                 <td>6.0</td>
                 <td>2.8</td>
                 <td>2.1</td>
                 <td>5%</td>
               </tr>
-              <tr>
+              <tr class="tr-collapsed">
                 <td class="text-left">2023</td>
                 <td>6.5</td>
                 <td>3.2</td>
                 <td>2.1</td>
                 <td>5%</td>
               </tr>
-          </div>
+            <tr class="is-desactive tr-collapsed">
+              <td class="text-left">Flujo de Caja 2014-2013</td>
+              <td></td>
+              <td></td>
+              <td>22.1</td>
+              <td>49%</td>
+            </tr>
             <tr>
               <td class="text-left">Valor Residual</td>
-              <td>80.4</td>
-              <td>3.6</td>
+              <td class="ocultar">80.4</td>
+              <td class="ocultar">3.6</td>
               <td>22.6</td>
               <td>51%</td>
             </tr>
@@ -1324,9 +1329,6 @@
             </tr>
           </tbody>
         </table>
-        <a class="btn btn-primary" data-toggle="collapse" href="#ocultando" aria-expanded="false" aria-controls="ocultando">
-          Link with href
-        </a>
       </div>
       <br>
       <br>
