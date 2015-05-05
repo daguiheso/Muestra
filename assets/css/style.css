@@ -6777,7 +6777,8 @@ button.close {
   color: white !important;
   height: 55px;
   background: #5d8f0d;
-  padding: 0 7.5px;
+  padding: 0;
+  width: 190px;
   line-height: 55px;
 }
 .navbar-header-pipoka {
