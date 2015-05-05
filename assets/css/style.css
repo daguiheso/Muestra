@@ -6851,6 +6851,9 @@ button.close {
 .fw-bold {
   font-weight: bold;
 }
+#btn-collapsed {
+  font-size: 2rem;
+}
 .pad0-panel {
   padding-right: 0;
   padding-left: 0;
@@ -6895,6 +6898,9 @@ tr > td {
 }
 .inline-block {
   display: inline-block;
+}
+.is-desactive {
+  display: none;
 }
 table.dataTable {
   margin: 0 auto;

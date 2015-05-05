@@ -37,7 +37,7 @@
 	    
 	function collapsedElements() {
 	    $elements.slideToggle();
-	    $ocultar.css(	"display", "none" );
+	    $ocultar.css(	"fontSize", "0" );
 	    return false;
 	} 	    
 	// Eventos
