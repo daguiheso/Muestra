@@ -42918,7 +42918,8 @@ var legend = svg.append("g")
 	    $btncollapmain.hide();
 	    $content.animate({
 	    	marginLeft: "60px"
-	    })
+	    });
+	    console.log("holas");
 	    return false;
 	} 
 	function expandMenu() {  
@@ -42944,6 +42945,8 @@ var legend = svg.append("g")
 	} 	    
 	// Eventos
 	$btnCollapsed.click(collapsedElements);
+	$btnexpmain.click(expandMenu);
+	$btncollapmain.click(collapsedMenu);
 
 /*
 	

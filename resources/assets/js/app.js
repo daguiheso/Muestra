@@ -16,7 +16,7 @@
 	    $btncollapmain.hide();
 	    $content.animate({
 	    	marginLeft: "60px"
-	    })
+	    });
 	    return false;
 	} 
 	function expandMenu() {  
@@ -42,6 +42,8 @@
 	} 	    
 	// Eventos
 	$btnCollapsed.click(collapsedElements);
+	$btnexpmain.click(expandMenu);
+	$btncollapmain.click(collapsedMenu);
 
 /*
 	
