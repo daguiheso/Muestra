@@ -1,7 +1,6 @@
 /*GENERAL*/
 /*PANELES*/
 /*TABLAS*/
-/*BADGES*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6769,6 +6768,53 @@ button.close {
   margin-bottom: 0;
   position: relative;
   z-index: 999;
+  border: 0;
+  min-height: 55px;
+}
+.title-pipoka {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white !important;
+  height: 55px;
+  background: #5d8f0d;
+  padding: 0 7.5px;
+  line-height: 55px;
+}
+.navbar-header-pipoka {
+  height: 55px;
+  min-width: 100%;
+}
+.by-latin {
+  font-size: .95rem;
+}
+.form-navbar {
+  height: 55px;
+  margin-left: 6rem;
+  line-height: 55px;
+  width: 40%;
+  display: inline-block;
+}
+.search-input {
+  width: 80%;
+  display: inline-block;
+}
+.btn-main {
+  position: absolute;
+  font-size: 2rem;
+  left: 22rem;
+  line-height: 50px;
+}
+.search-input::-webkit-input-placeholder {
+  color: #FF0000;
+}
+.search-input:-moz-placeholder {
+  color: #FF0000;
+}
+.search-input::-moz-placeholder {
+  color: #FF0000;
+}
+.search-input:-ms-input-placeholder {
+  color: #FF0000;
 }
 .ml {
   margin-left: 1em;
@@ -6827,7 +6873,7 @@ button.close {
   border-bottom-color: #0f5003;
 }
 .main {
-  background: #6161CF;
+  background: #5d8f0d;
   width: 190px;
   position: fixed;
   top: 0;
@@ -6837,18 +6883,6 @@ button.close {
 .main ul li a {
   color: white;
 }
-.btn-main {
-  position: absolute;
-  font-size: 2rem;
-  left: 5rem;
-  line-height: 50px;
-}
-.is-active {
-  display: block;
-}
-.is-desactive {
-  display: none;
-}
 #content {
   margin-left: 190px;
 }
@@ -6857,6 +6891,9 @@ tr > td {
 }
 .text-left {
   text-align: left;
+}
+.inline-block {
+  display: inline-block;
 }
 table.dataTable {
   margin: 0 auto;

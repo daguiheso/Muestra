@@ -42919,7 +42919,6 @@ var legend = svg.append("g")
 	    $content.animate({
 	    	marginLeft: "60px"
 	    });
-	    console.log("holas");
 	    return false;
 	} 
 	function expandMenu() {  
