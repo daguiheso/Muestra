@@ -4,9 +4,9 @@
 
 	// Cerrar / Expandir Menu
 	var $main = $("#main"),
+	    $content = $("#content"),
 	    $btnexpmain = $("#btn-exp-main"),
-	    $btncollapmain = $("#btn-collap-main"),
-	    $content = $("#content");
+	    $btncollapmain = $("#btn-collap-main");
 	    
 	function collapsedMenu() {
 	    $main.animate({
@@ -21,16 +21,29 @@
 	} 
 	function expandMenu() {  
 	    $main.animate({
-	    	width: "190px"
+	    	width: "210px"
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();
 	    $content.animate({
-	    	marginLeft: "190px"
+	    	marginLeft: "210px"
 	    })
 	    return false;
 	}     
-	// Efecto acordion
+
+	//Eventos
+
+	$btnexpmain.click(expandMenu);
+	$btncollapmain.click(collapsedMenu);
+
+
+
+
+
+
+
+
+	// Efecto acordion Tablas 
 	var $elements = $(".tr-collapsed"),
 			$btnCollapsed = $("#btn-collapsed"),
 			$ocultar = $('.ocultar');
@@ -39,11 +52,35 @@
 	    $elements.slideToggle();
 	    $ocultar.css(	"fontSize", "0" );
 	    return false;
-	} 	    
+	} 	
+
 	// Eventos
 	$btnCollapsed.click(collapsedElements);
-	$btnexpmain.click(expandMenu);
-	$btncollapmain.click(collapsedMenu);
+
+
+
+
+
+
+
+
+	// Efecto acordion Menu
+	var $subMainItem = $(".submain-item"),
+			$btnCollapSubMain = $("#btn-collapsed-main");
+
+	function collapsedSubMains() {
+	    $subMainItem.slideToggle();
+	    //$subMainItem.css ("border" , "0");
+	    return false;
+	} 	   
+
+	// Eventos SubMain
+	$btnCollapSubMain.click(collapsedSubMains);
+
+
+
+
+
 
 /*
 	

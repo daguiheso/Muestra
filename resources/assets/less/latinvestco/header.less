@@ -10,14 +10,19 @@
 	font-weight: 600;
 	color: white !important;
 	height: @height-header;
-	background: @color-nav;
+	background: @color-nav-dark;
 	padding: 0;
-	width: 190px;
+	width: @width-main;
 	line-height: @height-header;
+	border-bottom: 1px solid #444
 }
+.title-pipoka:hover {
+	background-color: @color-nav-dark !important;
+}
+
 .navbar-header-pipoka {
 	height: @height-header;
-	min-width: 100%;
+	width: 98.8%;
 }
 .by-latin {
 	font-size: .95rem;
@@ -41,7 +46,7 @@
 }
 .search-input::-webkit-input-placeholder
 {
-  color:    #FF0000;
+  color: @color-nav;
 }
 
 .search-input:-moz-placeholder

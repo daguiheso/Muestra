@@ -6776,14 +6776,18 @@ button.close {
   font-weight: 600;
   color: white !important;
   height: 55px;
-  background: #5d8f0d;
+  background: #446909;
   padding: 0;
-  width: 190px;
+  width: 210px;
   line-height: 55px;
+  border-bottom: 1px solid #444444;
+}
+.title-pipoka:hover {
+  background-color: #446909 !important;
 }
 .navbar-header-pipoka {
   height: 55px;
-  min-width: 100%;
+  width: 98.8%;
 }
 .by-latin {
   font-size: .95rem;
@@ -6806,7 +6810,7 @@ button.close {
   line-height: 50px;
 }
 .search-input::-webkit-input-placeholder {
-  color: #FF0000;
+  color: #5d8f0d;
 }
 .search-input:-moz-placeholder {
   color: #FF0000;
@@ -6878,17 +6882,42 @@ button.close {
 }
 .main {
   background: #5d8f0d;
-  width: 190px;
+  width: 210px;
   position: fixed;
   top: 0;
   bottom: 0;
   padding-top: 8rem;
 }
-.main ul li a {
+.main {
   color: white;
 }
+.main ul li a:hover {
+  background: #446909;
+}
 #content {
-  margin-left: 190px;
+  margin-left: 210px;
+}
+.associate-company {
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0 2rem;
+  border-bottom: 1px solid #444;
+}
+.nav-latleft li {
+  margin-top: 0 !important;
+  border-bottom: 1px solid #444;
+  display: none;
+}
+.nav-latleft li a {
+  font-weight: 500;
+  color: white;
+}
+.diagnostic-title {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #444;
+  padding: 1rem 0;
 }
 tr > td {
   text-align: right;
