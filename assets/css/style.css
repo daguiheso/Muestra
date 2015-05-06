@@ -6766,7 +6766,9 @@ button.close {
 }
 .navbar-pipoca {
   margin-bottom: 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  min-width: 100%;
   z-index: 999;
   border: 0;
   min-height: 55px;
@@ -6787,7 +6789,7 @@ button.close {
 }
 .navbar-header-pipoka {
   height: 55px;
-  width: 98.8%;
+  min-width: 100%;
 }
 .by-latin {
   font-size: .95rem;
