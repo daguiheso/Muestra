@@ -6893,11 +6893,21 @@ button.close {
 .main {
   color: white;
 }
+.main ul {
+  display: none;
+}
 .main ul li a {
+  background: #446909;
+  color: white;
+}
+.main ul li a:hover {
   background: #446909;
 }
 #content {
   margin-left: 210px;
+  padding-top: 55px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .associate-company {
   text-align: center;
@@ -6905,14 +6915,16 @@ button.close {
   padding: 1rem 0 2rem;
   border-bottom: 1px solid #444;
 }
-.nav-latleft li {
+.submain-diag li,
+.submain-proj li,
+.submain-val li {
   margin-top: 0 !important;
   border-bottom: 1px solid #444;
 }
-.nav-latleft li a {
-  font-weight: 500;
-  color: white;
-}
+/*.nav-latleft li a {
+	font-weight: 500;
+	color: white;
+}*/
 .main-titles {
   cursor: pointer;
   text-align: center;

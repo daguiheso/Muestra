@@ -10,11 +10,21 @@
 .main  {
 	color: white;
 }
+.main ul {
+	display: none;
+}
 .main ul li a {
+	background: @color-nav-dark;
+	color: white;
+}
+.main ul li a:hover {
 	background: @color-nav-dark;
 }
 #content {
 	margin-left: @width-main;
+	padding-top: @height-header;
+	padding-left: 4rem;
+	padding-right: 4rem;
 }
 
 
@@ -24,15 +34,16 @@
 	padding: 1rem 0 2rem;
 	border-bottom: 1px solid #444;
 }
-.nav-latleft li {
+.submain-diag li,
+.submain-proj li,
+.submain-val li {
 	margin-top: 0 !important;
 	border-bottom: 1px solid #444;
-	//display: none;
 }
-.nav-latleft li a {
+/*.nav-latleft li a {
 	font-weight: 500;
 	color: white;
-}
+}*/
 .main-titles {
 	cursor: pointer;
 	text-align: center;

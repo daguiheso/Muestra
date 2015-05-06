@@ -17,6 +17,10 @@
 	    $content.animate({
 	    	marginLeft: "60px"
 	    });
+	    document.getElementById("CA").innerHTML = "CA";
+	    document.getElementById("btn-collapsed-diag").innerHTML = "D";
+	    document.getElementById("btn-collapsed-proj").innerHTML = "P";
+	    document.getElementById("btn-collapsed-val").innerHTML = "V";
 	    return false;
 	} 
 	function expandMenu() {  
@@ -27,7 +31,11 @@
 	    $btnexpmain.hide();
 	    $content.animate({
 	    	marginLeft: "210px"
-	    })
+	    });
+	    document.getElementById("CA").innerHTML = "<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p>Sector: Suspendisse dui leo</p>";
+	    document.getElementById("btn-collapsed-diag").innerHTML = "DIAGNÓSTICO <br> CA vs CS vs SD vs S";
+	    document.getElementById("btn-collapsed-proj").innerHTML = "PROYECCIÓN";
+	    document.getElementById("btn-collapsed-val").innerHTML = "VALORACIÓN";
 	    return false;
 	}     
 
