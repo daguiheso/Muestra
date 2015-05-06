@@ -6813,13 +6813,13 @@ button.close {
   color: #5d8f0d;
 }
 .search-input:-moz-placeholder {
-  color: #FF0000;
+  color: #5d8f0d;
 }
 .search-input::-moz-placeholder {
-  color: #FF0000;
+  color: #5d8f0d;
 }
 .search-input:-ms-input-placeholder {
-  color: #FF0000;
+  color: #5d8f0d;
 }
 .ml {
   margin-left: 1em;
@@ -6891,7 +6891,7 @@ button.close {
 .main {
   color: white;
 }
-.main ul li a:hover {
+.main ul li a {
   background: #446909;
 }
 #content {
@@ -6906,13 +6906,12 @@ button.close {
 .nav-latleft li {
   margin-top: 0 !important;
   border-bottom: 1px solid #444;
-  display: none;
 }
 .nav-latleft li a {
   font-weight: 500;
   color: white;
 }
-.diagnostic-title {
+.main-titles {
   cursor: pointer;
   text-align: center;
   font-weight: bold;

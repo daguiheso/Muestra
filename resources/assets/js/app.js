@@ -65,17 +65,31 @@
 
 
 	// Efecto acordion Menu
-	var $subMainItem = $(".submain-item"),
-			$btnCollapSubMain = $("#btn-collapsed-main");
+	var $subMainDiag = $(".submain-diag"),
+			$btnCollapDiag = $("#btn-collapsed-diag"),
+			$subMainProj = $(".submain-proj"),
+			$btnCollapProj = $("#btn-collapsed-proj"),
+			$subMainVal = $(".submain-val"),
+			$btnCollapVal = $("#btn-collapsed-val");
 
-	function collapsedSubMains() {
-	    $subMainItem.slideToggle();
-	    //$subMainItem.css ("border" , "0");
+
+	function collapsedDiagnostic() {
+	    $subMainDiag.slideToggle();
 	    return false;
 	} 	   
+	function collapsedProjection() {
+	    $subMainProj.slideToggle();
+	    return false;
+	}
+	function collapsedValuation() {
+	    $subMainVal.slideToggle();
+	    return false;
+	}
 
 	// Eventos SubMain
-	$btnCollapSubMain.click(collapsedSubMains);
+	$btnCollapDiag.click(collapsedDiagnostic);
+	$btnCollapProj.click(collapsedProjection);
+	$btnCollapVal.click(collapsedValuation);
 
 
 
