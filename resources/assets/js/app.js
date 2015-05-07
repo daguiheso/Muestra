@@ -1,13 +1,25 @@
 (function() {
 
 	hljs.initHighlightingOnLoad();
-
-	// Cerrar / Expandir Menu
+	// Variables Cerrar / Expandir Menu
 	var $main = $("#main"),
 	    $content = $("#content"),
 	    $btnexpmain = $("#btn-exp-main"),
-	    $btncollapmain = $("#btn-collap-main");
-	    
+	    $btncollapmain = $("#btn-collap-main"),
+	    $areaCA = $("#CA"),
+	    $indicator = $(".indicator"),
+	    $stateResult = $(".state-result"),
+	    $balanceGen = $(".balance-gen"),
+	    $cashFlow = $(".cash-flow");
+	// Variables Efecto acordion Menu
+	var	$btnCollapDiag = $("#btn-collapsed-diag"),
+		$btnCollapProj = $("#btn-collapsed-proj"),
+		$btnCollapVal = $("#btn-collapsed-val"),
+	    $subMainDiag = $(".submain-diag"),
+		$subMainProj = $(".submain-proj"),
+		$subMainVal = $(".submain-val");
+
+	// Colapsar Menu
 	function collapsedMenu() {
 	    $main.animate({
 	    	width: "60px"
@@ -17,12 +29,17 @@
 	    $content.animate({
 	    	marginLeft: "60px"
 	    });
-	    document.getElementById("CA").innerHTML = "CA";
-	    document.getElementById("btn-collapsed-diag").innerHTML = "D";
-	    document.getElementById("btn-collapsed-proj").innerHTML = "P";
-	    document.getElementById("btn-collapsed-val").innerHTML = "V";
+	    $areaCA.html("CA");
+	    $indicator.html("I");
+	    $stateResult.html("ER");
+	    $balanceGen.html("BG");
+	    $cashFlow.html("FC");
+	    $subMainDiag.addClass("center-text");
+	    $subMainProj.addClass("center-text");
+	    $subMainVal.addClass("center-text");
 	    return false;
 	} 
+	// Expandir Menu
 	function expandMenu() {  
 	    $main.animate({
 	    	width: "210px"
@@ -32,17 +49,37 @@
 	    $content.animate({
 	    	marginLeft: "210px"
 	    });
-	    document.getElementById("CA").innerHTML = "<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p>Sector: Suspendisse dui leo</p>";
-	    document.getElementById("btn-collapsed-diag").innerHTML = "DIAGNÓSTICO <br> CA vs CS vs SD vs S";
-	    document.getElementById("btn-collapsed-proj").innerHTML = "PROYECCIÓN";
-	    document.getElementById("btn-collapsed-val").innerHTML = "VALORACIÓN";
+	    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p>Sector: Suspendisse dui leo</p>");
+	    $indicator.html("Indicadores");
+	    $stateResult.html("Estado de Resultado");
+	    $balanceGen.html("Balance General");
+	    $cashFlow.html("Flujo de Caja");
+	    $subMainDiag.removeClass("center-text");
+	    $subMainProj.removeClass("center-text");
+	    $subMainVal.removeClass("center-text");
 	    return false;
 	}     
-
+	// Colapsar y Expandir sub-menu Diagnostico
+	function collapextendDiagnostic() {
+	    $subMainDiag.slideToggle();
+	    return false;
+	} 	   
+	// Colapsar y Expandir sub-menu Proyección
+	function collapextendProjection() {
+	    $subMainProj.slideToggle();
+	    return false;
+	}
+	// Colapsar y Expandir sub-menu Valoración
+	function collapextendValuation() {
+	    $subMainVal.slideToggle();
+	    return false;
+	}
 	//Eventos
-
-	$btnexpmain.click(expandMenu);
 	$btncollapmain.click(collapsedMenu);
+	$btnexpmain.click(expandMenu);
+	$btnCollapDiag.click(collapextendDiagnostic);
+	$btnCollapProj.click(collapextendProjection);
+	$btnCollapVal.click(collapextendValuation);
 
 
 
@@ -55,7 +92,7 @@
 	var $elements = $(".tr-collapsed"),
 			$btnCollapsed = $("#btn-collapsed"),
 			$ocultar = $('.ocultar');
-	    
+
 	function collapsedElements() {
 	    $elements.slideToggle();
 	    $ocultar.css(	"fontSize", "0" );
@@ -72,32 +109,6 @@
 
 
 
-	// Efecto acordion Menu
-	var $subMainDiag = $(".submain-diag"),
-			$btnCollapDiag = $("#btn-collapsed-diag"),
-			$subMainProj = $(".submain-proj"),
-			$btnCollapProj = $("#btn-collapsed-proj"),
-			$subMainVal = $(".submain-val"),
-			$btnCollapVal = $("#btn-collapsed-val");
-
-
-	function collapsedDiagnostic() {
-	    $subMainDiag.slideToggle();
-	    return false;
-	} 	   
-	function collapsedProjection() {
-	    $subMainProj.slideToggle();
-	    return false;
-	}
-	function collapsedValuation() {
-	    $subMainVal.slideToggle();
-	    return false;
-	}
-
-	// Eventos SubMain
-	$btnCollapDiag.click(collapsedDiagnostic);
-	$btnCollapProj.click(collapsedProjection);
-	$btnCollapVal.click(collapsedValuation);
 
 
 
