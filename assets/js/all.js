@@ -42912,7 +42912,9 @@ var legend = svg.append("g")
 	    $indicator = $(".indicator"),
 	    $stateResult = $(".state-result"),
 	    $balanceGen = $(".balance-gen"),
-	    $cashFlow = $(".cash-flow");
+	    $cashFlow = $(".cash-flow"),
+	    $showhideCatg = $(".title-category"),
+	    $iconCatg = $(".icon-category");
 	// Variables Efecto acordion Menu
 	var	$btnCollapDiag = $("#btn-collapsed-diag"),
 		$btnCollapProj = $("#btn-collapsed-proj"),
@@ -42924,12 +42926,12 @@ var legend = svg.append("g")
 	// Colapsar Menu
 	function collapsedMenu() {
 	    $main.animate({
-	    	width: "60px"
+	    	width: "55px"
 	    });
 	    $btnexpmain.show();
 	    $btncollapmain.hide();
 	    $content.animate({
-	    	marginLeft: "60px"
+	    	marginLeft: "55px"
 	    });
 	    $areaCA.html("CA");
 	    $indicator.html("I");
@@ -42939,6 +42941,12 @@ var legend = svg.append("g")
 	    $subMainDiag.addClass("center-text");
 	    $subMainProj.addClass("center-text");
 	    $subMainVal.addClass("center-text");
+	    $showhideCatg.toggle();
+	    $iconCatg.css({
+	    	"position" : "relative",
+	    	"left" : "0",
+	    	"top" : ".5rem"
+	    });
 	    return false;
 	} 
 	// Expandir Menu
@@ -42959,6 +42967,12 @@ var legend = svg.append("g")
 	    $subMainDiag.removeClass("center-text");
 	    $subMainProj.removeClass("center-text");
 	    $subMainVal.removeClass("center-text");
+	    $showhideCatg.toggle();
+	    $iconCatg.css({
+	    	"position" : "absolute",
+	    	"left" : "1.5rem",
+	    	"top" : "initial"
+	    });
 	    return false;
 	}     
 	// Colapsar y Expandir sub-menu Diagnostico
@@ -42997,7 +43011,7 @@ var legend = svg.append("g")
 
 	function collapsedElements() {
 	    $elements.slideToggle();
-	    $ocultar.css(	"fontSize", "0" );
+	    $ocultar.css("fontSize", "0");
 	    return false;
 	} 	
 
