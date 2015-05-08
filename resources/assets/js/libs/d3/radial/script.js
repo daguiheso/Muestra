@@ -4,7 +4,7 @@ var w = 500,
 var colorscale = d3.scale.category10();
 
 //Legend titles
-var LegendOptions = ['CA','Sector'];
+var LegendOptions = ['CA','Sector','Empresa 1'];
 
 //Data
 var d = [
@@ -19,6 +19,12 @@ var d = [
 				{axis:"Social Networks",value:5.0},
 				{axis:"VE/Activos",value:4.0},
 				{axis:"VE/Ventas",value:2.0}
+		  ],
+		  [
+				{axis:"VE/EBITDA",value:9},
+				{axis:"Social Networks",value:6},
+				{axis:"VE/Activos",value:3},
+				{axis:"VE/Ventas",value:5}
 		  ]
 		];
 
