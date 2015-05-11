@@ -298,7 +298,21 @@
 	    null,
 	    null,
 	    null
-		]
+		],
+		colVis: {
+			"buttonText": "Expandir/Comprimir",
+			exclude: ['all'],
+			groups: [
+				{
+					title: "2013-2017",
+					columns: [ 3, 4, 5, 6, 7 ]
+				},
+				{
+					title: "2018-2022",
+					columns: [ 8, 9, 10, 11, 12 ]
+				}
+			]
+		},
 	});
 	new $.fn.dataTable.FixedColumns( table4, {
     leftColumns: 1,

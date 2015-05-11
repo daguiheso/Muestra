@@ -26,17 +26,22 @@ tr > td {
 	text-align: right;
 }
 li.ColVis_Special {
-	border: 0 !important;
+	border: 0  !important;
 	margin: 0 !important;
 	background: white !important;
 }
-
-.text-left {
+th, td { white-space: nowrap; }
+tr td:first-child {
 	text-align: left;
 }
-.inline-block {
-	display: inline-block;
+table.dataTable.cell-border tbody th,
+table.dataTable.cell-border tbody td,
+table.dataTable.cell-border thead th {
+  border-top: 1px solid #dddddd !important;
+  border-right: 1px solid #dddddd !important;
 }
-.is-desactive {
-	display: none;
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child,
+table.dataTable.cell-border thead tr th:first-child {
+  border-left: 1px solid #dddddd !important;
 }
