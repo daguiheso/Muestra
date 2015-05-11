@@ -109,7 +109,6 @@
 
 	function collapsedElements() {
 	    $elements.slideToggle();
-	    //$ocultar.css("fontSize", "0");
 	    $ocultar.slideToggle();
 	    return false;
 	} 	
@@ -239,24 +238,7 @@
 		"scrollY": "400px",
 		"scrollX": true,
 		"scrollCollapse": true,
-		"paging": false,
-		"columns": [
-		    { "width": "25%" },
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null,
-		    null
-		]
+		"paging": false		
 	});
 	new $.fn.dataTable.FixedColumns( table3 );
 
@@ -282,24 +264,7 @@
 		"scrollY": "400px",
 		"scrollX": true,
 		"scrollCollapse": true,
-		"paging": false,
-		"columns": [
-	    { "width": "25%" },
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null,
-	    null
-		],
+		"paging": false,		
 		colVis: {
 			"buttonText": "Expandir/Comprimir",
 			exclude: ['all'],

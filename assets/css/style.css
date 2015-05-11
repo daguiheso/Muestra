@@ -7017,6 +7017,10 @@ table.dataTable.cell-border tbody tr td:first-child,
 table.dataTable.cell-border thead tr th:first-child {
   border-left: 1px solid #dddddd !important;
 }
+.content-tables {
+  width: 100% !important;
+  margin: 0 auto;
+}
 table.dataTable {
   margin: 0 auto;
   clear: both;
