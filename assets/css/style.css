@@ -6991,6 +6991,9 @@ button.close {
 .title-proj {
   margin-left: 2.3rem;
 }
+legend {
+  margin: 3rem 0;
+}
 tr > td {
   text-align: right;
 }
