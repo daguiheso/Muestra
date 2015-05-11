@@ -43017,7 +43017,8 @@ var legend = svg.append("g")
 
 	function collapsedElements() {
 	    $elements.slideToggle();
-	    $ocultar.css("fontSize", "0");
+	    //$ocultar.css("fontSize", "0");
+	    $ocultar.slideToggle();
 	    return false;
 	} 	
 
