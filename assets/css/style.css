@@ -6924,9 +6924,7 @@ button.close {
   background: #5d8f0d;
   width: 210px;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  padding-top: 8rem;
+  top: 10rem;
 }
 .main {
   color: white;
