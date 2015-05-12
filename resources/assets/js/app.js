@@ -156,7 +156,9 @@
 		"ordering": false,
     "info":     false,
     "dom": 'C<"clear">lfrtip',		
-		"scrollY": "300px"
+		"scrollY": "300px",
+
+		"responsive": true
 	});
 
 	var table2 = $('#dataTable2').dataTable({		
