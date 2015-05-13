@@ -43914,27 +43914,63 @@ var legend = svg.append("g")
  	});
 	var table = $('#dataTable').dataTable({
 		language: {
-	    "emptyTable":     "Datos en la tabla no validos",
-	    "infoPostFix":    "",
-	    "thousands":      ",",
-	    "loadingRecords": "Cargando...",
-	    "processing":     "Procesando...",
-	    "search":         "Busqueda:",
-	    "zeroRecords":    "No matching records found",
-	    "paginate": {
-        "first":        "First",
-        "last":         "Last",
-        "next":         "Siguientes",
-        "previous":     "Anterior"
-    	}
+		    "emptyTable":     "Datos en la tabla no validos",
+		    "infoPostFix":    "",
+		    "thousands":      ",",
+		    "loadingRecords": "Cargando...",
+		    "processing":     "Procesando...",
+		    "search":         "Busqueda:",
+		    "zeroRecords":    "No matching records found",
+		    "paginate": {
+		        "first":        "First",
+		        "last":         "Last",
+		        "next":         "Siguientes",
+		        "previous":     "Anterior"
+	    	}
 		},
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Compañias",
+			exclude: ['all'],
+			groups: [
+				{
+					title: "PELLENTENQUE HABITANTS",
+					columns: [ 2, 3 ]
+				},
+				{
+					title: "Compañia 1",
+					columns: [ 4, 5 ]
+				},
+				{
+					title: "Compañia 2",
+					columns: [ 6, 7 ]
+				},
+				{
+					title: "Compañia 3",
+					columns: [ 8, 9 ]
+				},
+				{
+					title: "Compañia 4",
+					columns: [ 10, 11 ]
+				},
+				{
+					title: "Compañia 5",
+					columns: [ 12, 13 ]
+				}
+			]
+		},
+    	"paging": false,
 		"ordering": false,
-    "info":     false,
-    "dom": 'C<"clear">lfrtip',		
-		"scrollY": "300px",
-
-		"responsive": true
+    	"info":     false,
+    	"dom": 'C<"clear">lfrtip',		
+    	"scrollCollapse": true,
+		"scrollX": "100%"
+		//"responsive": true
 	});
+	new $.fn.dataTable.FixedColumns( table, {
+    	leftColumns: 1,
+    	leftColumns: 2
+  	});
+	// new $.fn.dataTable.FixedColumns( table );
 
 	var table2 = $('#dataTable2').dataTable({		
 		language: {
@@ -44058,9 +44094,9 @@ var legend = svg.append("g")
 		},
 	});
 	new $.fn.dataTable.FixedColumns( table4, {
-    leftColumns: 1,
-    rightColumns: 1
-  });
+    	leftColumns: 1,
+    	rightColumns: 1
+  	});
 
 	var table5 = $('#dataTable5').dataTable({ 
 		"sDom": '<"top"i>rt<"bottom"flp><"clear">',
