@@ -6805,12 +6805,6 @@ button.close {
   width: 80%;
   display: inline-block;
 }
-.btn-main {
-  position: absolute;
-  font-size: 2rem;
-  left: 22rem;
-  line-height: 50px;
-}
 .search-input::-webkit-input-placeholder {
   color: #6ea939;
 }
@@ -6917,6 +6911,17 @@ button.close {
 .main ul li a:hover {
   background: #565656;
 }
+.main-content-btn {
+  position: relative;
+  height: 50px;
+  background: #565656;
+}
+.btn-main {
+  position: absolute;
+  font-size: 2rem;
+  left: 1.68rem;
+  line-height: 50px;
+}
 #content {
   padding-top: 55px;
   padding-left: 7rem;
@@ -6925,7 +6930,7 @@ button.close {
 .associate-company {
   text-align: center;
   font-weight: bold;
-  padding: 1rem 0 2rem;
+  padding: 1.5rem 0 1rem;
   border-bottom: 1px solid #444;
 }
 .submain-diag li,
@@ -6934,10 +6939,6 @@ button.close {
   margin-top: 0 !important;
   border-bottom: 1px solid #444;
 }
-/*.nav-latleft li a {
-	font-weight: 500;
-	color: white;
-}*/
 .main-category {
   cursor: pointer;
   text-align: center;
