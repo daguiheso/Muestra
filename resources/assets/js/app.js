@@ -27,10 +27,7 @@
 	    	width: "55px"
 	    });
 	    $btnexpmain.show();
-	    $btncollapmain.hide();
-	    $content.animate({
-	    	marginLeft: "55px"
-	    });
+	    $btncollapmain.hide();	    
 	    $areaCA.html("CA");
 	    $indicator.html("I");
 	    $stateResult.html("ER");
