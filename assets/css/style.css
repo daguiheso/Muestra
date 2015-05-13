@@ -1,6 +1,12 @@
-/*GENERAL*/
-/*PANELES*/
-/*TABLAS*/
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/* GENERAL */
+/* TABLAS */
+/* MENU PIPOKA */
+/* HEADER */
+/* DATA-TABLES- PIPOKA  */
+/* VISTAS  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6974,6 +6980,11 @@ button.close {
 legend {
   margin: 3rem 0;
 }
+/*
+
+	DATA-TABLES - PIPOKA
+
+*/
 tr > td {
   text-align: right;
 }
@@ -7000,14 +7011,6 @@ table.dataTable.cell-border tbody tr td:first-child,
 table.dataTable.cell-border thead tr th:first-child {
   border-left: 1px solid #dddddd !important;
 }
-/*
-.content-tables {
-  width: 100% !important;
-  margin: 0 auto;
-}
-div.dataTables_scrollHeadInner {
-	width: 100% !important;
-}*/
 div.dataTables_wrapper {
   width: 100%;
   margin: 0 auto;
@@ -7024,6 +7027,20 @@ table thead th[colspan*="2"] {
 }
 .nav-pills > li > a {
   border-radius: 0!important;
+}
+.title-tables {
+  color: #669d35;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.table-pipoka {
+  color: #4a4a4a;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.subtitle-table-pipoka {
+  font-weight: normal !important;
 }
 table.dataTable {
   margin: 0 auto;
