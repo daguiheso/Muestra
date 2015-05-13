@@ -6746,7 +6746,7 @@ button.close {
   }
 }
 .header {
-  background: #0f5003;
+  background: #6ea939;
   color: #ffffff;
   bottom: 0;
   top: 0;
@@ -6778,14 +6778,14 @@ button.close {
   font-weight: 600;
   color: white !important;
   height: 55px;
-  background: #446909;
+  background: #565656;
   padding: 0;
   width: 210px;
   line-height: 55px;
   border-bottom: 1px solid #444444;
 }
 .title-pipoka:hover {
-  background-color: #446909 !important;
+  background-color: #565656 !important;
 }
 .navbar-header-pipoka {
   height: 55px;
@@ -6812,16 +6812,16 @@ button.close {
   line-height: 50px;
 }
 .search-input::-webkit-input-placeholder {
-  color: #5d8f0d;
+  color: #6ea939;
 }
 .search-input:-moz-placeholder {
-  color: #5d8f0d;
+  color: #6ea939;
 }
 .search-input::-moz-placeholder {
-  color: #5d8f0d;
+  color: #6ea939;
 }
 .search-input:-ms-input-placeholder {
-  color: #5d8f0d;
+  color: #6ea939;
 }
 .ml {
   margin-left: 1em;
@@ -6866,28 +6866,6 @@ button.close {
 .is-desactive {
   display: none;
 }
-.pad0-panel {
-  padding-right: 0;
-  padding-left: 0;
-}
-.panel-latinvestco {
-  border-color: #0f5003;
-}
-.panel-latinvestco > .panel-heading {
-  color: #ffffff;
-  background-color: #0f5003;
-  border-color: #0f5003;
-}
-.panel-latinvestco > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #0f5003;
-}
-.panel-latinvestco > .panel-heading .badge {
-  color: #0f5003;
-  background-color: #ffffff;
-}
-.panel-latinvestco > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #0f5003;
-}
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot?-6ajvpl');
@@ -6921,7 +6899,7 @@ button.close {
   content: "\e603";
 }
 .main {
-  background: #5d8f0d;
+  background: #6ea939;
   width: 210px;
   position: fixed;
   top: 10rem;
@@ -6933,11 +6911,11 @@ button.close {
   display: none;
 }
 .main ul li a {
-  background: #446909;
+  background: #565656;
   color: white;
 }
 .main ul li a:hover {
-  background: #446909;
+  background: #565656;
 }
 #content {
   padding-top: 55px;
@@ -7035,6 +7013,12 @@ table.dataTable thead th {
 }
 .dataTables_filter {
   display: none;
+}
+table thead th[colspan*="2"] {
+  text-align: center;
+}
+.nav-pills > li > a {
+  border-radius: 0!important;
 }
 table.dataTable {
   margin: 0 auto;

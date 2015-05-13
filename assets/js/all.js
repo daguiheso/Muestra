@@ -43967,8 +43967,8 @@ var legend = svg.append("g")
 		//"responsive": true
 	});
 	new $.fn.dataTable.FixedColumns( table, {
-    	leftColumns: 1,
-    	leftColumns: 2
+    	leftColumns: 1
+    	// leftColumns: 2,
   	});
 	// new $.fn.dataTable.FixedColumns( table );
 
