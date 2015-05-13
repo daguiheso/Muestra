@@ -7033,6 +7033,9 @@ table.dataTable.no-footer,
 table.dataTable thead th {
   border-bottom: 0 !important;
 }
+.dataTables_filter {
+  display: none;
+}
 table.dataTable {
   margin: 0 auto;
   clear: both;
