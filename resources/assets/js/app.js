@@ -53,10 +53,7 @@
 	    	width: "210px"
 	    });
 	    $btncollapmain.show();
-	    $btnexpmain.hide();
-	    $content.animate({
-	    	marginLeft: "210px"
-	    });
+	    $btnexpmain.hide();	    
 	    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p>Sector: Suspendisse dui leo</p>");
 	    $indicator.html("Indicadores");
 	    $stateResult.html("Estado de Resultado");
