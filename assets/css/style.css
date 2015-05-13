@@ -6778,20 +6778,19 @@ button.close {
   z-index: 999;
   border: 0;
   min-height: 55px;
+  background: #dedede;
 }
 .title-pipoka {
   font-size: 2.5rem;
   font-weight: 600;
-  color: white !important;
+  color: #4a4a4a !important;
   height: 55px;
-  background: #565656;
   padding: 0;
   width: 210px;
   line-height: 55px;
-  border-bottom: 1px solid #444444;
 }
 .title-pipoka:hover {
-  background-color: #565656 !important;
+  background-color: #dedede !important;
 }
 .navbar-header-pipoka {
   height: 55px;
@@ -6903,6 +6902,7 @@ button.close {
   width: 55px;
   position: fixed;
   top: 10rem;
+  z-index: 9999;
 }
 .main {
   color: white;
@@ -6932,6 +6932,7 @@ button.close {
   padding-top: 55px;
   padding-left: 7rem;
   padding-right: 4rem;
+  margin-bottom: 5rem;
 }
 .associate-company {
   text-align: center;

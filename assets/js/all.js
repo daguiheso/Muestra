@@ -43685,7 +43685,7 @@ var w = 500,
 var colorscale = d3.scale.category10();
 
 //Legend titles
-var LegendOptions = ['CA','Sector','Empresa 1'];
+var LegendOptions = ['CA','Sector','Empresa 1','Empresa 2'];
 
 //Data
 var d = [
@@ -43706,6 +43706,12 @@ var d = [
 				{axis:"Social Networks",value:6},
 				{axis:"VE/Activos",value:3},
 				{axis:"VE/Ventas",value:5}
+		  ],
+		  [
+				{axis:"VE/EBITDA",value:3},
+				{axis:"Social Networks",value:7},
+				{axis:"VE/Activos",value:1},
+				{axis:"VE/Ventas",value:8}
 		  ]
 		];
 
@@ -43966,10 +43972,10 @@ var legend = svg.append("g")
 		"scrollX": "100%"
 		//"responsive": true
 	});
-	new $.fn.dataTable.FixedColumns( table, {
-    	leftColumns: 1
-    	// leftColumns: 2,
-  	});
+	// new $.fn.dataTable.FixedColumns( table, {
+ //    	leftColumns: 1,
+ //    	leftColumns: 2
+ //  	});
 	// new $.fn.dataTable.FixedColumns( table );
 
 	var table2 = $('#dataTable2').dataTable({		
@@ -44121,11 +44127,7 @@ var legend = svg.append("g")
 	});
 	
 	
-/*
-	
-	HIGHCHARTS - GRAFICAS 
 
-*/
 	
 })();
 
