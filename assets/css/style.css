@@ -6846,6 +6846,9 @@ button.close {
 .mb0 {
   margin-bottom: 0;
 }
+.padd0 {
+  padding: 0;
+}
 .pt0 {
   padding-top: 0 !important;
 }
@@ -6894,24 +6897,12 @@ button.close {
   content: "\e603";
 }
 .main {
-  background: #6ea939;
   width: 55px;
   position: fixed;
-  top: 10rem;
+  top: 6.43em;
   z-index: 9999;
-}
-.main {
   color: white;
-}
-.main ul {
-  display: none;
-}
-.main ul li a {
-  background: #565656;
-  color: white;
-}
-.main ul li a:hover {
-  background: #565656;
+  background: #6ea939;
 }
 .main-content-btn {
   position: relative;
@@ -6924,17 +6915,57 @@ button.close {
   left: 1.68rem;
   line-height: 50px;
 }
-#content {
-  padding-top: 55px;
-  padding-left: 7rem;
-  padding-right: 4rem;
-  margin-bottom: 5rem;
-}
 .associate-company {
   text-align: center;
   font-weight: bold;
   padding: 1.5rem 0 1rem;
   border-bottom: 1px solid #444;
+}
+#CA > p:nth-child(2) {
+  font-size: 12px;
+}
+.main-category {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #444;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.main-category p {
+  margin-bottom: 0;
+}
+.title-category {
+  display: none;
+  font-weight: 500;
+}
+.title-val,
+.title-diag {
+  margin-left: 1rem;
+}
+.title-proj {
+  margin-left: 2.7rem;
+}
+.associate-company:hover,
+.main-category:hover,
+.abreviators {
+  background: #669d35;
+}
+.main ul {
+  display: none;
+}
+.main ul li a {
+  background: #565656;
+  color: white;
+  height: 34px;
+  line-height: 34px;
+  padding: 0;
+  text-align: center;
+}
+.main-content-btn:hover,
+.main ul li a:hover {
+  background: #414141;
 }
 .submain-diag li,
 .submain-proj li,
@@ -6942,40 +6973,114 @@ button.close {
   margin-top: 0 !important;
   border-bottom: 1px solid #444;
 }
-.main-category {
-  cursor: pointer;
-  text-align: center;
-  font-weight: bold;
-  border-bottom: 1px solid #444;
-  padding: 2rem 0;
+.submain-expand {
+  padding: 0 15px !important;
+  text-align: left !important;
 }
-.main-category p {
-  margin-bottom: 0;
+.abreviators {
+  padding: 15px;
+  font-size: 11px;
+  line-height: 18px;
+  display: none;
 }
 .line-graph-icon,
 .graph-icon,
 .coin-dollar-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.8rem;
   position: relative;
   left: 0;
   top: .5rem;
 }
-.line-graph-icon {
-  margin-top: 1.2rem;
+.val-ca-s,
+.val-ca-sd-s,
+.val-ca-cs-s,
+.val-vms {
+  font-size: 0.86em;
 }
-.title-diag {
-  margin-left: 4.3rem;
-  text-indent: -3.6rem;
-}
-.title-proj {
-  margin-left: 2.3rem;
-}
-.title-category {
+#btn-collapsed-diag::before {
+  content: " ";
+  position: absolute;
   display: none;
+  width: 0px;
+  height: 0px;
+  top: 1em;
+  right: 0px;
+  border-top: #6ea939 10px solid;
+  border-right: white 9px solid;
+  border-bottom: #6ea939 10px solid;
+  border-left: white 0px solid;
 }
-.sector {
-  font-size: 12px;
+#btn-collapsed-diag:hover::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  top: 1em;
+  right: 0px;
+  border-top: #6ea939 10px solid;
+  border-right: white 9px solid;
+  border-bottom: #6ea939 10px solid;
+  border-left: white 0px solid;
+}
+#btn-collapsed-proj::before {
+  content: " ";
+  position: none;
+  display: none;
+  width: 0px;
+  height: 0px;
+  top: 1em;
+  right: 0px;
+  border-top: #6ea939 10px solid;
+  border-right: white 9px solid;
+  border-bottom: #6ea939 10px solid;
+  border-left: white 0px solid;
+}
+#btn-collapsed-proj:hover::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  top: 1em;
+  right: 0px;
+  border-top: #6ea939 10px solid;
+  border-right: white 9px solid;
+  border-bottom: #6ea939 10px solid;
+  border-left: white 0px solid;
+}
+#btn-collapsed-val::before {
+  content: " ";
+  position: absolute;
+  display: none;
+  width: 0px;
+  height: 0px;
+  top: 1em;
+  right: 0px;
+  border-top: #6ea939 10px solid;
+  border-right: white 9px solid;
+  border-bottom: #6ea939 10px solid;
+  border-left: white 0px solid;
+}
+#btn-collapsed-val:hover::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  top: 1em;
+  right: 0px;
+  border-top: #6ea939 10px solid;
+  border-right: white 9px solid;
+  border-bottom: #6ea939 10px solid;
+  border-left: white 0px solid;
+}
+#content {
+  padding-top: 55px;
+  padding-left: 7rem;
+  padding-right: 4rem;
+  margin-bottom: 5rem;
 }
 legend {
   margin: 3rem 0;
