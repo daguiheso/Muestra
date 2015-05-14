@@ -177,12 +177,13 @@
 				}
 			]
 		},
-    	"paging": false,
+    "dom": 'C<"clear">ti',		
 		"ordering": false,
-    	"info":     false,
-    	"dom": 'C<"clear">lfrtip',		
-    	"scrollCollapse": true,
-		"scrollX": "100%"
+    "searching" : false,
+		"scrollX": true,
+    "scrollCollapse": true,
+    "paging": false,
+    "info": false
 		//"responsive": true
 	});
 	new $.fn.dataTable.FixedColumns( table, {
