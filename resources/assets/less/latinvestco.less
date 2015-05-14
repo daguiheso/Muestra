@@ -19,7 +19,13 @@
 @import "doc-pipoca/introduccion.less";
 
 
-
+html {
+	height: 100%;
+}
+body {
+	font-family: @font-family-pipoka;
+	height: 100%;
+}
 /*
 
 	DATA-TABLES - PIPOKA
@@ -96,5 +102,6 @@ table.dataTable.cell-border > tbody > tr:nth-child(1) td {
 	border-top: 0 !important;
 }
 
-// #dataTable > tbody > tr:nth-child(1) > td:nth-child(8)
-// #dataTable > tbody > tr:nth-child(1)
+div.ColVis {
+  float: initial !important;
+}

@@ -47,7 +47,7 @@
 	// Expandir Menu
 	function expandMenu() {  
 	    $main.animate({
-	    	width: "210px"
+	    	width: "183px"
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();	    
@@ -214,6 +214,7 @@
     "scrollCollapse": true,
     "paging":         false,
     "sDom": 'T<"clear">lfrtip',
+    "searching" : false,
     "oTableTools": {
       "sSwfPath": "assets/swf/copy_csv_xls_pdf.swf",
       "aButtons": [
@@ -252,6 +253,8 @@
     	}
 		},
 		"ordering": false,
+    "searching" : false,
+
     "info":     false,
   	dom: 'C<"clear">lfrtip',
 		colVis: {
@@ -296,6 +299,8 @@
 		"dom": "Cfrtip",
 		"scrollY": "400px",
 		"scrollX": true,
+    "searching" : false,
+
 		"scrollCollapse": true,
 		"paging": false,		
 		colVis: {
@@ -338,6 +343,7 @@
 		"ordering": false,
     "info":     false, 		
   	"paging": false,
+    "searching" : false
 	});
 	
 	

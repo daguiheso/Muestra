@@ -43834,7 +43834,7 @@ var legend = svg.append("g")
 	// Expandir Menu
 	function expandMenu() {  
 	    $main.animate({
-	    	width: "210px"
+	    	width: "183px"
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();	    
@@ -44001,6 +44001,7 @@ var legend = svg.append("g")
     "scrollCollapse": true,
     "paging":         false,
     "sDom": 'T<"clear">lfrtip',
+    "searching" : false,
     "oTableTools": {
       "sSwfPath": "assets/swf/copy_csv_xls_pdf.swf",
       "aButtons": [
@@ -44039,6 +44040,8 @@ var legend = svg.append("g")
     	}
 		},
 		"ordering": false,
+    "searching" : false,
+
     "info":     false,
   	dom: 'C<"clear">lfrtip',
 		colVis: {
@@ -44083,6 +44086,8 @@ var legend = svg.append("g")
 		"dom": "Cfrtip",
 		"scrollY": "400px",
 		"scrollX": true,
+    "searching" : false,
+
 		"scrollCollapse": true,
 		"paging": false,		
 		colVis: {
@@ -44125,6 +44130,7 @@ var legend = svg.append("g")
 		"ordering": false,
     "info":     false, 		
   	"paging": false,
+    "searching" : false
 	});
 	
 	
