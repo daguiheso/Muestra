@@ -7019,9 +7019,9 @@ button.close {
   height: 0px;
   top: 1em;
   right: 0px;
-  border-top: #6ea939 10px solid;
+  border-top: #669d35 10px solid;
   border-right: white 9px solid;
-  border-bottom: #6ea939 10px solid;
+  border-bottom: #669d35 10px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-proj::before {
@@ -7045,9 +7045,9 @@ button.close {
   height: 0px;
   top: 1em;
   right: 0px;
-  border-top: #6ea939 10px solid;
+  border-top: #669d35 10px solid;
   border-right: white 9px solid;
-  border-bottom: #6ea939 10px solid;
+  border-bottom: #669d35 10px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-val::before {
@@ -7071,9 +7071,9 @@ button.close {
   height: 0px;
   top: 1em;
   right: 0px;
-  border-top: #6ea939 10px solid;
+  border-top: #669d35 10px solid;
   border-right: white 9px solid;
-  border-bottom: #6ea939 10px solid;
+  border-bottom: #669d35 10px solid;
   border-left: white 0px solid;
 }
 #content {
