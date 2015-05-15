@@ -7160,6 +7160,14 @@ li.ColVis_Special {
   margin: 0 !important;
   background: #dddddd !important;
 }
+button.ColVis_Button {
+  background: #6ea939 !important;
+  color: white !important;
+}
+button.ColVis_Button:hover {
+  border: 0;
+  border-style: none;
+}
 li.ColVis_Restore {
   ont-family: 'Roboto', sans-serif !important;
   font-weight: 500;
@@ -7959,7 +7967,7 @@ ul.ColVis_collection li {
   cursor: pointer;
   *cursor: hand;
   font-size: 0.88em;
-  color: black !important;
+  color: black;
   white-space: nowrap;
   -o-border-radius: 2px;
   border-radius: 2px;
