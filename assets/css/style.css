@@ -7108,11 +7108,6 @@ body {
 tr > td {
   text-align: right;
 }
-li.ColVis_Special {
-  border: 0  !important;
-  margin: 0 !important;
-  background: white !important;
-}
 th,
 td {
   white-space: nowrap;
@@ -7153,12 +7148,38 @@ table.dataTable {
 table.dataTable.cell-border > tbody > tr:nth-child(1) td {
   border-top: 0 !important;
 }
-div.ColVis {
-  float: initial !important;
-}
 .table-prueba {
   width: auto !important;
   margin: 0 !important;
+}
+div.ColVis {
+  float: initial !important;
+}
+li.ColVis_Special {
+  border: 0  !important;
+  margin: 0 !important;
+  background: #dddddd !important;
+}
+li.ColVis_Restore {
+  ont-family: 'Roboto', sans-serif !important;
+  font-weight: 500;
+  color: #4a4a4a !important;
+  text-align: center !important;
+}
+ul.ColVis_collection {
+  width: 172px !important;
+  padding: 0 !important;
+}
+ul.ColVis_collection li {
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  color: #4a4a4a !important;
+}
+ul.ColVis_collection li span {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 500;
+  color: #4a4a4a !important;
 }
 table.dataTable thead td {
   border-bottom: 3px solid #0de32a !important;

@@ -172,6 +172,8 @@
 		},
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
+			"bRestore": true,
+      "sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
 				{
