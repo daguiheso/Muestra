@@ -31,7 +31,6 @@ body {
 	DATA-TABLES - PIPOKA
 
 */
-
 tr > td {
 	text-align: right;
 }
@@ -40,30 +39,13 @@ li.ColVis_Special {
 	margin: 0 !important;
 	background: white !important;
 }
-th, td { white-space: nowrap; }
+th, td { 
+	white-space: nowrap;
+}
 tr td:first-child {
 	text-align: left;
 }
-table.dataTable.cell-border tbody th,
-table.dataTable.cell-border tbody td,
-table.dataTable.cell-border thead th {
-  border-top: 1px solid #dddddd !important;
-  border-right: 1px solid #dddddd !important;
-}
-table.dataTable.cell-border tbody tr th:first-child,
-table.dataTable.cell-border tbody tr td:first-child,
-table.dataTable.cell-border thead tr th:first-child {
-  border-left: 1px solid #dddddd !important;
-}
- div.dataTables_wrapper {
-        width: 100%;
-        margin: 0 auto;
- }
- table.dataTable.no-footer,
- table.dataTable thead th {  
-  border-bottom: 0 !important;
-}
-table thead th[colspan*="2"] { 
+table thead tr th { 
 	text-align: center;
 }
 .nav-pills > li > a {
@@ -86,7 +68,10 @@ table thead th[colspan*="2"] {
 }
 
 .content-tables {
-	
+	margin: 0 auto;
+	text-align: center;
+}
+.content-tables table {
 	margin: 0 auto;
 }
 table.dataTable {
@@ -95,10 +80,38 @@ table.dataTable {
 table.dataTable.cell-border > tbody > tr:nth-child(1) td {
 	border-top: 0 !important;
 }
-
 div.ColVis {
   float: initial !important;
 }
-div.container {
-        width: 80%;
-    }
+.table-prueba {
+	width: auto !important;
+	margin: 0 !important;
+}
+
+
+
+
+// Bordes bottom tablas
+table.dataTable thead td {
+    border-bottom: 3px solid #0de32a !important;
+     }
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 1px solid #dddddd !important; 
+}
+table.dataTable.no-footer,
+table.dataTable thead th {  
+  border-bottom: 0 !important;
+}
+// bordes para headers de tablas
+table.dataTable.cell-border tbody th,
+table.dataTable.cell-border tbody td,
+table.dataTable.cell-border thead th {
+  border-top: 1px solid #dddddd !important;
+  border-right: 1px solid #dddddd !important;
+}
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child,
+table.dataTable.cell-border thead tr th:first-child {
+  border-left: 1px solid #dddddd !important;
+}

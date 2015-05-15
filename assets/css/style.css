@@ -7082,6 +7082,14 @@ button.close {
   padding-right: 4rem;
   margin-bottom: 5rem;
 }
+@media screen and (min-width: 1400px) {
+  #content {
+    padding: 5.5rem 22rem;
+  }
+}
+#dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
+  border-left: 0 !important;
+}
 legend {
   margin: 3rem 0;
 }
@@ -7112,26 +7120,7 @@ td {
 tr td:first-child {
   text-align: left;
 }
-table.dataTable.cell-border tbody th,
-table.dataTable.cell-border tbody td,
-table.dataTable.cell-border thead th {
-  border-top: 1px solid #dddddd !important;
-  border-right: 1px solid #dddddd !important;
-}
-table.dataTable.cell-border tbody tr th:first-child,
-table.dataTable.cell-border tbody tr td:first-child,
-table.dataTable.cell-border thead tr th:first-child {
-  border-left: 1px solid #dddddd !important;
-}
-div.dataTables_wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-table.dataTable.no-footer,
-table.dataTable thead th {
-  border-bottom: 0 !important;
-}
-table thead th[colspan*="2"] {
+table thead tr th {
   text-align: center;
 }
 .nav-pills > li > a {
@@ -7140,7 +7129,7 @@ table thead th[colspan*="2"] {
 .title-tables {
   color: #669d35;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
 .table-pipoka {
@@ -7153,6 +7142,10 @@ table thead th[colspan*="2"] {
 }
 .content-tables {
   margin: 0 auto;
+  text-align: center;
+}
+.content-tables table {
+  margin: 0 auto;
 }
 table.dataTable {
   margin: 0 !important;
@@ -7163,8 +7156,30 @@ table.dataTable.cell-border > tbody > tr:nth-child(1) td {
 div.ColVis {
   float: initial !important;
 }
-div.container {
-  width: 80%;
+.table-prueba {
+  width: auto !important;
+  margin: 0 !important;
+}
+table.dataTable thead td {
+  border-bottom: 3px solid #0de32a !important;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 1px solid #dddddd !important;
+}
+table.dataTable.no-footer,
+table.dataTable thead th {
+  border-bottom: 0 !important;
+}
+table.dataTable.cell-border tbody th,
+table.dataTable.cell-border tbody td,
+table.dataTable.cell-border thead th {
+  border-top: 1px solid #dddddd !important;
+  border-right: 1px solid #dddddd !important;
+}
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child,
+table.dataTable.cell-border thead tr th:first-child {
+  border-left: 1px solid #dddddd !important;
 }
 table.dataTable {
   margin: 0 auto;
