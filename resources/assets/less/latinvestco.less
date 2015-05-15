@@ -31,35 +31,34 @@ body {
 	DATA-TABLES - PIPOKA
 
 */
-tr > td {
-	text-align: right;
-}
-th, td { 
-	white-space: nowrap;
-}
-tr td:first-child {
-	text-align: left;
-}
-table thead tr th { 
-	text-align: center;
-}
-.nav-pills > li > a {
-  border-radius: 0!important; 
-}
-
-.title-tables {
-	color: @color-title-tables;
-	font-size: @font-size-title-tables;
-	font-weight: @font-weight-title-tables;
-	font-family: @font-family-titles-tables;
-}
 .table-pipoka {
 	color: @color-font-tables;
 	font-size: @font-size-data-tables;
 	font-family: @font-family-data-tables;
 }
-.subtitle-table-pipoka {
+.table-pipoka thead {
+	background: #EFEFEF;
+}
+.table-pipoka .subtitle-table-pipoka {
 	font-weight: normal !important;
+}
+.table-pipoka tr > td {
+	text-align: right;
+}
+.table-pipoka tr td:first-child {
+	text-align: left;
+}
+.table-pipoka th, td { 
+	white-space: nowrap;
+}
+.table-pipoka thead tr th { 
+	text-align: center;
+}
+.table-pipoka .title-tables {
+	color: @color-title-tables;
+	font-size: @font-size-title-tables;
+	font-weight: @font-weight-title-tables;
+	font-family: @font-family-titles-tables;
 }
 
 .content-tables {
@@ -74,10 +73,6 @@ table.dataTable {
 }
 table.dataTable.cell-border > tbody > tr:nth-child(1) td {
 	border-top: 0 !important;
-}
-.table-prueba {
-	width: auto !important;
-	margin: 0 !important;
 }
 div.ColVis {
   float: initial !important;
@@ -148,4 +143,14 @@ table.dataTable.cell-border thead tr th:first-child {
 }
 #dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
 	border-left: 0 !important;
+}
+
+
+
+
+// tabla tipo 3
+
+.table-prueba {
+	width: auto !important;
+	margin: 0 !important;
 }

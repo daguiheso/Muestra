@@ -7031,6 +7031,9 @@ button.close {
   padding: 0 15px !important;
   text-align: left !important;
 }
+.main .nav-pills > li > a {
+  border-radius: 0!important;
+}
 .abreviators {
   padding: 15px;
   font-size: 11px;
@@ -7156,35 +7159,35 @@ body {
 	DATA-TABLES - PIPOKA
 
 */
-tr > td {
-  text-align: right;
-}
-th,
-td {
-  white-space: nowrap;
-}
-tr td:first-child {
-  text-align: left;
-}
-table thead tr th {
-  text-align: center;
-}
-.nav-pills > li > a {
-  border-radius: 0!important;
-}
-.title-tables {
-  color: #669d35;
-  font-size: 13px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-}
 .table-pipoka {
   color: #4a4a4a;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
-.subtitle-table-pipoka {
+.table-pipoka thead {
+  background: #EFEFEF;
+}
+.table-pipoka .subtitle-table-pipoka {
   font-weight: normal !important;
+}
+.table-pipoka tr > td {
+  text-align: right;
+}
+.table-pipoka tr td:first-child {
+  text-align: left;
+}
+.table-pipoka th,
+td {
+  white-space: nowrap;
+}
+.table-pipoka thead tr th {
+  text-align: center;
+}
+.table-pipoka .title-tables {
+  color: #669d35;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 .content-tables {
   margin: 0 auto;
@@ -7198,10 +7201,6 @@ table.dataTable {
 }
 table.dataTable.cell-border > tbody > tr:nth-child(1) td {
   border-top: 0 !important;
-}
-.table-prueba {
-  width: auto !important;
-  margin: 0 !important;
 }
 div.ColVis {
   float: initial !important;
@@ -7266,6 +7265,10 @@ table.dataTable.cell-border thead tr th:first-child {
 }
 #dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
   border-left: 0 !important;
+}
+.table-prueba {
+  width: auto !important;
+  margin: 0 !important;
 }
 table.dataTable {
   margin: 0 auto;
