@@ -1,60 +1,108 @@
+// HEADER GENERAL PIPOKA
 .navbar-pipoca {
 	margin-bottom: 0;
 	position: fixed;
 	top: 0;
-	min-width: 100%;
+	left: 0;
+	right: 0;
 	z-index: 999;
 	border: 0;
 	min-height: @height-header;
 	background: @color-header;
+	padding: 0 1.40rem;
+	border-radius: 0 !important;
+	font-family: @font-family-header;
 }
+.navbar-header-pipoka {
+	height: @height-header;
+	width: 100%;
+}
+// LOGO PIPOKA
 .title-pipoka {
-	font-size: 2.5rem;
+	font-family: @font-family-title-pipoka;
+	font-size: 3.60rem;
 	font-weight: 600;
-	color: #4a4a4a !important;
+	color: #565656 !important;
 	height: @height-header;
 	padding: 0;
 	width: @width-main;
-	line-height: @height-header;
+	line-height: 65PX;
 }
 .title-pipoka:hover {
 	background-color: @color-header !important;
 }
-
-.navbar-header-pipoka {
-	height: @height-header;
-	min-width: 100%;
+.title-pipoka span{
+	font-family: @font-family-header;
+	font-size: 1.10rem;
 }
 .by-latin {
 	font-size: .95rem;
 }
+// BUSCADOR HEADER PIPOKA
 .form-navbar {
-	height: 55px;
-  margin-left: 6rem;
-  line-height: 55px;
+	height: @height-header;
+  position: absolute;
+  right: 0;
+  line-height: @height-header;
   width: 40%;
   display: inline-block;
+  color: #dddddd;
+}
+.form-navbar input,
+.form-navbar button {
+	border-radius: 0;
 }
 .search-input {
-	width: 80%;
+	width: 40%;
 	display: inline-block;
+}
+.search-input:focus {
+   border-color: #66afe9; 
+   outline: none; 
+   box-shadow: none;
 }
 .search-input::-webkit-input-placeholder
 {
-  color: @color-main;
+  color: #dddddd;
+  font-size: 1.20rem;
+  line-height: 2rem;
 }
-
 .search-input:-moz-placeholder
 {
-  color:    @color-main;
+  color:   #dddddd;
+  font-size: 1.20rem;
+  line-height: 2rem;
 }
-
 .search-input::-moz-placeholder
 {
-  color:    @color-main;
+  color:    #dddddd;
+  font-size: 1.20rem;
+  line-height: 2rem;
 }
-
 .search-input:-ms-input-placeholder
 {
-  color:    @color-main;
+  color:    #dddddd;
+  font-size: 1.20rem;
+  line-height: 2rem;
+}
+.btn-search-navbar {
+	position: relative;
+	left: -.5rem;
+	bottom: .1rem;
+	background: #565656;
+	color: white;
+}
+.btn-search-navbar:hover {
+	color: white;
+}
+.btn-search-navbar:hover {
+	background: #565656;
+}
+// SESION HEADER PIPOKA 
+.navbar-pipoca > div > ul > li > a {
+	height: @height-header;
+  line-height: @height-header;
+  padding: 0 1.40rem 0 0;
+  font-size: 1.20rem;
+  color: #565656;
 }
