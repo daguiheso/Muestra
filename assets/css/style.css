@@ -7126,17 +7126,14 @@ button.close {
 }
 #content {
   padding-top: 60px;
-  padding-left: 7rem;
-  padding-right: 4rem;
+  padding-left: 88px;
+  padding-right: 15px;
   margin-bottom: 5rem;
 }
 @media screen and (min-width: 1400px) {
   #content {
     padding: 5.5rem 22rem;
   }
-}
-#dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
-  border-left: 0 !important;
 }
 legend {
   margin: 3rem 0;
@@ -7211,6 +7208,8 @@ li.ColVis_Special {
 button.ColVis_Button {
   background: #6ea939 !important;
   color: white !important;
+  outline: none;
+  margin-bottom: 20px;
 }
 button.ColVis_Button:hover {
   border: 0;
@@ -7225,6 +7224,7 @@ li.ColVis_Restore {
 ul.ColVis_collection {
   width: 172px !important;
   padding: 0 !important;
+  border: 0 !important;
 }
 ul.ColVis_collection li {
   -ms-box-shadow: none !important;
@@ -7257,6 +7257,9 @@ table.dataTable.cell-border tbody tr th:first-child,
 table.dataTable.cell-border tbody tr td:first-child,
 table.dataTable.cell-border thead tr th:first-child {
   border-left: 1px solid #dddddd !important;
+}
+#dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
+  border-left: 0 !important;
 }
 table.dataTable {
   margin: 0 auto;
