@@ -6965,18 +6965,24 @@ button.close {
 }
 .associate-company {
   text-align: center;
-  font-weight: bold;
   padding: 1.5rem 0 1rem;
-  border-bottom: 1px solid #444;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.40rem;
+  font-weight: bold;
+}
+.main-content-btn,
+.associate-company,
+.main-category {
+  box-shadow: 0px -1px 1px #444444;
 }
 #CA > p:nth-child(2) {
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 .main-category {
   cursor: pointer;
   text-align: center;
   font-weight: bold;
-  border-bottom: 1px solid #444;
   height: 50px;
   line-height: 50px;
   position: relative;
@@ -7019,7 +7025,7 @@ button.close {
 .submain-proj li,
 .submain-val li {
   margin-top: 0 !important;
-  border-bottom: 1px solid #444;
+  box-shadow: 0px -1px 1px #444444;
 }
 .submain-expand {
   padding: 0 15px !important;
