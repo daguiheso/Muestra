@@ -7,6 +7,7 @@
 /* HEADER */
 /* DATA-TABLES- PIPOKA  */
 /* VISTAS  */
+/* HOME */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6849,7 +6850,7 @@ button.close {
 .btn-search-navbar {
   position: relative;
   left: -0.5rem;
-  bottom: .1rem;
+  bottom: .05rem;
   background: #565656;
   color: white;
 }
@@ -7005,6 +7006,7 @@ button.close {
 .main-category:hover,
 .abreviators {
   background: #669d35;
+  box-shadow: 0px -1px 0px #444444;
 }
 .main ul {
   display: none;
@@ -7144,6 +7146,33 @@ button.close {
     padding: 5.5rem 22rem;
   }
 }
+.home {
+  margin: 138px 33px 0 0;
+  text-align: center;
+}
+.title-home {
+  font-size: 100px;
+  font-family: 'Fjalla One', sans-serif;
+  color: #707070;
+  margin-bottom: 0;
+}
+.search-home {
+  width: 437px;
+  margin: 0 auto;
+}
+.btn-search-home,
+.btn-search-home:hover,
+.btn-search-home:focus,
+.btn-search-home:visited,
+.btn-search-home:active {
+  background: #6ea939;
+  outline: none;
+}
+.search-home-icon {
+  color: white;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
 legend {
   margin: 3rem 0;
 }
@@ -7273,6 +7302,68 @@ table.dataTable.cell-border thead tr th:first-child {
 .table-prueba {
   width: auto !important;
   margin: 0 !important;
+}
+/*
+
+	FOOTER - GLOBAL
+
+*/
+.footer-global {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  background: #393939;
+  text-align: center;
+  line-height: 63px;
+  height: 63px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer-global ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-global ul li {
+  display: inline-block;
+  position: absolute;
+}
+.footer-global ul > li:nth-child(1) {
+  left: 1.40rem;
+}
+.footer-global ul > li:nth-child(2) {
+  right: 11.4rem;
+}
+.footer-global ul > li:nth-child(3) {
+  right: 7rem;
+}
+.footer-global ul > li:nth-child(4) {
+  right: 1.40rem;
+}
+.footer-global ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+.privacy-title {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 430px) {
+  .footer-global {
+    height: auto;
+  }
+  .footer-global ul li {
+    display: inline-block;
+    position: static;
+    height: 2rem;
+  }
+  .footer-global ul > li:nth-child(1) {
+    display: block;
+  }
+  .footer-global ul li a {
+    font-size: .6rem;
+  }
 }
 table.dataTable {
   margin: 0 auto;
