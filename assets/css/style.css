@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 /* GENERAL */
+/* FONTS - GENERAL */
 /* TABLAS */
 /* MENU PIPOKA */
 /* HEADER */
@@ -6785,7 +6786,7 @@ button.close {
   height: 60px;
   width: 100%;
 }
-.title-pipoka {
+.title-header {
   font-family: 'Fjalla One', sans-serif;
   font-size: 3.60rem;
   font-weight: 600;
@@ -6795,10 +6796,10 @@ button.close {
   width: 183px;
   line-height: 65PX;
 }
-.title-pipoka:hover {
+.title-header:hover {
   background-color: #dedede !important;
 }
-.title-pipoka span {
+.title-header span {
   font-family: 'Roboto', sans-serif;
   font-size: 1.10rem;
 }
@@ -6879,10 +6880,7 @@ button.close {
   text-align: center;
   line-height: 63px;
   height: 63px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin: -20px auto 0;
   overflow: hidden;
 }
 .footer-global ul {
@@ -7200,6 +7198,13 @@ button.close {
   padding-left: 88px;
   padding-right: 15px;
   margin-bottom: 5rem;
+  height: auto;
+  min-height: 100%;
+}
+#content:after {
+  height: 63px;
+  display: block;
+  clear: both;
 }
 @media screen and (min-width: 1400px) {
   #content {
@@ -7213,6 +7218,41 @@ button.close {
 .select-companies {
   margin: 88px 33px 0 0;
   text-align: center;
+}
+.hr-div {
+  color: #d4d4d4;
+  width: 70%;
+}
+.companies-select {
+  display: inline-block;
+}
+.form-addCompany input {
+  font-size: 1.10rem;
+  color: #545454;
+  width: 260px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+.form-addCompany a {
+  text-decoration: none;
+  color: #545454;
+}
+.form-addCompany a:hover {
+  color: #6ea939;
+  cursor: pointer;
+}
+.form-addCompany + button {
+  float: left;
+  border-radius: 0;
+  background: #6ea939;
+  color: white;
+}
+.form-addCompany + button:hover,
+.form-addCompany + button:focus,
+.form-addCompany + button:active {
+  background: #6ea939;
+  outline: none;
+  color: white;
 }
 .title-search {
   font-size: 100px;
@@ -7366,6 +7406,12 @@ table.dataTable.cell-border thead tr th:first-child {
 .table-prueba {
   width: auto !important;
   margin: 0 !important;
+}
+.title-pipoka {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #639637;
+  font-weight: 500;
 }
 table.dataTable {
   margin: 0 auto;
