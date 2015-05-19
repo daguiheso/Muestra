@@ -1,0 +1,60 @@
+/*
+
+	FOOTER - GLOBAL
+
+*/
+.footer-global {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	background: #393939;
+	text-align: center;
+	line-height: 63px;
+	height: 63px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.footer-global ul {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.footer-global ul li {
+	display: inline-block;
+	position: absolute;
+}
+.footer-global ul > li:nth-child(1) {
+	left: 1.40rem;
+}
+.footer-global ul > li:nth-child(2) {
+	right: 12rem;
+}
+.footer-global ul > li:nth-child(3) {
+	right: 8rem;
+}
+.footer-global ul > li:nth-child(4) {
+	right: 1.40rem;
+}
+.footer-global ul li a {
+	display: inline-block;
+	color: #fff;;
+    text-decoration: none;
+}
+@media screen and (max-width: 430px) {
+	.footer-global {
+		height: auto;
+	}
+	.footer-global ul li {
+		display: inline-block;
+		position: static;
+		height: 2rem;
+	}
+	.footer-global ul > li:nth-child(1) {
+		display: block;
+	}
+	.footer-global ul li a {
+		font-size: .6rem;
+	}
+}
