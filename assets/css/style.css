@@ -6881,6 +6881,7 @@ button.close {
   line-height: 63px;
   height: 63px;
   margin: -20px auto 0;
+  width: 100%;
   overflow: hidden;
 }
 .footer-global ul {
@@ -7258,6 +7259,28 @@ button.close {
   width: 437px;
   text-align: left;
   margin: 0 auto;
+}
+.content-selected-info-company {
+  padding-top: 3rem;
+  color: #545454;
+}
+.content-selected-info-company p {
+  margin-bottom: 0;
+  line-height: 22px;
+}
+.title-company-selected {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.40rem;
+  color: #6a6a69;
+  margin-bottom: 0;
+}
+.subtitle-company-selected {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.20rem;
+  color: #545454;
+}
+.content-selected-graphic-company {
+  padding-top: 3rem;
 }
 .title-search {
   font-size: 100px;
