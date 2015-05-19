@@ -151,25 +151,27 @@
 	DATA - TABLES 
 
 */
- 	$('table.pipoca').dataTable({
- 			
- 	});
+		var table9 = $('#dataTable9').dataTable({
+			 			
+			"ordering": false,
+		    "searching" : false,
+			"scrollX": false,
+		    //"scrollCollapse": true,
+		    "paging": false,
+		    "info": false,
+		    "autoWidth": false
+		});
+ 		var table8 = $('#dataTable8').dataTable({
+ 			 			
+ 		"ordering": false,
+ 	    "searching" : false,
+ 		"scrollX": false,
+ 	    //"scrollCollapse": true,
+ 	    "paging": false,
+ 	    "info": false
+ 		});
 	var table = $('#dataTable').dataTable({
-		language: {
-		    "emptyTable":     "Datos en la tabla no validos",
-		    "infoPostFix":    "",
-		    "thousands":      ",",
-		    "loadingRecords": "Cargando...",
-		    "processing":     "Procesando...",
-		    "search":         "Busqueda:",
-		    "zeroRecords":    "No matching records found",
-		    "paginate": {
-		        "first":        "First",
-		        "last":         "Last",
-		        "next":         "Siguientes",
-		        "previous":     "Anterior"
-	    	}
-		},
+		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
 			"bRestore": true,
@@ -205,16 +207,19 @@
     "dom": 'C<"clear">ti',		
 		"ordering": false,
     "searching" : false,
-		"scrollX": true,
+		"scrollX": "100%",
     "scrollCollapse": true,
     "paging": false,
     "info": false
-		//"responsive": true
 	});
-	new $.fn.dataTable.FixedColumns( table, {
-    	leftColumns: 1,
-    	leftColumns: 2
-  	});
+	// table.columns.adjust().draw();
+	// $('#dataTable').on( 'column-sizing.dt', function ( e, settings ) {
+	//     console.log( 'Column width recalculated in table' );
+	// } );
+	// new $.fn.dataTable.FixedColumns( table, {
+ //    	leftColumns: 1,
+ //    	leftColumns: 2
+ //  	});
 	// new $.fn.dataTable.FixedColumns( table );
 
 	var table2 = $('#dataTable2').dataTable({		
