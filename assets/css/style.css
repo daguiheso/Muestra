@@ -7033,7 +7033,7 @@ button.close {
 .main-content-btn,
 .associate-company,
 .main-category {
-  box-shadow: 0px -1px 1px #444444;
+  box-shadow: 0px 1px 0px #55822c;
 }
 #CA > p:nth-child(2) {
   font-size: 12px;
@@ -7065,7 +7065,7 @@ button.close {
 .main-category:hover,
 .abreviators {
   background: #669d35;
-  box-shadow: 0px -1px 0px #444444;
+  box-shadow: 0px 1px 0px #55822c;
 }
 .main ul {
   display: none;
@@ -7086,7 +7086,6 @@ button.close {
 .submain-proj li,
 .submain-val li {
   margin-top: 0 !important;
-  box-shadow: 0px -1px 1px #444444;
 }
 .submain-expand {
   padding: 0 15px !important;
@@ -7122,11 +7121,11 @@ button.close {
   display: none;
   width: 0px;
   height: 0px;
-  top: 1em;
+  top: 1.3em;
   right: 0px;
-  border-top: #6ea939 10px solid;
-  border-right: white 9px solid;
-  border-bottom: #6ea939 10px solid;
+  border-top: #6ea939 6px solid;
+  border-right: white 7px solid;
+  border-bottom: #6ea939 6px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-diag:hover::before {
@@ -7135,11 +7134,11 @@ button.close {
   display: block;
   width: 0px;
   height: 0px;
-  top: 1em;
+  top: 1.3em;
   right: 0px;
-  border-top: #669d35 10px solid;
-  border-right: white 9px solid;
-  border-bottom: #669d35 10px solid;
+  border-top: #669d35 6px solid;
+  border-right: white 7px solid;
+  border-bottom: #669d35 6px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-proj::before {
@@ -7148,11 +7147,11 @@ button.close {
   display: none;
   width: 0px;
   height: 0px;
-  top: 1em;
+  top: 1.3em;
   right: 0px;
-  border-top: #6ea939 10px solid;
-  border-right: white 9px solid;
-  border-bottom: #6ea939 10px solid;
+  border-top: #6ea939 6px solid;
+  border-right: white 7px solid;
+  border-bottom: #6ea939 6px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-proj:hover::before {
@@ -7161,11 +7160,11 @@ button.close {
   display: block;
   width: 0px;
   height: 0px;
-  top: 1em;
+  top: 1.3em;
   right: 0px;
-  border-top: #669d35 10px solid;
-  border-right: white 9px solid;
-  border-bottom: #669d35 10px solid;
+  border-top: #669d35 6px solid;
+  border-right: white 7px solid;
+  border-bottom: #669d35 6px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-val::before {
@@ -7174,11 +7173,11 @@ button.close {
   display: none;
   width: 0px;
   height: 0px;
-  top: 1em;
+  top: 1.3em;
   right: 0px;
-  border-top: #6ea939 10px solid;
-  border-right: white 9px solid;
-  border-bottom: #6ea939 10px solid;
+  border-top: #6ea939 6px solid;
+  border-right: white 7px solid;
+  border-bottom: #6ea939 6px solid;
   border-left: white 0px solid;
 }
 #btn-collapsed-val:hover::before {
@@ -7187,11 +7186,11 @@ button.close {
   display: block;
   width: 0px;
   height: 0px;
-  top: 1em;
+  top: 1.3em;
   right: 0px;
-  border-top: #669d35 10px solid;
-  border-right: white 9px solid;
-  border-bottom: #669d35 10px solid;
+  border-top: #669d35 6px solid;
+  border-right: white 7px solid;
+  border-bottom: #669d35 6px solid;
   border-left: white 0px solid;
 }
 #content {
