@@ -7261,7 +7261,7 @@ button.close {
   margin: 0 auto;
 }
 .content-selected-info-company {
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   color: #545454;
 }
 .content-selected-info-company p {
@@ -7440,6 +7440,11 @@ table.dataTable.cell-border thead tr th:first-child {
   font-size: 18px;
   color: #639637;
   font-weight: 500;
+}
+.title-h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #70903b;
 }
 table.dataTable {
   margin: 0 auto;
