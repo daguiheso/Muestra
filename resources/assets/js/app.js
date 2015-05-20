@@ -216,7 +216,34 @@
 
 
 
-	var table = $('#dataTable9').dataTable({
+	var table9 = $('#dataTable9').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      "sRestore": "Revertir",
+			exclude: ['all'],
+			groups: [
+				{
+					title: "2014 - 2018",
+					columns: [ 4, 5, 6, 7, 8 ]
+				},
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    "dom": 'C<"clear">ti',		
+		"ordering": false,
+    "searching" : false,
+		"scrollX": "100%",
+    "scrollCollapse": true,
+    "paging": false,
+    "info": false
+	});
+
+	var table10 = $('#dataTable10').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
