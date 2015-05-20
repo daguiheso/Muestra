@@ -161,25 +161,16 @@
 	DATA - TABLES 
 
 */
-		var table9 = $('#dataTable9').dataTable({
+		// var table9 = $('#dataTable9').dataTable({
 			 			
-			"ordering": false,
-		    "searching" : false,
-			"scrollX": false,
-		    //"scrollCollapse": true,
-		    "paging": false,
-		    "info": false,
-		    "autoWidth": false
-		});
- 		var table8 = $('#dataTable8').dataTable({
- 			 			
- 		"ordering": false,
- 	    "searching" : false,
- 		"scrollX": false,
- 	    //"scrollCollapse": true,
- 	    "paging": false,
- 	    "info": false
- 		});
+		// 	"ordering": false,
+		//     "searching" : false,
+		// 	"scrollX": false,
+		//     //"scrollCollapse": true,
+		//     "paging": false,
+		//     "info": false,
+		//     "autoWidth": false
+		// });
 	var table = $('#dataTable').dataTable({
 		
 		colVis: {
@@ -212,6 +203,35 @@
 					title: "Compañia 5",
 					columns: [ 12, 13 ]
 				}
+			]
+		},
+    "dom": 'C<"clear">ti',		
+		"ordering": false,
+    "searching" : false,
+		"scrollX": "100%",
+    "scrollCollapse": true,
+    "paging": false,
+    "info": false
+	});
+
+
+
+	var table = $('#dataTable9').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      "sRestore": "Revertir",
+			exclude: ['all'],
+			groups: [
+				{
+					title: "2014 - 2018",
+					columns: [ 4, 5, 6, 7, 8 ]
+				},
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
 			]
 		},
     "dom": 'C<"clear">ti',		
