@@ -43941,8 +43941,6 @@ var legend = svg.append("g")
 
 
 
-
-
 /*
 	
 	DATA - TABLES 
@@ -44039,11 +44037,11 @@ var legend = svg.append("g")
 			groups: [
 				{
 					title: "2014 - 2018",
-					columns: [ 4, 5, 6, 7, 8 ]
+					columns: [ 2, 3, 4, 5, 6 ]
 				},
 				{
 					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
+					columns: [ 7, 8, 9, 10, 11 ]
 				}				
 			]
 		},
@@ -44055,7 +44053,11 @@ var legend = svg.append("g")
     "paging": false,
     "info": false
 	});
-	new $.fn.dataTable.FixedColumns(table3);
+	new $.fn.dataTable.FixedColumns(table3, {
+		leftColumns: 1,
+    leftColumns: 2,
+    rightColumns: 2
+	});
 
 	var table4 = $('#dataTable3Tab2').dataTable({
 		
@@ -44087,6 +44089,10 @@ var legend = svg.append("g")
     leftColumns: 1,
     leftColumns: 2
   });
+	table4.columns.adjust().draw();
+	 $('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
+		    console.log( 'Column width recalculated in table' );
+		});
 
   var table5 = $('#dataTable3Tab3').dataTable({
 		
@@ -44118,7 +44124,6 @@ var legend = svg.append("g")
     leftColumns: 1,
     leftColumns: 2
   });
-
 	// table.columns.adjust().draw();
 	// $('#dataTable').on( 'column-sizing.dt', function ( e, settings ) {
 	//     console.log( 'Column width recalculated in table' );
