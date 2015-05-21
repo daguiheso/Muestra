@@ -171,7 +171,7 @@
 		//     "info": false,
 		//     "autoWidth": false
 		// });
-	var table = $('#dataTable').dataTable({
+	var table = $('#dataTable3byCompany').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
@@ -216,7 +216,7 @@
 
 
 
-	var table9 = $('#dataTable9').dataTable({
+	var table2 = $('#dataTable3byYears').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -243,7 +243,7 @@
     "info": false
 	});
 
-	var table10 = $('#dataTable10').dataTable({
+	var table3 = $('#dataTable3Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -269,6 +269,38 @@
     "paging": false,
     "info": false
 	});
+
+	var table4 = $('#dataTable3Tab2').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      "sRestore": "Revertir",
+			exclude: ['all'],
+			groups: [
+				{
+					title: "2014 - 2018",
+					columns: [ 4, 5, 6, 7, 8 ]
+				},
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    "dom": 'C<"clear">ti',		
+		"ordering": false,
+    "searching" : false,
+		"scrollX": "100%",
+    "scrollCollapse": true,
+    "paging": false,
+    "info": false
+	});
+	$('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
+	    console.log( 'Column width recalculated in table' );
+	} );
+
+
 	// table.columns.adjust().draw();
 	// $('#dataTable').on( 'column-sizing.dt', function ( e, settings ) {
 	//     console.log( 'Column width recalculated in table' );
@@ -279,159 +311,159 @@
  //  	});
 	// new $.fn.dataTable.FixedColumns( table );
 
-	var table2 = $('#dataTable2').dataTable({		
-		language: {
-	    "emptyTable":     "Datos en la tabla no validos",
-	    "infoPostFix":    "",
-	    "thousands":      ",",
-	    "loadingRecords": "Cargando...",
-	    "processing":     "Procesando...",
-	    "search":         "Busqueda:",
-	    "zeroRecords":    "No matching records found",
-	    "paginate": {
-        "first":        "First",
-        "last":         "Last",
-        "next":         "Siguientes",
-        "previous":     "Anterior"
-    	}
-		},
-		"ordering": false,
-    "info":     false,
-		"scrollY": "300px",
-    "scrollCollapse": true,
-    "paging":         false,
-    "sDom": 'T<"clear">lfrtip',
-    "searching" : false,
-    "oTableTools": {
-      "sSwfPath": "assets/swf/copy_csv_xls_pdf.swf",
-      "aButtons": [
-    		{
-            "sExtends":	"copy",
-          	"sButtonText": "Copiar"
-    		},
-    		{
-            "sExtends":	"print",
-          	"sInfo" : "Por favor, pulse ESC para devolverse",
-          	"sButtonText": "Imprimir"
-    		},
-        {
-            "sExtends":    "collection",
-            "sButtonText": "Guardar",
-            "aButtons": [ "csv", "xls", "pdf" ]
-        }
-    	]
-    }
-	});
+	// var table2 = $('#dataTable2').dataTable({		
+	// 	language: {
+	//     "emptyTable":     "Datos en la tabla no validos",
+	//     "infoPostFix":    "",
+	//     "thousands":      ",",
+	//     "loadingRecords": "Cargando...",
+	//     "processing":     "Procesando...",
+	//     "search":         "Busqueda:",
+	//     "zeroRecords":    "No matching records found",
+	//     "paginate": {
+ //        "first":        "First",
+ //        "last":         "Last",
+ //        "next":         "Siguientes",
+ //        "previous":     "Anterior"
+ //    	}
+	// 	},
+	// 	"ordering": false,
+ //    "info":     false,
+	// 	"scrollY": "300px",
+ //    "scrollCollapse": true,
+ //    "paging":         false,
+ //    "sDom": 'T<"clear">lfrtip',
+ //    "searching" : false,
+ //    "oTableTools": {
+ //      "sSwfPath": "assets/swf/copy_csv_xls_pdf.swf",
+ //      "aButtons": [
+ //    		{
+ //            "sExtends":	"copy",
+ //          	"sButtonText": "Copiar"
+ //    		},
+ //    		{
+ //            "sExtends":	"print",
+ //          	"sInfo" : "Por favor, pulse ESC para devolverse",
+ //          	"sButtonText": "Imprimir"
+ //    		},
+ //        {
+ //            "sExtends":    "collection",
+ //            "sButtonText": "Guardar",
+ //            "aButtons": [ "csv", "xls", "pdf" ]
+ //        }
+ //    	]
+ //    }
+	// });
 
-	var table3 = $('#dataTable3').DataTable( {		
-		language: {
-	    "emptyTable":     "Datos en la tabla no validos",
-	    "infoPostFix":    "",
-	    "thousands":      ",",
-	    "loadingRecords": "Cargando...",
-	    "processing":     "Procesando...",
-	    "search":         "Busqueda:",
-	    "zeroRecords":    "No matching records found",
-	    "paginate": {
-        "first":        "First",
-        "last":         "Last",
-        "next":         "Siguientes",
-        "previous":     "Anterior"
-    	}
-		},
-		"ordering": false,
-    "searching" : false,
+	// var table3 = $('#dataTable3').DataTable( {		
+	// 	language: {
+	//     "emptyTable":     "Datos en la tabla no validos",
+	//     "infoPostFix":    "",
+	//     "thousands":      ",",
+	//     "loadingRecords": "Cargando...",
+	//     "processing":     "Procesando...",
+	//     "search":         "Busqueda:",
+	//     "zeroRecords":    "No matching records found",
+	//     "paginate": {
+ //        "first":        "First",
+ //        "last":         "Last",
+ //        "next":         "Siguientes",
+ //        "previous":     "Anterior"
+ //    	}
+	// 	},
+	// 	"ordering": false,
+ //    "searching" : false,
 
-    "info":     false,
-  	dom: 'C<"clear">lfrtip',
-		colVis: {
-			"buttonText": "Ocultar Años",
-			exclude: ['all'],
-			groups: [
-				{
-					title: "2013-2017",
-					columns: [ 3, 4, 5, 6, 7 ]
-				},
-				{
-					title: "2018-2022",
-					columns: [ 8, 9, 10, 11, 12 ]
-				}
-			]
-		},
-		"scrollY": "400px",
-		"scrollX": true,
-		"scrollCollapse": true,
-		"paging": false		
-	});
-	new $.fn.dataTable.FixedColumns( table3 );
+ //    "info":     false,
+ //  	dom: 'C<"clear">lfrtip',
+	// 	colVis: {
+	// 		"buttonText": "Ocultar Años",
+	// 		exclude: ['all'],
+	// 		groups: [
+	// 			{
+	// 				title: "2013-2017",
+	// 				columns: [ 3, 4, 5, 6, 7 ]
+	// 			},
+	// 			{
+	// 				title: "2018-2022",
+	// 				columns: [ 8, 9, 10, 11, 12 ]
+	// 			}
+	// 		]
+	// 	},
+	// 	"scrollY": "400px",
+	// 	"scrollX": true,
+	// 	"scrollCollapse": true,
+	// 	"paging": false		
+	// });
+	// new $.fn.dataTable.FixedColumns( table3 );
 
-	var table4 = $('#dataTable4').DataTable( {	
-	  language: {
-	    "emptyTable":     "Datos en la tabla no validos",
-	    "infoPostFix":    "",
-	    "thousands":      ",",
-	    "loadingRecords": "Cargando...",
-	    "processing":     "Procesando...",
-	    "search":         "Busqueda:",
-	    "zeroRecords":    "No matching records found",
-	    "paginate": {
-        "first":        "First",
-        "last":         "Last",
-        "next":         "Siguientes",
-        "previous":     "Anterior"
-    	}
-		},
-		"ordering": false,
-    "info":     false,	
-		"dom": "Cfrtip",
-		"scrollY": "400px",
-		"scrollX": true,
-    "searching" : false,
+	// var table4 = $('#dataTable4').DataTable( {	
+	//   language: {
+	//     "emptyTable":     "Datos en la tabla no validos",
+	//     "infoPostFix":    "",
+	//     "thousands":      ",",
+	//     "loadingRecords": "Cargando...",
+	//     "processing":     "Procesando...",
+	//     "search":         "Busqueda:",
+	//     "zeroRecords":    "No matching records found",
+	//     "paginate": {
+ //        "first":        "First",
+ //        "last":         "Last",
+ //        "next":         "Siguientes",
+ //        "previous":     "Anterior"
+ //    	}
+	// 	},
+	// 	"ordering": false,
+ //    "info":     false,	
+	// 	"dom": "Cfrtip",
+	// 	"scrollY": "400px",
+	// 	"scrollX": true,
+ //    "searching" : false,
 
-		"scrollCollapse": true,
-		"paging": false,		
-		colVis: {
-			"buttonText": "Expandir/Comprimir",
-			exclude: ['all'],
-			groups: [
-				{
-					title: "2013-2017",
-					columns: [ 3, 4, 5, 6, 7 ]
-				},
-				{
-					title: "2018-2022",
-					columns: [ 8, 9, 10, 11, 12 ]
-				}
-			]
-		},
-	});
-	new $.fn.dataTable.FixedColumns( table4, {
-    	leftColumns: 1,
-    	rightColumns: 1
-  	});
+	// 	"scrollCollapse": true,
+	// 	"paging": false,		
+	// 	colVis: {
+	// 		"buttonText": "Expandir/Comprimir",
+	// 		exclude: ['all'],
+	// 		groups: [
+	// 			{
+	// 				title: "2013-2017",
+	// 				columns: [ 3, 4, 5, 6, 7 ]
+	// 			},
+	// 			{
+	// 				title: "2018-2022",
+	// 				columns: [ 8, 9, 10, 11, 12 ]
+	// 			}
+	// 		]
+	// 	},
+	// });
+	// new $.fn.dataTable.FixedColumns( table4, {
+ //    	leftColumns: 1,
+ //    	rightColumns: 1
+ //  	});
 
-	var table5 = $('#dataTable5').dataTable({ 
-		"sDom": '<"top"i>rt<"bottom"flp><"clear">',
-	  language: {
-	    "emptyTable":     "Datos en la tabla no validos",
-	    "infoPostFix":    "",
-	    "thousands":      ",",
-	    "loadingRecords": "Cargando...",
-	    "processing":     "Procesando...",
-	    "search":         "Busqueda:",
-	    "zeroRecords":    "No matching records found",
-	    "paginate": {
-        "first":        "First",
-        "last":         "Last",
-        "next":         "Siguientes",
-        "previous":     "Anterior"
-    	}
-		},
-		"ordering": false,
-    "info":     false, 		
-  	"paging": false,
-    "searching" : false
-	});
+	// var table5 = $('#dataTable5').dataTable({ 
+	// 	"sDom": '<"top"i>rt<"bottom"flp><"clear">',
+	//   language: {
+	//     "emptyTable":     "Datos en la tabla no validos",
+	//     "infoPostFix":    "",
+	//     "thousands":      ",",
+	//     "loadingRecords": "Cargando...",
+	//     "processing":     "Procesando...",
+	//     "search":         "Busqueda:",
+	//     "zeroRecords":    "No matching records found",
+	//     "paginate": {
+ //        "first":        "First",
+ //        "last":         "Last",
+ //        "next":         "Siguientes",
+ //        "previous":     "Anterior"
+ //    	}
+	// 	},
+	// 	"ordering": false,
+ //    "info":     false, 		
+ //  	"paging": false,
+ //    "searching" : false
+	// });
 	
 	
 
