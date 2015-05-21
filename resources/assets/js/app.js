@@ -248,10 +248,10 @@
       "sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
-				{
-					title: "2014 - 2018",
-					columns: [ 2, 3, 4, 5, 6 ]
-				},
+				// {
+				// 	title: "2014 - 2018",
+				// 	columns: [ 2, 3, 4, 5, 6 ]
+				// },
 				{
 					title: "2019 - 2023",
 					columns: [ 7, 8, 9, 10, 11 ]
@@ -261,7 +261,7 @@
     "dom": 'C<"clear">ti',		
 		"ordering": false,
     "searching" : false,
-		"scrollX": "100%",
+		"scrollX": "true",
     "scrollCollapse": true,
     "paging": false,
     "info": false
