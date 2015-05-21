@@ -44000,8 +44000,7 @@ var legend = svg.append("g")
     "paging": false,
     "info": false
 	});
-
-
+	
 
 	var table2 = $('#dataTable3byYears').dataTable({
 		
@@ -44056,6 +44055,7 @@ var legend = svg.append("g")
     "paging": false,
     "info": false
 	});
+	new $.fn.dataTable.FixedColumns(table3);
 
 	var table4 = $('#dataTable3Tab2').dataTable({
 		
@@ -44083,10 +44083,41 @@ var legend = svg.append("g")
     "paging": false,
     "info": false
 	});
-	$('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
-	    console.log( 'Column width recalculated in table' );
-	} );
+	new $.fn.dataTable.FixedColumns( table4, {
+    leftColumns: 1,
+    leftColumns: 2
+  });
 
+  var table5 = $('#dataTable3Tab3').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      "sRestore": "Revertir",
+			exclude: ['all'],
+			groups: [
+				{
+					title: "2014 - 2018",
+					columns: [ 4, 5, 6, 7, 8 ]
+				},
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    "dom": 'C<"clear">ti',		
+		"ordering": false,
+    "searching" : false,
+		"scrollX": "100%",
+    "scrollCollapse": true,
+    "paging": false,
+    "info": false
+	});
+	new $.fn.dataTable.FixedColumns( table5, {
+    leftColumns: 1,
+    leftColumns: 2
+  });
 
 	// table.columns.adjust().draw();
 	// $('#dataTable').on( 'column-sizing.dt', function ( e, settings ) {
