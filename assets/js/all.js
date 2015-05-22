@@ -43902,17 +43902,11 @@ var legend = svg.append("g")
 	$btnCollapProj.click(collapextendProjection);
 	$btnCollapVal.click(collapextendValuation);
 })();
-(function() {
-
-	hljs.initHighlightingOnLoad();
-	
-
-
-
+(function () {
 	// Efecto acordion Tablas 
 	var $elements = $(".tr-collapsed"),
-			$btnCollapsed = $("#btn-collapsed"),
-			$ocultar = $('.ocultar');
+		$btnCollapsed = $("#btn-collapsed"),
+		$ocultar = $('.ocultar');
 
 	function collapsedElements() {
 	    $elements.slideToggle();
@@ -43940,9 +43934,11 @@ var legend = svg.append("g")
 	}
 
 	$btnAddCompany.click(addForm);
+})();
+(function() {
 
-
-
+	hljs.initHighlightingOnLoad();
+	
 
 /*
 	
