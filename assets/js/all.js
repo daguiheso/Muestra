@@ -43786,8 +43786,6 @@ var legend = svg.append("g")
 	  .text(function(d) { return d; })
 	  ;	
 (function() {
-
-	hljs.initHighlightingOnLoad();
 	// Variables Cerrar / Expandir Menu
 	var $main = $("#main"),
 	    $content = $("#content"),
@@ -43903,6 +43901,11 @@ var legend = svg.append("g")
 	$btnCollapDiag.click(collapextendDiagnostic);
 	$btnCollapProj.click(collapextendProjection);
 	$btnCollapVal.click(collapextendValuation);
+})();
+(function() {
+
+	hljs.initHighlightingOnLoad();
+	
 
 
 

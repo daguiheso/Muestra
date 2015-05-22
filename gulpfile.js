@@ -17,6 +17,7 @@ elixir(function(mix) {
         "libs/d3/d3.js",
         "libs/d3/radial/RadarCharts.js",
         "libs/d3/radial/script.js",
+        "pipoka/main.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
