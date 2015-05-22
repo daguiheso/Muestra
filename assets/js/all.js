@@ -44055,8 +44055,7 @@ var legend = svg.append("g")
 	});
 	new $.fn.dataTable.FixedColumns(table3, {
 		leftColumns: 1,
-    leftColumns: 2,
-    rightColumns: 1
+    leftColumns: 2
 	});
 
 	var table4 = $('#dataTable3Tab2').dataTable({
