@@ -7421,6 +7421,7 @@ ul.ColVis_collection li {
   -o-box-shadow: none !important;
   box-shadow: none !important;
   color: #4a4a4a !important;
+  padding: 0.9em 0.5em !important;
 }
 ul.ColVis_collection li span {
   font-family: 'Roboto', sans-serif !important;

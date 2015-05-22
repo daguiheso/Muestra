@@ -5,7 +5,7 @@
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
 			"bRestore": true,
-      		"sRestore": "Revertir",
+      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [
 				{
@@ -55,13 +55,9 @@
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      		"sRestore": "Revertir",
+      		"sRestore": "TODAS",
 			exclude: ['all'],
-			groups: [
-				{
-					title: "2014 - 2018",
-					columns: [ 4, 5, 6, 7, 8 ]
-				},
+			groups: [				
 				{
 					title: "2019 - 2023",
 					columns: [ 9, 10, 11, 12, 13 ]
@@ -91,7 +87,7 @@
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      		"sRestore": "Revertir",
+      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [
 				// {
@@ -130,13 +126,9 @@
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      		"sRestore": "Revertir",
+      		"sRestore": "TODAS",
 			exclude: ['all'],
-			groups: [
-				{
-					title: "2014 - 2018",
-					columns: [ 4, 5, 6, 7, 8 ]
-				},
+			groups: [				
 				{
 					title: "2019 - 2023",
 					columns: [ 9, 10, 11, 12, 13 ]
@@ -172,13 +164,9 @@
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-        	"sRestore": "Revertir",
+        	"sRestore": "TODAS",
 			exclude: ['all'],
-			groups: [
-				{
-					title: "2014 - 2018",
-					columns: [ 4, 5, 6, 7, 8 ]
-				},
+			groups: [				
 				{
 					title: "2019 - 2023",
 					columns: [ 9, 10, 11, 12, 13 ]
