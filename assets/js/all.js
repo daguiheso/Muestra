@@ -44031,17 +44031,47 @@ function randomData(){
 	}     
 	// Colapsar y Expandir sub-menu Diagnostico
 	function collapextendDiagnostic() {
-	    $subMainDiag.parent().slideToggle();
+	    if ($(".submain-val").css("display")=="block") {
+	    	$subMainVal.slideToggle();
+		    $subMainDiag.slideToggle();
+	    }
+	    else if ($(".submain-proj").css("display")=="block") {
+	    	$subMainProj.slideToggle();
+		    $subMainDiag.slideToggle();
+	    }
+	    else {
+		    $subMainDiag.slideToggle();
+	    }
 	    return false;
 	} 	   
 	// Colapsar y Expandir sub-menu Proyección
 	function collapextendProjection() {
-	    $subMainProj.slideToggle();
+		if ($(".submain-val").css("display")=="block") {
+		    $subMainVal.slideToggle();
+	    	$subMainProj.slideToggle();
+	    }
+	    else if ($(".submain-diag").css("display")=="block") {
+		    $subMainDiag.slideToggle();
+	    	$subMainProj.slideToggle();
+	    }
+	    else {
+		    $subMainProj.slideToggle();
+	    }
 	    return false;
 	}
 	// Colapsar y Expandir sub-menu Valoración
 	function collapextendValuation() {
-	    $subMainVal.slideToggle();
+		if ($(".submain-proj").css("display")=="block") {
+		    $subMainProj.slideToggle();
+	    	$subMainVal.slideToggle();
+	    }
+	    else if ($(".submain-diag").css("display")=="block") {
+		    $subMainDiag.slideToggle();
+	    	$subMainVal.slideToggle();
+	    }
+	    else {
+		    $subMainVal.slideToggle();
+	    }
 	    return false;
 	}
 	//Eventos
