@@ -6786,6 +6786,9 @@ button.close {
   height: 60px;
   width: 100%;
 }
+nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
+  padding-left: 0.70rem;
+}
 .title-header {
   font-family: 'Fjalla One', sans-serif;
   font-size: 3.60rem;

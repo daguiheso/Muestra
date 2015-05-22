@@ -95,7 +95,7 @@
 	}     
 	// Colapsar y Expandir sub-menu Diagnostico
 	function collapextendDiagnostic() {
-	    $subMainDiag.slideToggle();
+	    $subMainDiag.parent().slideToggle();
 	    return false;
 	} 	   
 	// Colapsar y Expandir sub-menu Proyección
