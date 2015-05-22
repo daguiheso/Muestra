@@ -43906,16 +43906,23 @@ var legend = svg.append("g")
 	// Efecto acordion Tablas 
 	var $elements = $(".tr-collapsed"),
 		$btnCollapsed = $("#btn-collapsed"),
+		$btnCollapsed2 = $("#btn-collapsed2"),
 		$ocultar = $('.ocultar');
 
 	function collapsedElements() {
 	    $elements.toggle();
-	    $ocultar.slideToggle();
+	    // $ocultar.slideToggle();
 	    return false;
 	} 	
+	function collapsedElements2() {
+	    // $elements.toggle();
+	    $ocultar.slideToggle();
+	    return false;
+	} 
 
 	// Eventos
 	$btnCollapsed.click(collapsedElements);
+	$btnCollapsed2.click(collapsedElements2);
 
 
 
@@ -44134,6 +44141,32 @@ var legend = svg.append("g")
     	leftColumns: 1,
     	leftColumns: 2
     });
+
+
+
+
+    var table6 = $('#dataTableType5').dataTable({ 
+		"sDom": '<"top"i>rt<"bottom"flp><"clear">',
+	  language: {
+	    "emptyTable":     "Datos en la tabla no validos",
+	    "infoPostFix":    "",
+	    "thousands":      ",",
+	    "loadingRecords": "Cargando...",
+	    "processing":     "Procesando...",
+	    "search":         "Busqueda:",
+	    "zeroRecords":    "No matching records found",
+	    "paginate": {
+        "first":        "First",
+        "last":         "Last",
+        "next":         "Siguientes",
+        "previous":     "Anterior"
+    	}
+		},
+		"ordering": false,
+    "info":     false, 		
+  	"paging": false,
+    "searching" : false
+	});
 })();
 (function() {
 
