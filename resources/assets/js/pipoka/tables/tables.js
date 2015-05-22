@@ -5,7 +5,7 @@
 		$ocultar = $('.ocultar');
 
 	function collapsedElements() {
-	    $elements.slideToggle();
+	    $elements.toggle();
 	    $ocultar.slideToggle();
 	    return false;
 	} 	
