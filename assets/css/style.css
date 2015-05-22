@@ -6793,7 +6793,7 @@ button.close {
   color: #565656 !important;
   height: 60px;
   padding: 0;
-  width: 183px;
+  width: auto;
   line-height: 65PX;
 }
 .title-header:hover {
@@ -6802,6 +6802,7 @@ button.close {
 .title-header span {
   font-family: 'Roboto', sans-serif;
   font-size: 1.10rem;
+  font-weight: 100;
 }
 .by-latin {
   font-size: .95rem;
@@ -7048,7 +7049,7 @@ button.close {
   text-align: center;
   padding: 1.5rem 0 1rem;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.40rem;
+  font-size: 1.70rem;
   font-weight: bold;
 }
 .main-content-btn,
