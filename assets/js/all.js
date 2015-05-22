@@ -43935,32 +43935,14 @@ var legend = svg.append("g")
 
 	$btnAddCompany.click(addForm);
 })();
-(function() {
+(function () {
 
-	hljs.initHighlightingOnLoad();
-	
-
-/*
-	
-	DATA - TABLES 
-
-*/
-		// var table9 = $('#dataTable9').dataTable({
-			 			
-		// 	"ordering": false,
-		//     "searching" : false,
-		// 	"scrollX": false,
-		//     //"scrollCollapse": true,
-		//     "paging": false,
-		//     "info": false,
-		//     "autoWidth": false
-		// });
 	var table = $('#dataTable3byCompany').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
 			"bRestore": true,
-      "sRestore": "Revertir",
+      		"sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
 				{
@@ -43989,22 +43971,28 @@ var legend = svg.append("g")
 				}
 			]
 		},
-    "dom": 'C<"clear">ti',		
+    	"dom": 'C<"clear">ti',		
 		"ordering": false,
-    "searching" : false,
+    	"searching" : false,
 		"scrollX": "100%",
-    "scrollCollapse": true,
-    "paging": false,
-    "info": false
+   	 	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
 	});
 	
+
+
+
+
+
+
 
 	var table2 = $('#dataTable3byYears').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      "sRestore": "Revertir",
+      		"sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
 				{
@@ -44017,21 +44005,30 @@ var legend = svg.append("g")
 				}				
 			]
 		},
-    "dom": 'C<"clear">ti',		
+    	"dom": 'C<"clear">ti',		
 		"ordering": false,
-    "searching" : false,
+    	"searching" : false,
 		"scrollX": "100%",
-    "scrollCollapse": true,
-    "paging": false,
-    "info": false
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
 	});
+
+
+
+
+
+
+
+
+
 
 	var table3 = $('#dataTable3Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      "sRestore": "Revertir",
+      		"sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
 				// {
@@ -44044,25 +44041,33 @@ var legend = svg.append("g")
 				}				
 			]
 		},
-    "dom": 'C<"clear">ti',		
+    	"dom": 'C<"clear">ti',		
 		"ordering": false,
-    "searching" : false,
+    	"searching" : false,
 		"scrollX": "true",
-    "scrollCollapse": true,
-    "paging": false,
-    "info": false
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
 	});
 	new $.fn.dataTable.FixedColumns(table3, {
 		leftColumns: 1,
-    leftColumns: 2
+    	leftColumns: 2
 	});
+
+
+
+
+
+
+
+
 
 	var table4 = $('#dataTable3Tab2').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      "sRestore": "Revertir",
+      		"sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
 				{
@@ -44075,29 +44080,36 @@ var legend = svg.append("g")
 				}				
 			]
 		},
-    "dom": 'C<"clear">ti',		
+    	"dom": 'C<"clear">ti',		
 		"ordering": false,
-    "searching" : false,
+    	"searching" : false,
 		"scrollX": "100%",
-    "scrollCollapse": true,
-    "paging": false,
-    "info": false
+    	"scrollCollapse": true,
+   	 	"paging": false,
+   		"info": false
 	});
 	new $.fn.dataTable.FixedColumns( table4, {
-    leftColumns: 1,
-    leftColumns: 2
-  });
+    	leftColumns: 1,
+    	leftColumns: 2
+    });
 	table4.columns.adjust().draw();
-	 $('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
-		    console.log( 'Column width recalculated in table' );
-		});
+	$('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
+		console.log( 'Column width recalculated in table' );
+	});
 
-  var table5 = $('#dataTable3Tab3').dataTable({
+
+
+
+
+
+
+
+    var table5 = $('#dataTable3Tab3').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			"bRestore": true,
-      "sRestore": "Revertir",
+        	"sRestore": "Revertir",
 			exclude: ['all'],
 			groups: [
 				{
@@ -44110,18 +44122,40 @@ var legend = svg.append("g")
 				}				
 			]
 		},
-    "dom": 'C<"clear">ti',		
+   	 	"dom": 'C<"clear">ti',		
 		"ordering": false,
-    "searching" : false,
+    	"searching" : false,
 		"scrollX": "100%",
-    "scrollCollapse": true,
-    "paging": false,
-    "info": false
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
 	});
 	new $.fn.dataTable.FixedColumns( table5, {
-    leftColumns: 1,
-    leftColumns: 2
-  });
+    	leftColumns: 1,
+    	leftColumns: 2
+    });
+})();
+(function() {
+
+	hljs.initHighlightingOnLoad();
+	
+
+/*
+	
+	DATA - TABLES 
+
+*/
+		// var table9 = $('#dataTable9').dataTable({
+			 			
+		// 	"ordering": false,
+		//     "searching" : false,
+		// 	"scrollX": false,
+		//     //"scrollCollapse": true,
+		//     "paging": false,
+		//     "info": false,
+		//     "autoWidth": false
+		// });
+	
 	// table.columns.adjust().draw();
 	// $('#dataTable').on( 'column-sizing.dt', function ( e, settings ) {
 	//     console.log( 'Column width recalculated in table' );
