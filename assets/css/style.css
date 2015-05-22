@@ -6868,6 +6868,30 @@ button.close {
   font-size: 1.20rem;
   color: #565656;
 }
+@media screen and (max-width: 999px) {
+  .search-input {
+    width: 48%;
+  }
+  .form-navbar {
+    right: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body > nav.navbar.navbar-default.navbar-pipoca > div > ul {
+    margin: 0;
+    position: absolute;
+    right: 0;
+  }
+  .form-navbar {
+    right: 3rem;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .form-navbar {
+    display: none;
+  }
+}
 /*
 
 	FOOTER - GLOBAL
