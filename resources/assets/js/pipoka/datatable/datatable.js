@@ -147,7 +147,7 @@
     	leftColumns: 1,
     	leftColumns: 2
     });
-	table4.columns.adjust().draw();
+	//table4.columns.adjust().draw();
 	$('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
 		console.log( 'Column width recalculated in table' );
 	});
