@@ -25,41 +25,173 @@
 		<legend> 
 			<h2>Introducción</h2>
 		</legend>
+<!--  =======================================
+      ESTRUCTURA GENERAL
+      =======================================
+--> 
 		<legend>
 			<h2>Estructura General</h2>
 		</legend>
-		<p>La plantilla PIPOCA se ha construido en base a Bootstrap. Así que todo lo que encuentre en Bootstrap, se encuentra en PIPOCA.</p>
+		<p>La plantilla PIPOKA se ha construido en base a Bootstrap. Así que todo lo que encuentre en Bootstrap, se encuentra en PIPOKA.</p>
 		<h3>HTML</h3>
-		<p>PIPOCA requiere una hoja de estilos CSS y las importaciones de Javascript. Copie el código de abajo para empezar en su proyecto.</p>
+		<p>PIPOKA requiere una hoja de estilos CSS y las importaciones de Javascript. Copie el código de abajo para empezar en su proyecto.</p>
 		<pre>
 			<code class="html">
-	&lt;!DOCTYPE html&gt;
-	&lt;html lang=&quot;en&quot;&gt;
-	&lt;head&gt;
-	    &lt;meta charset=&quot;UTF-8&quot;&gt;
-	    &lt;title&gt;Introducci&#xF3;n PIPOCA&lt;/title&gt;
-	    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot;&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-	    &lt;header class=&quot;header&quot;&gt;
-	        &lt;h1 class=&quot;name&quot;&gt;Latinvestco&lt;/h1&gt;
-	&#x9;&lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
-	&#x9;    &lt;li&gt;
-	&#x9;        &lt;a href=&quot;/introduccion&quot;&gt;Comenzando&lt;/a&gt;
-	&#x9;        &lt;a href=&quot;&quot;&gt;Estructura CSS&lt;/a&gt;
-	&#x9;        &lt;a href=&quot;&quot;&gt;Componentes&lt;/a&gt;
-	&#x9;        &lt;a href=&quot;&quot;&gt;Javascript&lt;/a&gt;
-	&#x9;    &lt;/li&gt;
-	&#x9;&lt;/ul&gt; 
-	    &lt;/header&gt;
-	    &lt;script src=&quot;assets/js/all.js&quot;&gt;&lt;/script&gt;
-	&lt;/body&gt;
-	&lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;MENU&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1,maximum-scale=1&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script src=&quot;assets/js/all.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 			</code>
 		</pre>
+<!--  =======================================
+      BODY
+      =======================================
+--> 
+		<legend> 
+			<h2>Body</h2>
+		</legend>
+		<p>El body se compone del &lt;nav&gt;&lt;/nav&gt; que contiene el header gloabal que se utilizara en toda la plantilla, otro &lt;nav&gt;&lt;/nav&gt; que contiene el menu, un &lt;div id=&quot;content&quot;&gt; &lt;/div&gt; que sera el contenedro de todas las vistas y por ultimo un &lt;footer&gt; &lt;/footer&gt;.</p>
+		<p>La estructura de la plantilla general es la misma en toda la plantilla. Esta es la estructura general</p>
+		<pre>
+			<code>
+&lt;nav&gt;
+ ~ Contenido del header va Aqui ~
+&lt;/nav&gt;
+&lt;nav&gt;
+ ~ Contenido del menu  va Aqui ~
+&lt;/nav&gt;
+&lt;div id=&quot;content&quot;&gt;   
+ ~ Contenido de la vista va Aqui ~
+&lt;/div&gt;    				
+			</code>
+		</pre>
+<!--  =======================================
+      ESTRUCTURA DEL HEADER
+      =======================================
+--> 
+		<legend> 
+			<h2>Estructura del Header </h2>
+		</legend>
+		<p>El header contiene el logotipo, una barra de búsqueda y el estado de sección</p>
+		<pre>
+			<code>
+&lt;nav class=&quot;navbar navbar-default navbar-pipoca&quot;&gt;
+    &lt;div class=&quot;navbar-header navbar-header-pipoka&quot;&gt;
+        &lt;a class=&quot;navbar-brand title-header&quot; href=&quot;#&quot;&gt;
+            PIPOKA &lt;span class=&quot;by-latin&quot;&gt;by Latinvestco&lt;/span&gt;
+            &lt;!-- &lt;img alt=&quot;Pipoka&quot; src=&quot;assets/images/pipoca.png&quot;&gt; --&gt;
+        &lt;/a&gt;
+      
+        &lt;form class=&quot;navbar-left form-navbar&quot; role=&quot;search&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control search-input&quot; placeholder=&quot;Buscar Nueva Compa&ntilde;ia&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-search-navbar&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;ul class=&quot;nav navbar-nav navbar-right inline-block&quot;&gt;
+            &lt;li class=&quot;dropdown&quot;&gt;
+                &lt;a class=&quot;nav-ul-li-global&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Bienvenid@ Maria Paula&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Editar Perfil&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Salida segura&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+			</code>
+		</pre>
+<!--  =======================================
+      ESTRUCTURA DEL MENU
+      =======================================
+--> 
+		<legend> 
+			<h2>Estructura del Menu</h2>
+		</legend>
+		<pre>
+			<code>
+&lt;nav id=&quot;main&quot; class=&quot;main&quot;&gt;
+    &lt;div class=&quot;main-content-btn&quot;&gt;
+        &lt;span id=&quot;btn-collap-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
+        &lt;span id=&quot;btn-exp-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;CA&quot; class=&quot;associate-company&quot;&gt;
+        CA
+    &lt;/div&gt;
+    &lt;div id=&quot;btn-collapsed-diag&quot; class=&quot;main-category&quot;&gt;
+        &lt;span class=&quot;icon-category icon-line-graph line-graph-icon&quot;&gt;&lt;/span&gt;
+        &lt;p class=&quot;title-category title-diag&quot;&gt;DIAGN&Oacute;STICO&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-diag&quot;&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt; 
+    &lt;div id=&quot;btn-collapsed-proj&quot; class=&quot;main-category&quot;&gt;
+        &lt;span class=&quot;icon-category icon-graph graph-icon&quot;&gt;&lt;/span&gt;
+        &lt;p class=&quot;title-category title-proj&quot;&gt;PROYECCI&Oacute;N CA&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-proj&quot;&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div id=&quot;btn-collapsed-val&quot; class=&quot;main-category&quot;&gt;
+        &lt;span class=&quot;icon-category icon-coin-dollar coin-dollar-icon&quot;&gt;&lt;/span&gt;
+        &lt;p class=&quot;title-category title-val&quot;&gt;VALORACI&Oacute;N&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-val&quot;&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;val-ca-s&quot; href=&quot;&quot;&gt;CA/S&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;val-ca-sd-s&quot; href=&quot;&quot;&gt;CA/SD/S&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;val-ca-cs-s&quot; href=&quot;&quot;&gt;CA/CS/S&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a class=&quot;val-vms&quot; href=&quot;&quot;&gt;VMS&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;  
+    &lt;div id=&quot;abreviators&quot; class=&quot;abreviators&quot;&gt;
+        CA: Compa&ntilde;oa Analizada&lt;br&gt;S: Sector&lt;br&gt;SD: Sector Decil&lt;br&gt;CS: Compa&ntilde;ias Seleccionadas
+    &lt;/div&gt;
+&lt;/nav&gt;				
+			</code>
+		</pre>
+<!--  =======================================
+      ESTRUCTURA LESS
+      =======================================
+--> 
 		<legend> 
 			<h2>Estructura Less</h2>
 		</legend>
+
 			<pre>
 				<code class="html">
 	└── resources/
@@ -79,6 +211,25 @@
 			        └── shared/
 			            ├── animations.less
 			            └── variables.less
+
+
+	└── resources/
+	└── assets/
+		└── less/
+			├── bootstrap.less
+			├── pipoca.less
+			├── bootstrap/
+			│	├── // archivos less de bootstrap sin modificar
+			│   	└── ...ADDONS
+			├── pipoca/
+			│	├── // archivos less de pipoca
+			│       └── ...
+			├── libs/
+			│	├── // archivos less para javascript añadidos
+			│       └── ...
+			└── shared/
+				├── animations.less
+			        └── variables.less
 				</code>
 	</div>
 	<script src="assets/js/all.js"></script>
