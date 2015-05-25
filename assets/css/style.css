@@ -6781,6 +6781,18 @@ svg text.percent {
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+#body-tarro .axis path,
+#body-tarro .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+#body-tarro .bar {
+  fill: steelblue;
+}
+#body-tarro .x.axis path {
+  display: none;
+}
 .header {
   background: #6ea939;
   color: #ffffff;
