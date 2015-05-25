@@ -19,6 +19,7 @@ elixir(function(mix) {
         "libs/d3/radial/script.js",
         "libs/d3/pie/donut3d.js",
         "libs/d3/pie/script.js",
+        "libs/d3/lineChart/script.js",
         "pipoka/main.js",
         "pipoka/tables/tables.js",
         "pipoka/tables/table-valoracion.js",

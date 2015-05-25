@@ -5,32 +5,6 @@
   <title>MENU</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <style>
-    #body2 {
-      /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-      /*width: 960px;
-      height: 500px;*/
-      /*position: relative;*/
-    }
-    path.slice{
-        stroke-width:2px;
-    }
-    polyline{
-        opacity: .3;
-        stroke: black;
-        stroke-width: 2px;
-        fill: none;
-    } 
-    svg text.percent{
-        fill:white;
-        text-anchor:middle;
-        font-size:12px;
-    }
-    #body2 > svg {
-        position: absolute; 
-        left: -17rem;
-    }
-</style>
 </head>
 <body>
 <!-- 
@@ -5946,8 +5920,12 @@
             <div id="chart"></div>
         </div>
         <legend>Graficas - Libreria D3 - PIE</legend>
-        <div id="body2">
-            <div id="chart"></div>
+        <div class="content-pie relative">
+            <div id="body2"></div>
+        </div>
+        <legend>Graficas - Libreria D3 - LINE CHART</legend>
+        <div id="body-lineChart">
+            <!-- <div id="chart"></div> -->
         </div>
                     <!-- <pre>
                       <code>

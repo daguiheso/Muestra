@@ -6753,6 +6753,34 @@ button.close {
     display: none !important;
   }
 }
+path.slice {
+  stroke-width: 2px;
+}
+polyline {
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+svg text.percent {
+  fill: white;
+  text-anchor: middle;
+  font-size: 12px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
 .header {
   background: #6ea939;
   color: #ffffff;
