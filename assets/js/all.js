@@ -44307,32 +44307,32 @@ function randomData(){
 
 
 
-    var table5 = $('#dataTable3Tab3').dataTable({
+ //    var table5 = $('#dataTable3Tab3').dataTable({
 		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-        	"sRestore": "TODAS",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-   	 	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
-	});
-	new $.fn.dataTable.FixedColumns( table5, {
-    	leftColumns: 1,
-    	leftColumns: 2
-    });
+	// 	colVis: {
+	// 		"buttonText": "Mostrar/Ocultar Años",
+	// 		"bRestore": true,
+ //        	"sRestore": "TODAS",
+	// 		exclude: ['all'],
+	// 		groups: [				
+	// 			{
+	// 				title: "2019 - 2023",
+	// 				columns: [ 9, 10, 11, 12, 13 ]
+	// 			}				
+	// 		]
+	// 	},
+ //   	 	"dom": 'C<"clear">ti',		
+	// 	"ordering": false,
+ //    	"searching" : false,
+	// 	"scrollX": "100%",
+ //    	"scrollCollapse": true,
+ //    	"paging": false,
+ //    	"info": false
+	// });
+	// new $.fn.dataTable.FixedColumns( table5, {
+ //    	leftColumns: 1,
+ //    	leftColumns: 2
+ //    });
 
 
 
@@ -44359,6 +44359,115 @@ function randomData(){
   	"paging": false,
     "searching" : false
 	});
+
+
+
+
+
+
+
+
+    var table10 = $('#dataTable10').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      		"sRestore": "TODAS",
+			exclude: ['all'],
+			groups: [				
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    	"dom": 'C<"clear">ti',		
+		"ordering": false,
+    	"searching" : false,
+		"scrollX": "100%",
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
+	});
+
+
+	 var table11 = $('#dataTable11').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      		"sRestore": "TODAS",
+			exclude: ['all'],
+			groups: [				
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    	"dom": 'C<"clear">ti',		
+		"ordering": false,
+    	"searching" : false,
+		"scrollX": "100%",
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
+	});
+
+
+	 var table12 = $('#dataTable10').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      		"sRestore": "TODAS",
+			exclude: ['all'],
+			groups: [				
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    	"dom": 'C<"clear">ti',		
+		"ordering": false,
+    	"searching" : false,
+		"scrollX": "100%",
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
+	});
+
+
+	 var table13 = $('#dataTable13').dataTable({
+		
+		colVis: {
+			"buttonText": "Mostrar/Ocultar Años",
+			"bRestore": true,
+      		"sRestore": "TODAS",
+			exclude: ['all'],
+			groups: [				
+				{
+					title: "2019 - 2023",
+					columns: [ 9, 10, 11, 12, 13 ]
+				}				
+			]
+		},
+    	"dom": 'C<"clear">ti',		
+		"ordering": false,
+    	"searching" : false,
+		"scrollX": "100%",
+    	"scrollCollapse": true,
+    	"paging": false,
+    	"info": false
+	});
+
+
+
+
+
+
+
 })();
 (function() {
 
