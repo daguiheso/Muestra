@@ -44082,8 +44082,20 @@ function randomData(){
 	$btnCollapVal.click(collapextendValuation);
 })();
 (function () {
+	var $pest2 = $("#pest2"),
+		$linkPest2 = $("#linkpest2");
+
+	// $pest2.addClass("visible");
+		// $pest2.removeClass("active");
 	
-	
+	// function changes () {
+		// $pest2.css("display", "block");
+		// $pest2.removeClass("active");
+		// $pest2.removeClass("visible");
+		// return false;
+	// }
+
+	// $linkPest2.click(changes);
 })();
 (function () {
 	var $btnCollapsed = $("#btn-collapsed-tableValoration"),
@@ -44238,10 +44250,6 @@ function randomData(){
       		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [
-				// {
-				// 	title: "2014 - 2018",
-				// 	columns: [ 2, 3, 4, 5, 6 ]
-				// },
 				{
 					title: "2019 - 2023",
 					columns: [ 7, 8, 9, 10, 11 ]
@@ -44295,44 +44303,11 @@ function randomData(){
     	leftColumns: 1,
     	leftColumns: 2
     });
-	//table4.columns.adjust().draw();
-	$('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
-		console.log( 'Column width recalculated in table' );
-	});
-
-
-
-
-
-
-
-
- //    var table5 = $('#dataTable3Tab3').dataTable({
-		
-	// 	colVis: {
-	// 		"buttonText": "Mostrar/Ocultar Años",
-	// 		"bRestore": true,
- //        	"sRestore": "TODAS",
-	// 		exclude: ['all'],
-	// 		groups: [				
-	// 			{
-	// 				title: "2019 - 2023",
-	// 				columns: [ 9, 10, 11, 12, 13 ]
-	// 			}				
-	// 		]
-	// 	},
- //   	 	"dom": 'C<"clear">ti',		
-	// 	"ordering": false,
- //    	"searching" : false,
-	// 	"scrollX": "100%",
- //    	"scrollCollapse": true,
- //    	"paging": false,
- //    	"info": false
+	// $('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
+	// 	console.log( 'Column width recalculated in table' );
 	// });
-	// new $.fn.dataTable.FixedColumns( table5, {
- //    	leftColumns: 1,
- //    	leftColumns: 2
- //    });
+
+
 
 
 
@@ -44415,7 +44390,7 @@ function randomData(){
 	});
 
 
-	 var table12 = $('#dataTable10').dataTable({
+	 var table12 = $('#dataTable12').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -44461,11 +44436,6 @@ function randomData(){
     	"paging": false,
     	"info": false
 	});
-
-
-
-
-
 
 
 })();

@@ -90,10 +90,6 @@
       		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [
-				// {
-				// 	title: "2014 - 2018",
-				// 	columns: [ 2, 3, 4, 5, 6 ]
-				// },
 				{
 					title: "2019 - 2023",
 					columns: [ 7, 8, 9, 10, 11 ]
@@ -147,44 +143,11 @@
     	leftColumns: 1,
     	leftColumns: 2
     });
-	//table4.columns.adjust().draw();
-	$('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
-		console.log( 'Column width recalculated in table' );
-	});
-
-
-
-
-
-
-
-
- //    var table5 = $('#dataTable3Tab3').dataTable({
-		
-	// 	colVis: {
-	// 		"buttonText": "Mostrar/Ocultar Años",
-	// 		"bRestore": true,
- //        	"sRestore": "TODAS",
-	// 		exclude: ['all'],
-	// 		groups: [				
-	// 			{
-	// 				title: "2019 - 2023",
-	// 				columns: [ 9, 10, 11, 12, 13 ]
-	// 			}				
-	// 		]
-	// 	},
- //   	 	"dom": 'C<"clear">ti',		
-	// 	"ordering": false,
- //    	"searching" : false,
-	// 	"scrollX": "100%",
- //    	"scrollCollapse": true,
- //    	"paging": false,
- //    	"info": false
+	// $('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
+	// 	console.log( 'Column width recalculated in table' );
 	// });
-	// new $.fn.dataTable.FixedColumns( table5, {
- //    	leftColumns: 1,
- //    	leftColumns: 2
- //    });
+
+
 
 
 
@@ -267,7 +230,7 @@
 	});
 
 
-	 var table12 = $('#dataTable10').dataTable({
+	 var table12 = $('#dataTable12').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -313,11 +276,6 @@
     	"paging": false,
     	"info": false
 	});
-
-
-
-
-
 
 
 })();
