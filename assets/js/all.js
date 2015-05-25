@@ -44320,8 +44320,15 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 
 	$btnAddCompany.click(addForm);
 })();
-(function () {
+/*
 
+	TABLA TIPO 3 - TABLA CON BOTÓN PARA OCULTAR COLUMNAS Y SCROLL HORIZONTAL
+
+*/
+(function () {
+/*
+	TABLA TIPO 3 - # 1 
+ */
 	var table = $('#dataTable3byCompany').dataTable({
 		
 		colVis: {
@@ -44364,14 +44371,13 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
     	"paging": false,
     	"info": false
 	});
-	
-
-
-
-
-
-
-
+	new $.fn.dataTable.FixedColumns(table, {
+		leftColumns: 1,
+    	leftColumns: 2
+	});
+/* 
+	TABLA TIPO 3 - # 2 
+*/
 	var table2 = $('#dataTable3byYears').dataTable({
 		
 		colVis: {
@@ -44394,16 +44400,13 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
     	"paging": false,
     	"info": false
 	});
-
-
-
-
-
-
-
-
-
-
+	new $.fn.dataTable.FixedColumns(table2, {
+		leftColumns: 1,
+    	leftColumns: 2
+	});
+/*  
+	TABLA TIPO 3 - # 3 TAB 1 
+*/
 	var table3 = $('#dataTable3Tab1').dataTable({
 		
 		colVis: {
@@ -44430,15 +44433,9 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		leftColumns: 1,
     	leftColumns: 2
 	});
-
-
-
-
-
-
-
-
-
+/*  
+	TABLA TIPO 3 - # 3 TAB 2
+*/
 	var table4 = $('#dataTable3Tab2').dataTable({
 		
 		colVis: {
@@ -44465,146 +44462,11 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
     	leftColumns: 1,
     	leftColumns: 2
     });
-	// $('#dataTable3Tab2').on( 'column-sizing.dt', function ( e, settings ) {
-	// 	console.log( 'Column width recalculated in table' );
-	// });
-
-
-
-
-
-
-    var table6 = $('#dataTableType5').dataTable({ 
-		"sDom": '<"top"i>rt<"bottom"flp><"clear">',
-	  language: {
-	    "emptyTable":     "Datos en la tabla no validos",
-	    "infoPostFix":    "",
-	    "thousands":      ",",
-	    "loadingRecords": "Cargando...",
-	    "processing":     "Procesando...",
-	    "search":         "Busqueda:",
-	    "zeroRecords":    "No matching records found",
-	    "paginate": {
-        "first":        "First",
-        "last":         "Last",
-        "next":         "Siguientes",
-        "previous":     "Anterior"
-    	}
-		},
-		"ordering": false,
-    "info":     false, 		
-  	"paging": false,
-    "searching" : false
-	});
-
-
-
-
-
-
-
-
-    var table10 = $('#dataTable10').dataTable({
-		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
-	});
-
-
-	 var table11 = $('#dataTable11').dataTable({
-		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
-	});
-
-
-	 var table12 = $('#dataTable12').dataTable({
-		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
-	});
-
-
-	 var table13 = $('#dataTable13').dataTable({
-		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
-	});
-
-
 })();
-(function() {
 
-	hljs.initHighlightingOnLoad();
-		
+
+(function() {
+	hljs.initHighlightingOnLoad();		
 })();
 
 

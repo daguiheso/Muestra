@@ -26,7 +26,8 @@ elixir(function(mix) {
         "pipoka/tables/table-valoracion.js",
         "pipoka/tables/table-balance-general.js",
         "pipoka/companies/addCompany.js",
-        "pipoka/datatable/datatable.js",
+        "pipoka/datatable/dataTable-Type3.js",
+        "pipoka/datatable/dataTable-Type4.js",
     	"app.js"
     ], "assets/js", "resources/assets/js");
 
