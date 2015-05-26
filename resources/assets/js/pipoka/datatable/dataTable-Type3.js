@@ -60,8 +60,6 @@
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
@@ -89,8 +87,6 @@
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [
 				{
@@ -118,8 +114,6 @@
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{

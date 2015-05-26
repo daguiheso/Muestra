@@ -44382,8 +44382,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
@@ -44411,8 +44409,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [
 				{
@@ -44440,8 +44436,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
@@ -44478,8 +44472,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
@@ -44503,8 +44495,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
@@ -44528,8 +44518,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
@@ -44553,8 +44541,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
-			"bRestore": true,
-      		"sRestore": "TODAS",
 			exclude: ['all'],
 			groups: [				
 				{
