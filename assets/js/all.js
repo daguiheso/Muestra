@@ -44258,6 +44258,9 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	// }
 
 	// $linkPest2.click(changes);
+
+	
+
 })();
 (function () {
 	var $btnCollapsed = $("#btn-collapsed-tableValoration"),
@@ -44402,6 +44405,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		leftColumns: 1,
     	leftColumns: 2
 	});
+
 /*  
 	TABLA TIPO 3 - # 3 TAB 1 
 */
@@ -44429,33 +44433,40 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		leftColumns: 1,
     	leftColumns: 2
 	});
+
+
+	$('.tab-pipoka').on('shown.bs.tab', function (e) {
+		e.target 
+	    e.relatedTarget 
+	    
 /*  
 	TABLA TIPO 3 - # 3 TAB 2
 */
-	var table4 = $('#dataTable3Tab2').dataTable({
-		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-   	 	"paging": false,
-   		"info": false
+	    $('#dataTable3Tab2').dataTable({
+			colVis: {
+				"buttonText": "Mostrar/Ocultar Años",
+				exclude: ['all'],
+				groups: [				
+					{
+						title: "2019 - 2023",
+						columns: [ 9, 10, 11, 12, 13 ]
+					}				
+				]
+			},
+	    	"dom": 'C<"clear">ti',		
+			"ordering": false,
+	    	"searching" : false,
+			"scrollX": "true",
+	    	"scrollCollapse": true,
+	    	"paging": false,
+	    	"info": false,
+	    	"destroy": true
+		});
+		// new $.fn.dataTable.FixedColumns(table3, {
+		// 	leftColumns: 1,
+	 	//  leftColumns: 2
+		// });
 	});
-	new $.fn.dataTable.FixedColumns( table4, {
-    	leftColumns: 1,
-    	leftColumns: 2
-    });
 })();
 
 
@@ -44511,52 +44522,68 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
     	"paging": false,
     	"info": false
 	});
+
+
+
 /*
 	TABLA TIPO 4 # 2 - TAB 2.1
 */
-	var table3 = $('#dataTableBg2Tab2').dataTable({
-		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
-	});
+
+	$('.tab-pipoka').on('shown.bs.tab', function (e) {
+	   e.target // activated tab
+	   e.relatedTarget // previous tab
+
+	    $('#dataTableBg2Tab2').dataTable({ 
+			colVis: {
+				"buttonText": "Mostrar/Ocultar Años",
+				exclude: ['all'],
+				groups: [				
+					{
+						title: "2019 - 2023",
+						columns: [ 9, 10, 11, 12, 13 ]
+					}				
+				]
+			},
+	    	"dom": 'C<"clear">ti',		
+			"ordering": false,
+	    	"searching" : false,
+			"scrollX": "100%",
+	    	"scrollCollapse": true,
+	    	"paging": false,
+	    	"info": false,
+	    	"destroy": true
+	    });
+	    
 /*
 	TABLA TIPO 4 # 2 - TAB 2.2
 */
-	var table4 = $('#dataTableBg2Tab2-2').dataTable({
+	    $('#dataTableBg2Tab2-2').dataTable({
 		
-		colVis: {
-			"buttonText": "Mostrar/Ocultar Años",
-			exclude: ['all'],
-			groups: [				
-				{
-					title: "2019 - 2023",
-					columns: [ 9, 10, 11, 12, 13 ]
-				}				
-			]
-		},
-    	"dom": 'C<"clear">ti',		
-		"ordering": false,
-    	"searching" : false,
-		"scrollX": "100%",
-    	"scrollCollapse": true,
-    	"paging": false,
-    	"info": false
+			colVis: {
+				"buttonText": "Mostrar/Ocultar Años",
+				exclude: ['all'],
+				groups: [				
+					{
+						title: "2019 - 2023",
+						columns: [ 9, 10, 11, 12, 13 ]
+					}				
+				]
+			},
+	    	"dom": 'C<"clear">ti',		
+			"ordering": false,
+	    	"searching" : false,
+			"scrollX": "100%",
+	    	"scrollCollapse": true,
+	    	"paging": false,
+	    	"info": false,
+	    	"destroy": true
+		});
 	});
+
+
+
+
+	
 })();
 (function() {
 	hljs.initHighlightingOnLoad();		
