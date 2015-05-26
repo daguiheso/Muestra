@@ -1,14 +1,24 @@
-.select-companies {
-	margin: 88px 33px 0 0;
-  text-align: center;
-}
+// Linea Divisora entre Busqueda y Compañias a Comparar
 .hr-div {
 	color: #d4d4d4;
 	width: 70%;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+// Titulo Compañias a Comparar
+.content-titles-select-company {
+	width: 395px;
+	text-align: left;
+	margin: 0 auto;
+}
+.content-titles-select-company p {
+	color: #545454;
+	font-size: 12px;
 }
 .companies-select {
 	display: inline-block;
 }
+// PlaceHolder de Inputs
 .form-addCompany input {
 	font-size: 1.10rem;
 	color: #545454;
@@ -16,19 +26,23 @@
   margin-right: 1rem;
   display: inline-block;
 }
+// Boton Agregar otra Compañia
 .form-addCompany a {
 	text-decoration: none;
 	color: #545454;
+	font-size: 1.10rem;
 }
 .form-addCompany a:hover {
 	color: @color-latinvestco;
 	cursor: pointer;
 }
+// Boton Comparar
 .form-addCompany + button {
   float: left;
   border-radius: 0;
   background: #6ea939;
   color: white;
+	border-color: white;
 }
 .form-addCompany + button:hover,
 .form-addCompany + button:focus,
@@ -37,8 +51,4 @@
   outline: none;
   color: white;
 }
-.content-titles-select-company {
-	width: 437px;
-	text-align: left;
-	margin: 0 auto;
-}
+

@@ -7283,13 +7283,20 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   margin: 138px 33px 0 0;
   text-align: center;
 }
-.select-companies {
-  margin: 88px 33px 0 0;
-  text-align: center;
-}
 .hr-div {
   color: #d4d4d4;
   width: 70%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.content-titles-select-company {
+  width: 395px;
+  text-align: left;
+  margin: 0 auto;
+}
+.content-titles-select-company p {
+  color: #545454;
+  font-size: 12px;
 }
 .companies-select {
   display: inline-block;
@@ -7304,6 +7311,7 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 .form-addCompany a {
   text-decoration: none;
   color: #545454;
+  font-size: 1.10rem;
 }
 .form-addCompany a:hover {
   color: #6ea939;
@@ -7314,6 +7322,7 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   border-radius: 0;
   background: #6ea939;
   color: white;
+  border-color: white;
 }
 .form-addCompany + button:hover,
 .form-addCompany + button:focus,
@@ -7321,11 +7330,6 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   background: #6ea939;
   outline: none;
   color: white;
-}
-.content-titles-select-company {
-  width: 437px;
-  text-align: left;
-  margin: 0 auto;
 }
 .content-selected-info-company {
   padding-top: 3.5rem;
@@ -7349,6 +7353,10 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 .content-selected-graphic-company {
   padding-top: 3rem;
 }
+.select-companies {
+  margin: 88px 33px 0 0;
+  text-align: center;
+}
 .title-search {
   font-size: 100px;
   font-family: 'Fjalla One', sans-serif;
@@ -7371,6 +7379,13 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   color: white;
   font-size: 1.5rem;
   vertical-align: middle;
+}
+.form-addCompany input {
+  font-size: 1.10rem;
+  color: #545454;
+  width: 260px;
+  margin-right: 1rem;
+  display: inline-block;
 }
 legend {
   margin: 3rem 0;
