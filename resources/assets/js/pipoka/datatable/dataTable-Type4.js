@@ -53,14 +53,14 @@
 
 
 
-/*
-	TABLA TIPO 4 # 2 - TAB 2.1
-*/
 
 	$('.tab-pipoka').on('shown.bs.tab', function (e) {
 	   e.target // activated tab
 	   e.relatedTarget // previous tab
 
+/*
+	TABLA TIPO 4 # 2 - TAB 2.1
+*/
 	    $('#dataTableBg2Tab2').dataTable({ 
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
