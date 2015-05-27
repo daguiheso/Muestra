@@ -11,7 +11,6 @@ elixir(function(mix) {
     	"libs/datatable/extensions/TableTools/dataTables.tableTools.js",
         "libs/datatable/extensions/Colvis/dataTables.colVis.js",
         "libs/datatable/extensions/FixedColumns/dataTables.fixedColumns.js",
-    	"libs/datatable/extensions/Responsive/dataTables.responsive.js",
         "libs/bootstrap/dataTables.bootstrap.js",
         "libs/highlight/highlight.js",
         "libs/d3/d3.js",
