@@ -6793,21 +6793,6 @@ svg text.percent {
 #body-tarro .x.axis path {
   display: none;
 }
-.header {
-  background: #6ea939;
-  color: #ffffff;
-  bottom: 0;
-  top: 0;
-  width: 200px;
-  position: fixed;
-}
-.name {
-  text-align: center;
-  margin-bottom: 100px;
-}
-.content {
-  padding: 7rem 7rem 7rem 26rem;
-}
 .navbar-pipoca {
   margin-bottom: 0;
   position: fixed;
@@ -7387,9 +7372,6 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   margin-right: 1rem;
   display: inline-block;
 }
-legend {
-  margin: 3rem 0;
-}
 html {
   height: 100%;
 }
@@ -7572,6 +7554,9 @@ table.dataTable.cell-border thead tr th:first-child {
 #content > ul li[role="presentation"] {
   width: 50%;
   text-align: center;
+}
+legend {
+  margin: 3rem 0;
 }
 table.dataTable {
   margin: 0 auto;
