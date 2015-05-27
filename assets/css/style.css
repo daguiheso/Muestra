@@ -7162,10 +7162,8 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   left: 0;
   top: .5rem;
 }
-.val-ca-s,
-.val-ca-sd-s,
-.val-ca-cs-s,
-.val-vms {
+.val-ca,
+.val-ms {
   font-size: 0.86em;
 }
 #btn-collapsed-diag::before {

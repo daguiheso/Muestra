@@ -44107,10 +44107,8 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    $stateResult = $(".state-result"),
 	    $balanceGen = $(".balance-gen"),
 	    $cashFlow = $(".cash-flow"),
-	    $valCAvsS = $(".val-ca-s"),
-	    $valCAvsSDvsS = $(".val-ca-sd-s"),
-	    $valCAvsCSvsS = $(".val-ca-cs-s"),
-	    $valVMS = $(".val-vms"),
+	    $valCA = $(".val-ca"),
+	    $valMS = $(".val-ms"),
 	    $showhideCatg = $(".title-category"),
 	    $iconCatg = $(".icon-category");
 	    $abreviators = $("#abreviators");
@@ -44134,18 +44132,14 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    $stateResult.html("ER");
 	    $balanceGen.html("BG");
 	    $cashFlow.html("FC");
-	    $valCAvsS.html("CA/S");
-	    $valCAvsSDvsS.html("CA/SD/S");
-	    $valCAvsCSvsS.html("CA/CS/S");
-	    $valVMS.html("VMS");
+	    $valCA.html("CA");
+	    $valMS.html("MS");
 	    $indicator.removeClass("submain-expand");
 	    $stateResult.removeClass("submain-expand");
 	    $balanceGen.removeClass("submain-expand");
 	    $cashFlow.removeClass("submain-expand");
-	    $valCAvsS.removeClass("submain-expand");
-	    $valCAvsSDvsS.removeClass("submain-expand");
-	    $valCAvsCSvsS.removeClass("submain-expand");
-	    $valVMS.removeClass("submain-expand");
+	    $valCA.removeClass("submain-expand");
+	    $valMS.removeClass("submain-expand");
 	    $showhideCatg.toggle();
 	    $iconCatg.css({
 	    	"position" : "relative",
@@ -44168,18 +44162,14 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    $stateResult.html("Estado de Resultado");
 	    $balanceGen.html("Balance General");
 	    $cashFlow.html("Flujo de Caja");
-	    $valCAvsS.html("CA vs S");
-	    $valCAvsSDvsS.html("CA vs SD vs S");
-	    $valCAvsCSvsS.html("CAvs CS vs S");
-	    $valVMS.html("Valoración Multiplos Sector");	   
+	    $valCA.html("Compañia Analizada");
+	    $valMS.html("Múltiplos del Sector");	   
 	    $indicator.addClass("submain-expand");
 	    $stateResult.addClass("submain-expand");
 	    $balanceGen.addClass("submain-expand");
 	    $cashFlow.addClass("submain-expand");
-	    $valCAvsS.addClass("submain-expand");
-	    $valCAvsSDvsS.addClass("submain-expand");
-	    $valCAvsCSvsS.addClass("submain-expand");
-	    $valVMS.addClass("submain-expand");
+	    $valCA.addClass("submain-expand");
+	    $valMS.addClass("submain-expand");
 	    $showhideCatg.toggle();
 	    $iconCatg.css({
 	    	"position" : "absolute",
