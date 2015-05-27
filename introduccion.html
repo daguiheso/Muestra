@@ -178,49 +178,46 @@
       =======================================
 --> 
 		<legend> 
-			<h2>Estructura Less</h2>
+		    <h2>Estructura Less</h2>
 		</legend>
 
 			<pre>
 				<code class="html">
-	└── resources/
-	    └── assets/
-		      └── less/
-			        ├── bootstrap.less
-			        ├── pipoca.less
-			        ├── bootstrap/
-			        │   ├── // archivos less de bootstrap sin modificar
-			        │   └── ...ADDONS
-			        ├── pipoca/
-			        │   ├── // archivos less de pipoca
-			        │   └── ...
-			        ├── libs/
-			        │   ├── // archivos less para javascript añadidos
-			        │   └── ...
-			        └── shared/
-			            ├── animations.less
-			            └── variables.less
-
-
-	└── resources/
-	└── assets/
-		└── less/
-			├── bootstrap.less
-			├── pipoca.less
-			├── bootstrap/
-			│	├── // archivos less de bootstrap sin modificar
-			│   	└── ...ADDONS
-			├── pipoca/
-			│	├── // archivos less de pipoca
-			│       └── ...
-			├── libs/
-			│	├── // archivos less para javascript añadidos
-			│       └── ...
-			└── shared/
-				├── animations.less
-			        └── variables.less
+└── resources/
+    └── assets/
+        └── less/           
+            │               
+            ├── libs/
+            │   ├── // archivos less para  librerias añadidas
+            │   │  
+            │   ├── bootstrap/
+            │   │   └── // archivos less de bootstrap sin modificar
+            │   │
+            │   ├── d3/
+            │   │   └── // archivos less para graficas de libreria d3
+            │   │
+            │   ├── datatables/
+            │   │   └── // archivos less para libreria datatable
+            │   │
+            │   ├── highlight/
+            │   │   └── // archivos less para libreria highlight
+            │   │
+            │   └── ...ADDONS
+            │
+            ├── pipoca/
+            │   └──  // archivos less de pipoca
+            │          
+            ├── shared/                 
+            │   └── variables.less
+            │
+            ├── bootstrap.less
+            ├── d3.less
+            ├── datatables.less
+            ├── documentacion.less
+            ├── pipoka.less
+            └── style.less
 				</code>
 	</div>
 	<script src="assets/js/all.js"></script>
 </body>
-</html>
+</html> 
