@@ -6793,6 +6793,21 @@ svg text.percent {
 #body-tarro .x.axis path {
   display: none;
 }
+.header {
+  background: #6ea939;
+  color: #ffffff;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  position: fixed;
+}
+.name {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.content {
+  padding: 7rem 7rem 7rem 26rem;
+}
 .navbar-pipoca {
   margin-bottom: 0;
   position: fixed;
