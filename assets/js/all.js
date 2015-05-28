@@ -43252,6 +43252,9 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    $main.animate({
 	    	width: "55px"
 	    });
+	    $content.animate({
+	    	paddingLeft: "88px"
+	    });
 	    $btnexpmain.show();
 	    $btncollapmain.hide();	    
 	    $areaCA.html("CA");
@@ -43281,6 +43284,9 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	function expandMenu() {  
 	    $main.animate({
 	    	width: "183px"
+	    });
+	    $content.animate({
+	    	paddingLeft: "216px"
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();	    

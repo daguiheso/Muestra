@@ -27,6 +27,9 @@
 	    $main.animate({
 	    	width: "55px"
 	    });
+	    $content.animate({
+	    	paddingLeft: "88px"
+	    });
 	    $btnexpmain.show();
 	    $btncollapmain.hide();	    
 	    $areaCA.html("CA");
@@ -56,6 +59,9 @@
 	function expandMenu() {  
 	    $main.animate({
 	    	width: "183px"
+	    });
+	    $content.animate({
+	    	paddingLeft: "216px"
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();	    
