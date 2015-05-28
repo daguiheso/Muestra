@@ -43602,7 +43602,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
 */
-   var table1 = $('#dataTableBg2Tab1').dataTable({
+    var table1 = $('#dataTableBg2Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -43702,11 +43702,6 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    	"destroy": true
 		});
 	});
-
-
-
-
-	
 })();
 (function() {
 	hljs.initHighlightingOnLoad();		

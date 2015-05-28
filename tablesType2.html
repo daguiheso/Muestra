@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MENU</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-pipoca">
+        <div class="navbar-header navbar-header-pipoka">
+            <a class="navbar-brand title-header" href="#">
+                PIPOKA <span class="by-latin">by Latinvestco</span>
+                <!-- <img alt="Pipoka" src="assets/images/pipoca.png"> -->
+            </a>
+          
+            <form class="navbar-left form-navbar" role="search">
+                <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
+                <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+            <ul class="nav navbar-nav navbar-right inline-block">
+                <li class="dropdown">
+                    <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="">Editar Perfil</a></li>
+                        <li><a href="">Salida segura</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="main" class="main">
+        <div class="main-content-btn">
+            <span id="btn-collap-main" class="glyphicon glyphicon-menu-hamburger btn-main"></span>
+            <span id="btn-exp-main" class="glyphicon glyphicon-menu-hamburger btn-main"></span>
+        </div>
+        <div id="CA" class="associate-company">
+            CA
+        </div>
+        <div id="btn-collapsed-diag" class="main-category">
+            <span class="icon-category icon-line-graph line-graph-icon"></span>
+            <p class="title-category title-diag">DIAGNÓSTICO</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked nav-latleft submain-diag">
+            <li>
+                <a class="indicator" href="">I</a>
+            </li>
+            <li>
+                <a class="state-result" href="">ER</a>
+            </li>
+            <li>
+                <a class="balance-gen" href="">BG</a>
+            </li>
+            <li>
+                <a class="cash-flow" href="">FC</a>
+            </li>
+        </ul> 
+        <div id="btn-collapsed-proj" class="main-category">
+            <span class="icon-category icon-graph graph-icon"></span>
+            <p class="title-category title-proj">PROYECCIÓN CA</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked nav-latleft submain-proj">
+            <li>
+                <a class="indicator" href="">I</a>
+            </li>
+            <li>
+                <a class="state-result" href="">ER</a>
+            </li>
+            <li>
+                <a class="balance-gen" href="">BG</a>
+            </li>
+            <li>
+                <a class="cash-flow" href="">FC</a>
+            </li>
+        </ul>
+        <div id="btn-collapsed-val" class="main-category">
+            <span class="icon-category icon-coin-dollar coin-dollar-icon"></span>
+            <p class="title-category title-val">VALORACIÓN</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked nav-latleft submain-val">
+            <li>
+                <a class="val-ca" href="">CA</a>
+            </li>
+            <li>
+                <a class="val-ms" href="">MS</a>
+            </li>
+        </ul>  
+        <div id="abreviators" class="abreviators">
+            CA: Compañoa Analizada<br>S: Sector<br>SD: Sector Decil<br>CS: Compañias Seleccionadas
+        </div>
+    </nav>      
+<!-- 
+
+    TIPO 2 
+
+-->
+    <div id="content"> 
+        <legend>TIPO DE TABLA 2 - TABS CON TABLA SENCILLA</legend>
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-tabs-pipoka" role="tablist">
+            <li role="presentation" class="active"><a href="#editProfile" aria-controls="editProfile" role="tab" data-toggle="tab">Cifras en Miles de Millones</a></li>
+            <li role="presentation"><a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">Base 100 Activos</a></li>
+        </ul>
+        <div class="tab-content">
+            <!-- Tab panes  1 -->
+            <div role="tabpanel" class="tab-pane active" id="editProfile">
+                <div class="content-tables">
+                    <div class="table-responsive">
+                        <br>
+                        <table class="table table-pipoka table-bordered table-striped table-condensed table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>2009</th>
+                                    <th>2010</th>
+                                    <th>2011</th>
+                                    <th>2012</th>
+                                    <th>2013</th>
+                                    <th>Crecimiento <br> Promedio Anual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ingresos</td>
+                                    <td>31.7</td>
+                                    <td>34.1</td>
+                                    <td>62.7</td>
+                                    <td>46.2</td>
+                                    <td>54.5</td>
+                                    <td>14.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Costo de Ventas</td>
+                                    <td>(28.0)</td>
+                                    <td>(31.5)</td>
+                                    <td>(57.2)</td>
+                                    <td>(38.6)</td>
+                                    <td>(46.6)</td>
+                                    <td>13.6%</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO BRUTO</td>
+                                    <td>3.6</td>
+                                    <td>2.6</td>
+                                    <td>5.5</td>
+                                    <td>7.6</td>
+                                    <td>7.9</td>
+                                    <td>21.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos de Administración</td>
+                                    <td>(28.0)</td>
+                                    <td>(31.5)</td>
+                                    <td>(57.2)</td>
+                                    <td>(38.6)</td>
+                                    <td>(46.6)</td>
+                                    <td>13.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos de Ventas</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Otros Operacionales</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO OPERACIONAL</td>
+                                    <td>3.6</td>
+                                    <td>2.6</td>
+                                    <td>5.5</td>
+                                    <td>7.6</td>
+                                    <td>7.9</td>
+                                    <td>21.3%</td>
+                                </tr>
+                                <tr>
+                                  <td>Resultado No Operacional</td>
+                                  <td>(28.0)</td>
+                                  <td>(31.5)</td>
+                                  <td>(57.2)</td>
+                                  <td>(38.6)</td>
+                                  <td>(46.6)</td>
+                                  <td>18.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos por Interes</td>
+                                    <td>(1.5)</td>
+                                    <td>(0.8)</td>
+                                    <td>(0.8)</td>
+                                    <td>(2.0)</td>
+                                    <td>(1.2)</td>
+                                    <td>-5.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO ANTES DE IMPUESTOS</td>
+                                    <td>3.6</td>
+                                    <td>2.6</td>
+                                    <td>5.5</td>
+                                    <td>7.6</td>
+                                    <td>7.9</td>
+                                    <td>124,1%%</td>
+                                </tr>
+                                <tr>
+                                    <td>Impuestos</td>
+                                    <td>(1.5)</td>
+                                    <td>(0.8)</td>
+                                    <td>(0.8)</td>
+                                    <td>(2.0)</td>
+                                    <td>(1.2)</td>
+                                    <td>39.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO NETO</td>
+                                    <td>(1.5)</td>
+                                    <td>0.1</td>
+                                    <td>(0.8)</td>
+                                    <td>1.9</td>
+                                    <td>0.9</td>
+                                    <td>N/A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab panes 2 -->
+            <div role="tabpanel" class="tab-pane" id="billing">
+                <div class="content-tables">
+                    <div class="table-responsive">
+                        <br>
+                        <table class="table table-pipoka table-bordered table-striped table-condensed table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>2009</th>
+                                    <th>2010</th>
+                                    <th>2011</th>
+                                    <th>2012</th>
+                                    <th>2013</th>
+                                    <th>Crecimiento <br> Promedio Anual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ingresos</td>
+                                    <td>31.7</td>
+                                    <td>34.1</td>
+                                    <td>62.7</td>
+                                    <td>46.2</td>
+                                    <td>54.5</td>
+                                    <td>14.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Costo de Ventas</td>
+                                    <td>(28.0)</td>
+                                    <td>(31.5)</td>
+                                    <td>(57.2)</td>
+                                    <td>(38.6)</td>
+                                    <td>(46.6)</td>
+                                    <td>13.6%</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO BRUTO</td>
+                                    <td>3.6</td>
+                                    <td>2.6</td>
+                                    <td>5.5</td>
+                                    <td>7.6</td>
+                                    <td>7.9</td>
+                                    <td>21.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos de Administración</td>
+                                    <td>(28.0)</td>
+                                    <td>(31.5)</td>
+                                    <td>(57.2)</td>
+                                    <td>(38.6)</td>
+                                    <td>(46.6)</td>
+                                    <td>13.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos de Ventas</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Otros Operacionales</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>-00</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO OPERACIONAL</td>
+                                    <td>3.6</td>
+                                    <td>2.6</td>
+                                    <td>5.5</td>
+                                    <td>7.6</td>
+                                    <td>7.9</td>
+                                    <td>21.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>Resultado No Operacional</td>
+                                    <td>(28.0)</td>
+                                    <td>(31.5)</td>
+                                    <td>(57.2)</td>
+                                    <td>(38.6)</td>
+                                    <td>(46.6)</td>
+                                    <td>18.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos por Interes</td>
+                                    <td>(1.5)</td>
+                                    <td>(0.8)</td>
+                                    <td>(0.8)</td>
+                                    <td>(2.0)</td>
+                                    <td>(1.2)</td>
+                                    <td>-5.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO ANTES DE IMPUESTOS</td>
+                                    <td>3.6</td>
+                                    <td>2.6</td>
+                                    <td>5.5</td>
+                                    <td>7.6</td>
+                                    <td>7.9</td>
+                                    <td>124,1%%</td>
+                                </tr>
+                                <tr>
+                                    <td>Impuestos</td>
+                                    <td>(1.5)</td>
+                                    <td>(0.8)</td>
+                                    <td>(0.8)</td>
+                                    <td>(2.0)</td>
+                                    <td>(1.2)</td>
+                                    <td>39.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-tables">RESULTADO NETO</td>
+                                    <td>(1.5)</td>
+                                    <td>0.1</td>
+                                    <td>(0.8)</td>
+                                    <td>1.9</td>
+                                    <td>0.9</td>
+                                    <td>N/A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MENU</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-pipoca">
+        <div class="navbar-header navbar-header-pipoka">
+            <a class="navbar-brand title-header" href="#">
+                PIPOKA <span class="by-latin">by Latinvestco</span>
+                <!-- <img alt="Pipoka" src="assets/images/pipoca.png"> -->
+            </a>
+          
+            <form class="navbar-left form-navbar" role="search">
+                <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
+                <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+            <ul class="nav navbar-nav navbar-right inline-block">
+                <li class="dropdown">
+                    <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="">Editar Perfil</a></li>
+                        <li><a href="">Salida segura</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="main" class="main">
+        <div class="main-content-btn">
+            <span id="btn-collap-main" class="glyphicon glyphicon-menu-hamburger btn-main"></span>
+            <span id="btn-exp-main" class="glyphicon glyphicon-menu-hamburger btn-main"></span>
+        </div>
+        <div id="CA" class="associate-company">
+            CA
+        </div>
+        <div id="btn-collapsed-diag" class="main-category">
+            <span class="icon-category icon-line-graph line-graph-icon"></span>
+            <p class="title-category title-diag">DIAGNÓSTICO</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked nav-latleft submain-diag">
+            <li>
+                <a class="indicator" href="">I</a>
+            </li>
+            <li>
+                <a class="state-result" href="">ER</a>
+            </li>
+            <li>
+                <a class="balance-gen" href="">BG</a>
+            </li>
+            <li>
+                <a class="cash-flow" href="">FC</a>
+            </li>
+        </ul> 
+        <div id="btn-collapsed-proj" class="main-category">
+            <span class="icon-category icon-graph graph-icon"></span>
+            <p class="title-category title-proj">PROYECCIÓN CA</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked nav-latleft submain-proj">
+            <li>
+                <a class="indicator" href="">I</a>
+            </li>
+            <li>
+                <a class="state-result" href="">ER</a>
+            </li>
+            <li>
+                <a class="balance-gen" href="">BG</a>
+            </li>
+            <li>
+                <a class="cash-flow" href="">FC</a>
+            </li>
+        </ul>
+        <div id="btn-collapsed-val" class="main-category">
+            <span class="icon-category icon-coin-dollar coin-dollar-icon"></span>
+            <p class="title-category title-val">VALORACIÓN</p>
+        </div>
+        <ul class="nav nav-pills nav-stacked nav-latleft submain-val">
+            <li>
+                <a class="val-ca" href="">CA</a>
+            </li>
+            <li>
+                <a class="val-ms" href="">MS</a>
+            </li>
+        </ul>  
+        <div id="abreviators" class="abreviators">
+            CA: Compañoa Analizada<br>S: Sector<br>SD: Sector Decil<br>CS: Compañias Seleccionadas
+        </div>
+    </nav>      
+    <div id="content">
+<!-- 
+
+    TIPO 5 
+
+-->
+        <legend>TIPO DE TABLA 5 - TABLA DE VALORACION EXPANDIDA / COMPRIMIDA</legend>
+            <h2 class="title-h2">Variaciòn Anual de los Ingresos</h2>
+            <br>
+            <br>
+            <br>
+            <div class="content-tables relative">
+                <a id="btn-collapsed-tableValoration" class="btn-collapsed-type5" href="">Ampliar/Reducir Flujo de Caja</a>
+                <table class="table table-pipoka table-bordered table-striped table-condensed table-hover table-prueba">
+                    <thead>
+                        <tr>
+                          <th>Año</th>
+                          <th class="tr-Valoration">FCL<br> (MMM COP)</th>
+                          <th class="tr-Valoration">Deflactor</th>
+                          <th>Valor<br> Presente</th>
+                          <th>%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr-Valoration">
+                            <td>2014</td>
+                            <td>1.8</td>
+                            <td>1.1</td>
+                            <td>1.6</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2015</td>
+                            <td>2.7</td>
+                            <td>1.2</td>
+                            <td>2.2</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2016</td>
+                            <td>3.9</td>
+                            <td>1.4</td>
+                            <td>2.8</td>
+                            <td>6%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2017</td>
+                            <td>3.3</td>
+                            <td>1.6</td>
+                            <td>2.1</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2018</td>
+                            <td>4.1</td>
+                            <td>1.8</td>
+                            <td>2.3</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2019</td>
+                            <td>4.8</td>
+                            <td>2.0</td>
+                            <td>2.4</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2020</td>
+                            <td>5.2</td>
+                            <td>2.2</td>
+                            <td>2.3</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2021</td>
+                            <td>5.6</td>
+                            <td>2.5</td>
+                            <td>2.2</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2022</td>
+                            <td>6.0</td>
+                            <td>2.8</td>
+                            <td>2.1</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="tr-Valoration">
+                            <td>2023</td>
+                            <td>6.5</td>
+                            <td>3.2</td>
+                            <td>2.1</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr class="is-desactive tr-Valoration">
+                          <td>Flujo de Caja 2014-2013</td>
+                          <td class="tr-Valoration"></td>
+                          <td class="tr-Valoration"></td>
+                          <td>22.1</td>
+                          <td>49%</td>
+                        </tr>
+                        <tr>
+                          <td>Valor Residual</td>
+                          <td class="tr-Valoration">80.4</td>
+                          <td class="tr-Valoration">3.6</td>
+                          <td>22.6</td>
+                          <td>51%</td>
+                        </tr>
+                        <tr>
+                          <td class="title-tables">Valor de Empresa (VE)</td>
+                          <td class="tr-Valoration"></td>
+                          <td class="tr-Valoration"></td>
+                          <td>44.7</td>
+                          <td>100%</td>
+                        </tr>
+                        <tr>
+                          <td>(-) Deuda neta</td>
+                          <td class="tr-Valoration"></td>
+                          <td class="tr-Valoration"></td>
+                          <td>6.6</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>(+) Inversiones Permanentes</td>
+                          <td class="tr-Valoration"></td>
+                          <td class="tr-Valoration"></td>
+                          <td>0.2</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td class="title-tables">Valor del Patrimonio Accionistas (VPA)</td>
+                          <td class="tr-Valoration"></td>
+                          <td class="tr-Valoration"></td>
+                          <td>38.4</td>
+                          <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <br>
+        <br>  
+    </div>
+    <script src="assets/js/all.js"></script>
+</body>
+</html>
