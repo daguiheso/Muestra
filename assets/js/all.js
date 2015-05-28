@@ -43290,7 +43290,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();	    
-	    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p>Sector: Suspendisse dui leo</p>");
+	    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p style='font-weight:300'>Sector: Suspendisse dui leo</p>");
 	    $indicator.html("Indicadores");
 	    $stateResult.html("Estado de Resultado");
 	    $balanceGen.html("Balance General");
