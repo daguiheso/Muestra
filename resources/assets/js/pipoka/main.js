@@ -27,9 +27,9 @@
 	    $main.animate({
 	    	width: "55px"
 	    });
-	    $content.animate({
-	    	paddingLeft: "88px"
-	    });
+	    // $content.animate({
+	    // 	paddingLeft: "88px"
+	    // });
 	    $btnexpmain.show();
 	    $btncollapmain.hide();	    
 	    $areaCA.html("CA");
@@ -60,9 +60,9 @@
 	    $main.animate({
 	    	width: "183px"
 	    });
-	    $content.animate({
-	    	paddingLeft: "216px"
-	    });
+	    // $content.animate({
+	    // 	paddingLeft: "216px"
+	    // });
 	    $btncollapmain.show();
 	    $btnexpmain.hide();	    
 	    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p style='font-weight:300'>Sector: Suspendisse dui leo</p>");
