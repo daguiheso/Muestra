@@ -3,6 +3,8 @@
 	TABLA TIPO 3 - TABLA CON BOTÓN PARA OCULTAR COLUMNAS Y SCROLL HORIZONTAL
 
 */
+(function () {
+
 
 /*
 	TABLA TIPO 3 - # 1 
@@ -143,4 +145,4 @@
 		// });
 	});
 
-
+})();

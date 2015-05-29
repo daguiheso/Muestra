@@ -3,6 +3,8 @@
 	TABLA TIPO 4 # 2 - BALANCE GENERAL
 
 */
+(function () {
+
 
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
@@ -107,3 +109,4 @@
 	    	"destroy": true
 		});
 	});
+})();

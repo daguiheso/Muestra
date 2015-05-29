@@ -43429,6 +43429,8 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	TABLA TIPO 3 - TABLA CON BOTÓN PARA OCULTAR COLUMNAS Y SCROLL HORIZONTAL
 
 */
+(function () {
+
 
 /*
 	TABLA TIPO 3 - # 1 
@@ -43569,13 +43571,15 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		// });
 	});
 
-
+})();
 
 /*
 
 	TABLA TIPO 4 # 2 - BALANCE GENERAL
 
 */
+(function () {
+
 
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
@@ -43680,7 +43684,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    	"destroy": true
 		});
 	});
-
+})();
 (function() {
 	hljs.initHighlightingOnLoad();		
 })();
