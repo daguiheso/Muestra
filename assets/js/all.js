@@ -42811,15 +42811,10 @@ var w = 300,
 
 var colorscale = d3.scale.category10();
 
-if (document.getElementById("a") === null) {
-    
-}
-else {
+if (!(document.getElementById("a") === null)) {
     document.getElementById("a").checked = true;
     new_radar_data();
 }
-
-
 
 function new_radar_data() {
     
