@@ -9,7 +9,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
 */
-    var table4 = $('.dataTableBg2Tab1').dataTable({
+    var table4 = $('#dataTableBg2Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -32,7 +32,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 1.2
 */
-	var table5 = $('.dataTableBg2Tab1-2').dataTable({
+	var table5 = $('#dataTableBg2Tab1-2').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -63,7 +63,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 2.1
 */
-	    $('.dataTableBg2Tab2').dataTable({ 
+	    $('#dataTableBg2Tab2').dataTable({ 
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
 				exclude: ['all'],
@@ -87,7 +87,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 2.2
 */
-	    $('.dataTableBg2Tab2-2').dataTable({
+	    $('#dataTableBg2Tab2-2').dataTable({
 		
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -109,4 +109,5 @@
 	    	"destroy": true
 		});
 	});
+
 })();
