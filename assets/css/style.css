@@ -7025,6 +7025,9 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 .visible {
   visibility: hidden;
 }
+.color-pipoka {
+  color: #70903b;
+}
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot?-u8d6yn');
@@ -7505,10 +7508,29 @@ table.dataTable.cell-border thead tr th:first-child {
   color: #639637;
   font-weight: 500;
 }
+.title-h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
 .title-h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  color: #70903b;
+}
+.title-h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+.title-h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+.title-h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+}
+.title-h6 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
 }
 .nav-tabs-pipoka li a {
   font-size: 18px;
@@ -7557,14 +7579,23 @@ table.dataTable.cell-border thead tr th:first-child {
 legend {
   margin: 3rem 0;
 }
-.title-doc {
+.documentation {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.documentation h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   color: #70903b;
 }
-.documentation {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+.doc-typografy {
+  list-style: none;
+  line-height: 4rem;
+}
+.content-jumb {
+  margin-bottom: 0;
+  background: white;
+  border: 2px solid #eae4e4;
 }
 table.dataTable {
   margin: 0 auto;
