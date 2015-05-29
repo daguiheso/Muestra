@@ -3,11 +3,11 @@
 	TABLA TIPO 4 # 2 - BALANCE GENERAL
 
 */
-(function () {
+
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
 */
-    var table1 = $('#dataTableBg2Tab1').dataTable({
+    var table4 = $('.dataTableBg2Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -19,7 +19,7 @@
 				}				
 			]
 		},
-    	"dom": 'C<"clear">ti',		
+    	"dom": 'C<"clear">lfrtip',		
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -30,7 +30,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 1.2
 */
-	var table2 = $('#dataTableBg2Tab1-2').dataTable({
+	var table5 = $('.dataTableBg2Tab1-2').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -53,15 +53,15 @@
 
 
 
-
+// Evento que detecta cambio de pestaña 
 	$('.tab-pipoka').on('shown.bs.tab', function (e) {
-	   e.target // activated tab
-	   e.relatedTarget // previous tab
+	   e.target 
+	   e.relatedTarget 
 
 /*
 	TABLA TIPO 4 # 2 - TAB 2.1
 */
-	    $('#dataTableBg2Tab2').dataTable({ 
+	    $('.dataTableBg2Tab2').dataTable({ 
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
 				exclude: ['all'],
@@ -85,7 +85,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 2.2
 */
-	    $('#dataTableBg2Tab2-2').dataTable({
+	    $('.dataTableBg2Tab2-2').dataTable({
 		
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -107,4 +107,3 @@
 	    	"destroy": true
 		});
 	});
-})();

@@ -43400,19 +43400,28 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	$btnCollapsedBg2Tab2.click(collapsedElementsBg2Tab2);
 })();
 (function () {
-	// Add Comapnies - Compare
-
+	// Add Companies - Compare
+	var cont = 0;
 	var $formAdd = $(".form-addCompany").first(),
+		$inputAdd = $(".input-add-company"),
 		$list = $("#companies-select"),
 		$btnAddCompany = $(".add-company");
 
 	function addForm(){ 
-		$clone = $formAdd.clone();
-		$list.prepend($clone);
-
-		return false;
+		if ($inputAdd.val() === "") {
+			alert("Ingrese Compañia")
+		}
+		else {			
+			while (cont < 4) {
+				cont += 1;
+				$clone = $formAdd.clone();
+				$list.prepend($clone);
+				$inputAdd.val("");
+				$inputAdd.attr('placeholder','Ingrese una compañia a comparar');
+				return false;
+			}
+		}
 	}
-
 	$btnAddCompany.click(addForm);
 })();
 /*
@@ -43420,7 +43429,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	TABLA TIPO 3 - TABLA CON BOTÓN PARA OCULTAR COLUMNAS Y SCROLL HORIZONTAL
 
 */
-(function () {
+
 /*
 	TABLA TIPO 3 - # 1 
  */
@@ -43559,7 +43568,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	 	//  leftColumns: 2
 		// });
 	});
-})();
+
 
 
 /*
@@ -43567,11 +43576,11 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	TABLA TIPO 4 # 2 - BALANCE GENERAL
 
 */
-(function () {
+
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
 */
-    var table1 = $('#dataTableBg2Tab1').dataTable({
+    var table4 = $('.dataTableBg2Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -43583,7 +43592,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 				}				
 			]
 		},
-    	"dom": 'C<"clear">ti',		
+    	"dom": 'C<"clear">lfrtip',		
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -43594,7 +43603,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 /*
 	TABLA TIPO 4 # 2 - TAB 1.2
 */
-	var table2 = $('#dataTableBg2Tab1-2').dataTable({
+	var table5 = $('.dataTableBg2Tab1-2').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -43617,15 +43626,15 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 
 
 
-
+// Evento que detecta cambio de pestaña 
 	$('.tab-pipoka').on('shown.bs.tab', function (e) {
-	   e.target // activated tab
-	   e.relatedTarget // previous tab
+	   e.target 
+	   e.relatedTarget 
 
 /*
 	TABLA TIPO 4 # 2 - TAB 2.1
 */
-	    $('#dataTableBg2Tab2').dataTable({ 
+	    $('.dataTableBg2Tab2').dataTable({ 
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
 				exclude: ['all'],
@@ -43649,7 +43658,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 /*
 	TABLA TIPO 4 # 2 - TAB 2.2
 */
-	    $('#dataTableBg2Tab2-2').dataTable({
+	    $('.dataTableBg2Tab2-2').dataTable({
 		
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -43671,7 +43680,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    	"destroy": true
 		});
 	});
-})();
+
 (function() {
 	hljs.initHighlightingOnLoad();		
 })();
