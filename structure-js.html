@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Structure JS</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="documentation">
+	<div class="container">
+		<legend>
+			<h2>Estructura JavaScript</h2>
+		</legend>
+		<p></p>
+		<pre>
+			<code class="html">
+└── resources/
+    └── assets/
+        └── js/           
+            │               
+            ├── libs/
+            │   ├── // archivos js para  librerias añadidas
+            │   │  
+            │   ├── bootstrap/
+            │   │   └── // archivos js de bootstrap sin modificar
+            │   │
+            │   ├── d3/
+            │   │   └── // archivos js para graficas de libreria d3
+            │   │	
+            │   ├── datatables/
+            │   │   ├── extensions/
+            │	│	│	└── // extensiones para dataTables
+            │	│	└── // archivos js de d3
+            │   │
+            │   ├── highlight/
+            │   │   └── // archivos js para libreria highlight
+            │   │
+            │   └── ...ADDONS
+            │
+            └── pipoka/
+                └──  // archivos js de pipoca
+			</code>
+        </pre>
+        <legend>
+			<h2>DataTables</h2>
+		</legend>
+		<p>DataTables es una biblioteca externa que añade funcionalidades de interacción avanzadas a cualquier tabla HTML. DataTables ofrece una documentación y ejemplos en su <a href="https://datatables.net" target="_black">página web</a></p>
+		<h3>Empezando</h3>
+		<h5>Dependencias</h5>
+		<p>Lo primero es importar los archivos JavaScript y CSS en nuestro gulpfile.js y compilar.</p>
+		<pre>
+			<code>
+	var elixir = require('laravel-elixir');
+
+
+	elixir(function(mix) {
+	    mix.less("style.less", "assets/css");
+
+	    mix.scripts([
+	    	"libs/jquery/jquery.js",
+	    	"libs/bootstrap/bootstrap.js",
+	    	"libs/datatable/jquery.dataTables.js",
+	    ], "assets/js", "resources/assets/js");
+
+	});
+			</code>
+		</pre>
+		<h5>JavaScript</h5>
+		<p>Una vez compilado con Gulp.js </p>
+
+	</div>
+<script src="assets/js/all.js"></script>
+</body>
+</html>
