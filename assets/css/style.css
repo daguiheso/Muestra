@@ -7599,10 +7599,10 @@ legend {
   background: white;
   border: 2px solid #eae4e4;
 }
-c-red {
+.c-red {
   color: red;
 }
-c-blue {
+.c-blue {
   color: blue;
 }
 table.dataTable {

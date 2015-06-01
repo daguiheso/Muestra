@@ -34,7 +34,7 @@
 		<legend>
 			<h2>Tablas</h2>
 		</legend>	
-		<p>Para todas las tablas utilizadas en Pipoka se debe implementar la clase .table junto a la clase .table-pipoka, ademas de estar dentro de un div contenedor que lleva por clase .content-tables. Estas clases css le dan un estilio limpio y recomendado a las tablas de la plantilla. Todas las caracteristticas y estilos de Bootstarp pueden ser aplicadas ya que Pipoka se basa en Bootstrap.</p>
+		<p>Para todas las tablas utilizadas en Pipoka se debe implementar las clases css <span class="c-red">.table .table-pipoka</span>, ademas de estar dentro de un <span class="c-blue">div</span> contenedor que lleva por clase <span class="c-red">.content-tables </span>. Estas clases css le dan un estilio limpio y recomendado a las tablas de la plantilla. Todas las caracteristticas y estilos de Bootstarp pueden ser aplicadas ya que Pipoka se basa en Bootstrap.</p>
 		<pre>
 			<code>
 	&lt;div class=&quot;content-tables&quot;&gt;
@@ -44,51 +44,53 @@
 	&lt;/div&gt;
 			</code>
 		</pre>
-        <h3>Ejemplo</h3>
-        <div class="content-tables">
-            <div class="table-responsive">
-                <table class="table table-pipoka table-bordered table striped table-condensed table-hover">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>2009</th>
-                            <th>2010</th>
-                            <th>2011</th>
-                            <th>2012</th>
-                            <th>2013</th>
-                            <th>Promedio 09-13</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Nombre de la Compañia Analizada</td>
-                            <td>nd</td>
-                            <td>8%</td>
-                            <td>84%</td>
-                            <td>-26%</td>
-                            <td>18%</td>
-                            <td>21%</td>
-                        </tr>
-                        <tr>
-                            <td>Decil</td>
-                            <td>21%</td>
-                            <td>18%</td>
-                            <td>44%</td>
-                            <td>3%</td>
-                            <td>3%</td>
-                            <td>17%</td>
-                        </tr>
-                        <tr>
-                            <td>Sector</td>
-                            <td>21%</td>
-                            <td>18%</td>
-                            <td>44%</td>
-                            <td>3%</td>
-                            <td>3%</td>
-                            <td>17%</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <h4>Ejemplo</h4>
+        <div class="jumbotron content-jumb">
+            <div class="content-tables">
+                <div class="table-responsive">
+                    <table class="table table-pipoka table-bordered table striped table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>2009</th>
+                                <th>2010</th>
+                                <th>2011</th>
+                                <th>2012</th>
+                                <th>2013</th>
+                                <th>Promedio 09-13</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre de la Compañia Analizada</td>
+                                <td>nd</td>
+                                <td>8%</td>
+                                <td>84%</td>
+                                <td>-26%</td>
+                                <td>18%</td>
+                                <td>21%</td>
+                            </tr>
+                            <tr>
+                                <td>Decil</td>
+                                <td>21%</td>
+                                <td>18%</td>
+                                <td>44%</td>
+                                <td>3%</td>
+                                <td>3%</td>
+                                <td>17%</td>
+                            </tr>
+                            <tr>
+                                <td>Sector</td>
+                                <td>21%</td>
+                                <td>18%</td>
+                                <td>44%</td>
+                                <td>3%</td>
+                                <td>3%</td>
+                                <td>17%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 	    <pre>
@@ -141,7 +143,7 @@
  	&lt;/div
 	    	</code>
 	    </pre>
-        <h3>Titulos para Tablas</h3>
+        <h3>Titulos para Filas</h3>
         <p>Para dar estilo de Pipoka a los titulos de las filas se incluye la clase css <span class="c-red">.title-tables</span></p>
         <div class="content-tables">
             <br>
@@ -167,150 +169,22 @@
                             <td>46.2</td>
                             <td>54.5</td>
                             <td>14.6%</td>
-                        </tr>
-                        <tr>
-                            <td class="title-tables">TOTAL DE ACTIVO CORRIENTE</td>
-                            <td>(28.0)</td>
-                            <td>(31.5)</td>
-                            <td>(57.2)</td>
-                            <td>(38.6)</td>
-                            <td>(46.6)</td>
-                            <td>13.6%</td>
-                        </tr>
-                        <tr class="is-desactive tr-bg1-tab1">
-                            <td>Disponible + Inversiones</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr class="tr-bg1-tab1">
-                            <td>Disponible</td>
-                            <td>3.6</td>
-                            <td>2.6</td>
-                            <td>5.5</td>
-                            <td>7.6</td>
-                            <td>7.9</td>
-                            <td>21.3%</td>
-                        </tr>
-                        <tr class="tr-bg1-tab1">
-                            <td>Inversiones</td>
-                            <td>(28.0)</td>
-                            <td>(31.5)</td>
-                            <td>(57.2)</td>
-                            <td>(38.6)</td>
-                            <td>(46.6)</td>
-                            <td>13.6%</td>
-                        </tr>
-                        <tr>
-                            <td>Clientes</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr class="is-desactive tr-bg1-tab1">
-                            <td>Otros Deudores</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>-00</td>
-                            <td>N/A</td>
-                        </tr>
+                        </tr>  
                     </tbody>
                 </table>
             </div>
         </div>
         <pre>
             <code>
-    &lt;div class=&quot;content-tables&quot;&gt;
-        &lt;br&gt;
-        &lt;div class=&quot;table-responsive&quot;&gt;
-            &lt;table class=&quot;table table-pipoka table-bordered table-striped table-condensed table-hover&quot;&gt;
-                &lt;thead&gt;
-                    &lt;tr&gt;
-                        &lt;th&gt;&lt;/th&gt;
-                        &lt;th&gt;2009&lt;/th&gt;
-                        &lt;th&gt;2010&lt;/th&gt;
-                        &lt;th&gt;2011&lt;/th&gt;
-                        &lt;th&gt;2012&lt;/th&gt;
-                        &lt;th&gt;2013&lt;/th&gt;
-                        &lt;th&gt;Crecimiento &lt;br&gt; Promedio Anual&lt;/th&gt;
-                    &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                    &lt;tr&gt;
-                        &lt;td class=&quot;title-tables&quot;&gt;TOTAL DE ACTIVOS&lt;/td&gt;
-                        &lt;td&gt;31.7&lt;/td&gt;
-                        &lt;td&gt;34.1&lt;/td&gt;
-                        &lt;td&gt;62.7&lt;/td&gt;
-                        &lt;td&gt;46.2&lt;/td&gt;
-                        &lt;td&gt;54.5&lt;/td&gt;
-                        &lt;td&gt;14.6%&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td class=&quot;title-tables&quot;&gt;TOTAL DE ACTIVO CORRIENTE&lt;/td&gt;
-                        &lt;td&gt;(28.0)&lt;/td&gt;
-                        &lt;td&gt;(31.5)&lt;/td&gt;
-                        &lt;td&gt;(57.2)&lt;/td&gt;
-                        &lt;td&gt;(38.6)&lt;/td&gt;
-                        &lt;td&gt;(46.6)&lt;/td&gt;
-                        &lt;td&gt;13.6%&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;is-desactive tr-bg1-tab1&quot;&gt;
-                        &lt;td&gt;Disponible + Inversiones&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;N/A&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;tr-bg1-tab1&quot;&gt;
-                        &lt;td&gt;Disponible&lt;/td&gt;
-                        &lt;td&gt;3.6&lt;/td&gt;
-                        &lt;td&gt;2.6&lt;/td&gt;
-                        &lt;td&gt;5.5&lt;/td&gt;
-                        &lt;td&gt;7.6&lt;/td&gt;
-                        &lt;td&gt;7.9&lt;/td&gt;
-                        &lt;td&gt;21.3%&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;tr-bg1-tab1&quot;&gt;
-                        &lt;td&gt;Inversiones&lt;/td&gt;
-                        &lt;td&gt;(28.0)&lt;/td&gt;
-                        &lt;td&gt;(31.5)&lt;/td&gt;
-                        &lt;td&gt;(57.2)&lt;/td&gt;
-                        &lt;td&gt;(38.6)&lt;/td&gt;
-                        &lt;td&gt;(46.6)&lt;/td&gt;
-                        &lt;td&gt;13.6%&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Clientes&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;N/A&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr class=&quot;is-desactive tr-bg1-tab1&quot;&gt;
-                        &lt;td&gt;Otros Deudores&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;-00&lt;/td&gt;
-                        &lt;td&gt;N/A&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;title-tables&quot;&gt;TOTAL DE ACTIVOS&lt;/td&gt;
+        &lt;td&gt;31.7&lt;/td&gt;
+        &lt;td&gt;34.1&lt;/td&gt;
+        &lt;td&gt;62.7&lt;/td&gt;
+        &lt;td&gt;46.2&lt;/td&gt;
+        &lt;td&gt;54.5&lt;/td&gt;
+        &lt;td&gt;14.6%&lt;/td&gt;
+    &lt;/tr&gt;
             </code>
         </pre>
     </div>
