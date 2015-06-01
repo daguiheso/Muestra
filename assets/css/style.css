@@ -7534,7 +7534,16 @@ table.dataTable.cell-border thead tr th:first-child {
 }
 .nav-tabs-pipoka li a {
   font-size: 18px;
+  color: #979797 ;
+}
+#content .nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
   color: #6ea939;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
 }
 .btn-collapsed {
   background: #6ea939;
