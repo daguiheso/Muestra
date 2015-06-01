@@ -7544,8 +7544,9 @@ table.dataTable.cell-border thead tr th:first-child {
   font-size: 1.40rem;
   margin: .5rem;
   text-decoration: none;
-  position: relative;
-  top: 1rem;
+  position: absolute;
+  top: 4.9rem;
+  left: 14rem;
 }
 .btn-collapsed:hover,
 .btn-collapsed:visited,
@@ -7572,10 +7573,6 @@ table.dataTable.cell-border thead tr th:first-child {
   color: white;
   text-decoration: none;
 }
-#content > ul li[role="presentation"] {
-  width: 50%;
-  text-align: center;
-}
 legend {
   margin: 3rem 0;
 }
@@ -7588,6 +7585,11 @@ legend {
   font-size: 30px;
   color: #70903b;
 }
+.documentation h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  color: #70903b;
+}
 .doc-typografy {
   list-style: none;
   line-height: 4rem;
@@ -7596,6 +7598,12 @@ legend {
   margin-bottom: 0;
   background: white;
   border: 2px solid #eae4e4;
+}
+c-red {
+  color: red;
+}
+c-blue {
+  color: blue;
 }
 table.dataTable {
   margin: 0 auto;
