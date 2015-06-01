@@ -7544,9 +7544,8 @@ table.dataTable.cell-border thead tr th:first-child {
   font-size: 1.40rem;
   margin: .5rem;
   text-decoration: none;
-  position: absolute;
-  top: 4.9rem;
-  left: 14rem;
+  position: relative;
+  top: 1rem;
 }
 .btn-collapsed:hover,
 .btn-collapsed:visited,
