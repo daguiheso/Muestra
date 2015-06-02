@@ -7136,7 +7136,8 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 .main-content-btn:hover,
 .main ul li a:hover,
 .main ul li a:active,
-.main ul li a:focus {
+.main ul li a:focus,
+.main ul li a:visited {
   background: #414141;
 }
 .submain-diag li,
@@ -7439,6 +7440,9 @@ button.ColVis_Button {
   color: white !important;
   outline: none;
   margin-bottom: 20px;
+  border: 0;
+  border-style: none;
+  box-shadow: none !important;
 }
 button.ColVis_Button:hover {
   border: 0;
