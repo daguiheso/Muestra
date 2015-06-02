@@ -7061,7 +7061,7 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   content: "\f055";
 }
 .main {
-  width: 55px;
+  width: 183px;
   position: fixed;
   top: 6.79em;
   z-index: 9999;
@@ -7107,7 +7107,6 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   margin-bottom: 0;
 }
 .title-category {
-  display: none;
   font-weight: 500;
 }
 .title-val,
@@ -7154,16 +7153,12 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   padding: 15px;
   font-size: 11px;
   line-height: 18px;
-  display: none;
 }
-.line-graph-icon,
-.graph-icon,
-.coin-dollar-icon {
+.icon-category {
   font-size: 2.5rem;
-  line-height: 1.8rem;
-  position: relative;
-  left: 0;
-  top: .5rem;
+  line-height: 5rem;
+  position: absolute;
+  left: 1.2rem;
 }
 .val-ca,
 .val-ms {
@@ -7249,7 +7244,7 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 }
 #content {
   padding-top: 60px;
-  padding-left: 88px;
+  padding-left: 216px;
   padding-right: 15px;
   margin-bottom: 5rem;
   height: auto;
