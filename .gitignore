@@ -1,4 +1,3 @@
 node_modules
 *.log
-assets/css/style.css.map
-assets/js/all.js.map
+*.map
