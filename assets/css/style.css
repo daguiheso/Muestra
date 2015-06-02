@@ -7160,10 +7160,6 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   position: absolute;
   left: 1.2rem;
 }
-.val-ca,
-.val-ms {
-  font-size: 0.86em;
-}
 #btn-collapsed-diag::before {
   content: " ";
   position: absolute;
