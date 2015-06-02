@@ -43214,7 +43214,11 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 		$subMainProj = $(".submain-proj"),
 		$subMainVal = $(".submain-val");
 
-	// Colapsar Menu
+/* 
+
+	Colapsar Menu
+
+*/
 	function collapsedMenu() {
 	    $main.animate({
 	    	width: "55px"
@@ -43248,7 +43252,11 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    $abreviators.slideToggle();
 	    return false;
 	} 
-	// Expandir Menu
+/* 
+
+	Expandir Menu
+	
+*/
 	function expandMenu() {  
 	    $main.animate({
 	    	width: "183px"

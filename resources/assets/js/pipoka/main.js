@@ -22,7 +22,11 @@
 		$subMainProj = $(".submain-proj"),
 		$subMainVal = $(".submain-val");
 
-	// Colapsar Menu
+/* 
+
+	Colapsar Menu
+
+*/
 	function collapsedMenu() {
 	    $main.animate({
 	    	width: "55px"
@@ -56,7 +60,11 @@
 	    $abreviators.slideToggle();
 	    return false;
 	} 
-	// Expandir Menu
+/* 
+
+	Expandir Menu
+	
+*/
 	function expandMenu() {  
 	    $main.animate({
 	    	width: "183px"

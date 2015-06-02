@@ -7134,7 +7134,9 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   text-align: center;
 }
 .main-content-btn:hover,
-.main ul li a:hover {
+.main ul li a:hover,
+.main ul li a:active,
+.main ul li a:focus {
   background: #414141;
 }
 .submain-diag li,
