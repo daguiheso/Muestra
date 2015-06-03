@@ -43097,17 +43097,17 @@ d3.tsv("assets/data/lineChart.tsv", function(error, data) {
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 600 - margin.left - margin.right,
+    width = 900 - margin.left - margin.right,
     height = 350 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
+    .rangeRoundBands([0, width], .2);
 
 var y = d3.scale.linear()
     .rangeRound([height, 0]);
 
 var color = d3.scale.ordinal()
-    .range(["#fff", "#8a89a6"]);
+    .range(["#ffd", "green"]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -43116,7 +43116,7 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
-    .tickFormat(d3.format(".2s"));
+    .tickFormat(d3.format(".1s"));
 
 var svg = d3.select("#body-tarro").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -43148,10 +43148,10 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 6)
+      .attr("y", 1)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Population");
+      .text("%");
 
   var state = svg.selectAll(".state")
       .data(data)
