@@ -1,6 +1,10 @@
-State,Under 5 Years,5 to 13 Years
-2017,310504,552339
-2016,52083,85640
-2019,515910,828669
-2020,2704659,4499890
-2018,358280,587154
+State,Titulo1,Titulo2
+Ingresos,0,100
+Costos,13.8,86.2
+G Oper,8.3,5.4
+EBITDA,0,8.3
+Impuestos,5.9,2.5
+Cap Trab,4.2,1.7
+Otros,4.2,0.7
+CAPEX,3.8,1.1
+FCL,0,3.8
