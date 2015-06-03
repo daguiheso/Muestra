@@ -43229,7 +43229,7 @@ d3.csv("assets/data/tarro.csv", function(error, data) {
 	    });
 	    $btnexpmain.show();
 	    $btncollapmain.hide();	    
-	    $areaCA.html("CA");
+	    $areaCA.html("<span class='icon-info info-icon'></span>");
 	    $indicator.html("I");
 	    $stateResult.html("ER");
 	    $balanceGen.html("BG");
