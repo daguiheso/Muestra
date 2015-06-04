@@ -53,7 +53,7 @@
 	    $showhideCatg.toggle();
 	    $iconCatg.css({
 	    	"position" : "relative",
-	    	"left" : "-4px",
+	    	"left" : "0px",
 	    	"top" : ".5rem",
 	    	"line-height" : "1.8rem"
 	    });
