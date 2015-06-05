@@ -13,25 +13,38 @@
      
 -->
     <nav class="navbar navbar-default navbar-pipoca">
-        <div class="navbar-header navbar-header-pipoka">
-            <a class="navbar-brand title-header" href="#">
-                PIPOKA <span class="by-latin">by Latinvestco</span>
-                <!-- <img alt="Pipoka" src="assets/images/pipoca.png"> -->
-            </a>
-          
-            <form class="navbar-left form-navbar" role="search">
-                <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
-                <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
-            </form>
-            <ul class="nav navbar-nav navbar-right inline-block">
-                <li class="dropdown">
-                    <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="">Editar Perfil</a></li>
-                        <li><a href="">Salida segura</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand title-header" href="#">PIPOKA</a>
+                <span class="by-latin">by Latinvestco</span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left form-navbar" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                    <li><a href="#">Metodologia</a></li>
+                    <li class="comodin"><a href="#">|</a></li>
+                    <li><a class="glosario" href="#">Glosario</a></li>
+                    <li class="dropdown">
+                        <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">Editar perfil</a></li>
+                            <li><a href="">Salida segura</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 <!-- 

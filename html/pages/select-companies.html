@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SELECTED - COMPANY</title>
+	<title>SELECT - COMAPNIES</title>
 	<meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -13,25 +13,38 @@
      
 -->
     <nav class="navbar navbar-default navbar-pipoca">
-        <div class="navbar-header navbar-header-pipoka">
-            <a class="navbar-brand title-header" href="#">
-                PIPOKA <span class="by-latin">by Latinvestco</span>
-                <!-- <img alt="Pipoka" src="assets/images/pipoca.png"> -->
-            </a>
-          
-            <form class="navbar-left form-navbar" role="search">
-                <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
-                <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
-            </form>
-            <ul class="nav navbar-nav navbar-right inline-block">
-                <li class="dropdown">
-                    <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="">Editar Perfil</a></li>
-                        <li><a href="">Salida segura</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand title-header" href="#">PIPOKA</a>
+                <span class="by-latin">by Latinvestco</span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left form-navbar" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                    <li><a href="#">Metodologia</a></li>
+                    <li class="comodin"><a href="#">|</a></li>
+                    <li><a class="glosario" href="#">Glosario</a></li>
+                    <li class="dropdown">
+                        <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">Editar perfil</a></li>
+                            <li><a href="">Salida segura</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 <!-- 
@@ -102,48 +115,34 @@
     </nav>
 <!-- 
 
-	SELECTED - COMPANY
+    SEARCH - HOME
 
- -->
+-->
     <div id="content">
-	    <div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<div class="content-selected-info-company">
-					<p class="title-company-selected">PELLENTENQUE HABITAN S.A.S</p>
-					<p class="subtitle-company-selected">Sector:porro quisquam est qui dolorem ipsum quia dolor sit ame</p>
-					<br>
-					<p><strong>NIT:</strong> 123456789-0</p>
-					<p><strong>Sector:</strong> Suspendise dui leo</p>
-					<p><strong>Ciudad:</strong> Bogotà</p>
-					<p><strong>Empresas del Sector:</strong> 999999999</p>
-					<p><strong>Ventas Empresa:</strong> $ 999999999</p>
-					<p><strong>Ventas Sector:</strong> $ 999999999</p>
-			    	<h2 class="title-pipoka">COMPAÑIAS COMPARADAS</h2>
-			    	<div class="form-group form-addCompany">
-		                <input type="text" class="form-control" placeholder="Lorem Lipsum S.A.S">
-					</div>
-					<div class="form-group form-addCompany">
-		                <input type="text" class="form-control" placeholder="Lorem Lipsum S.A.S">
-					</div>
-					<div class="form-group form-addCompany">
-		                <input type="text" class="form-control" placeholder="Lorem Lipsum S.A.S">
-					</div>
-					<div class="form-group form-addCompany">
-		                <input type="text" class="form-control" placeholder="Lorem Lipsum S.A.S">
-					</div>
-					<div class="form-group form-addCompany">
-		                <input type="text" class="form-control" placeholder="Lorem Lipsum S.A.S">
-					</div>
-					<button class="btn btn-default" type="submit">Comparar</button>
+    	<section class="select-companies">
+	    	<div class="content-search">
+	        	<h1 class="title-search">PIPOKA</h1>
+	            <div class="input-group">
+		            <input type="text" class="form-control" placeholder="Buscar Compañia o NIT a analizar">
+		            <span class="input-group-btn">
+		                <button class="btn btn-default btn-search" type="button"><span class="glyphicon glyphicon-search search-icon"></button>
+		            </span>
+	            </div>
+	    	</div>
+	    	<hr class="hr-div">
+	    	<div class="content-titles-select-company">
+		    	<h2 class="title-pipoka">COMPAÑIAS A COMPARAR</h2>
+		    	<p>Ingrese entre 1 o 5 compañias a comparar</p>
+	    	</div>
+	    	<div id="companies-select" class="companies-select">
+		    	<div class="form-group form-addCompany">
+	                <input type="text" class="form-control input-add-company" placeholder="Ingrese una compañia a comparar">
+					<a class="add-company"><span class="icon-plus-circle"></span>Agregar otra compañia</a>
 				</div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<div class="content-selected-graphic-company">
-					
-				</div>
-			</div>
-		</div>
- 	</div>
+				<button class="btn btn-default" type="submit">Comparar</button>
+	    	</div>	
+    	</section>
+    </div>
 <!-- 
 
 	FOOTER - GLOBAL
@@ -160,4 +159,3 @@
     <script src="assets/js/all.js"></script>
 </body>
 </html>
-

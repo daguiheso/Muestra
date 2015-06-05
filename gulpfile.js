@@ -12,7 +12,6 @@ elixir(function(mix) {
         "libs/datatable/extensions/Colvis/dataTables.colVis.js",
         "libs/datatable/extensions/FixedColumns/dataTables.fixedColumns.js",
         "libs/bootstrap/dataTables.bootstrap.js",
-        "libs/highlight/highlight.js",
         "libs/d3/d3.js",
         "libs/d3/radial/RadarCharts.js",
         "libs/d3/radial/script.js",
@@ -25,9 +24,8 @@ elixir(function(mix) {
         "pipoka/tables/table-valoracion.js",
         "pipoka/tables/table-balance-general.js",
         "pipoka/companies/addCompany.js",
-        "pipoka/datatable/dataTable-Type3.js",
-        "pipoka/datatable/dataTable-Type4.js",
-    	"app.js"
+        "pipoka/datatable/dataTable-Type3.j s",
+        "pipoka/datatable/dataTable-Type4.js"
     ], "assets/js", "resources/assets/js");
 
 });

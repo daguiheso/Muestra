@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>SELECT - COMAPNIES</title>
-	<meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>MENU</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 </head>
 <body>
 <!-- 
 
-	NAV-BAR - HEADER GLOBAL
+  NAV-BAR - HEADER GLOBAL
      
 -->
     <nav class="navbar navbar-default navbar-pipoca">
@@ -18,11 +18,19 @@
                 PIPOKA <span class="by-latin">by Latinvestco</span>
                 <!-- <img alt="Pipoka" src="assets/images/pipoca.png"> -->
             </a>
+          
+            <form class="navbar-left form-navbar" role="search">
+                <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
+                <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
             <ul class="nav navbar-nav navbar-right inline-block">
-                <li class="dropdown">
+                <li><a href="">Metodologia </a></li>
+                <li><a href="javascript:void(0);">|</a></li>
+                <li><a href="">Glosario</a></li>
+                <li class="dropdown ml">
                     <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="">Editar Perfil</a></li>
+                        <li><a href="">Editar perfil</a></li>
                         <li><a href="">Salida segura</a></li>
                     </ul>
                 </li>
@@ -32,7 +40,7 @@
 <!-- 
 
     NAV-BAR - MAIN GLOBAL
-                     
+             
 -->
     <nav id="main" class="main">
         <div class="main-content-btn">
@@ -95,41 +103,49 @@
             CA: Compañoa Analizada<br>S: Sector<br>SD: Sector Decil<br>CS: Compañias Seleccionadas
         </div>
     </nav>
-<!-- 
-
-    SEARCH - HOME
-
--->
     <div id="content">
-    	<section class="select-companies">
-	    	<div class="content-search">
-	        	<h1 class="title-search">PIPOKA</h1>
-	            <div class="input-group">
-		            <input type="text" class="form-control" placeholder="Buscar Compañia o NIT a analizar">
-		            <span class="input-group-btn">
-		                <button class="btn btn-default btn-search" type="button"><span class="glyphicon glyphicon-search search-icon"></button>
-		            </span>
-	            </div>
-	    	</div>
-	    	<hr class="hr-div">
-	    	<div class="content-titles-select-company">
-		    	<h2 class="title-pipoka">COMPAÑIAS A COMPARAR</h2>
-		    	<p>Ingrese entre 1 o 5 compañias a comparar</p>
-	    	</div>
-	    	<div id="companies-select" class="companies-select">
-		    	<div class="form-group form-addCompany">
-	                <input type="text" class="form-control input-add-company" placeholder="Ingrese una compañia a comparar">
-					<a class="add-company"><span class="icon-plus-circle"></span>Agregar otra compañia</a>
-				</div>
-				<button class="btn btn-default" type="submit">Comparar</button>
-	    	</div>	
-    	</section>
+<!--  
+    
+    GRAFICAS 
+          
+-->
+        <legend>Graficas - Libreria D3 - Radial con Marcadores</legend>
+        <div id="body">
+            <div id="chart"></div>
+        </div>
+        <table  class="table">
+            <tbody>
+                <tr>
+                    <th class="left-text">Data</th>
+                    <th class="">CA</th>
+                    <th class="">Sector</th>
+                    <th class="">Empresa 1</th>
+                    <th class="">Empresa 2</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="left-text"><input id="a" type="checkbox" onclick="new_radar_data()" value="true"></td>
+                    <td class="left-text"><input id="b" type="checkbox" onclick="new_radar_data()"></td>
+                    <td class="left-text"><input id="c" type="checkbox" onclick="new_radar_data()"></td>
+                    <td class="left-text"><input id="d" type="checkbox" onclick="new_radar_data()"></td>
+                </tr>
+            </tbody>
+        </table>
+        <legend>Graficas - Libreria D3 - PIE</legend>
+        <div class="content-pie relative">
+            <div id="body2"></div>
+        </div>
+        <legend>Graficas - Libreria D3 - LINE CHART</legend>
+        <div id="body-lineChart">
+        </div>
+        <legend>Graficas - Libreria D3 - TARRO</legend>
+        <div id="body-tarro"></div>
     </div>
-<!-- 
-
-	FOOTER - GLOBAL
-    	         
---> 
+<!--  
+    
+    FOOTER 
+          
+-->
     <footer class="footer-global">
         <ul>
             <li><a href="">&copy; PIPOKA by LATINVESTCO 2015</a></li>
@@ -138,6 +154,7 @@
             <li><a href="">| Metodología</a></li>
         </ul>
     </footer>
-    <script src="assets/js/all.js"></script>
+    <script src="../../assets/js/all.js"></script>
 </body>
 </html>
+

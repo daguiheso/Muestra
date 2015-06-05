@@ -6801,21 +6801,13 @@ svg text.percent {
   right: 0;
   z-index: 999;
   border: 0;
-  min-height: 60px;
+  height: 60px;
   background: #dedede;
-  padding: 0 1.40rem;
   border-radius: 0 !important;
   font-family: 'Roboto', sans-serif;
 }
-.navbar-header-pipoka {
-  height: 60px;
-  width: 100%;
-}
-.navbar-header-pipoka > ul > li > a:hover {
-  color: #6ea939 !important;
-}
-nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
-  padding-left: 0.70rem;
+#bs-example-navbar-collapse-1 {
+  background: #dedede;
 }
 .title-header {
   font-family: 'Fjalla One', sans-serif;
@@ -6825,40 +6817,55 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   height: 60px;
   padding: 0;
   width: auto;
-  line-height: 65PX;
+  line-height: 65px;
+  margin-left: -4px !important;
 }
 .title-header:hover {
   background-color: #dedede !important;
 }
-.title-header span {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.10rem;
-  font-weight: 100;
-}
 .by-latin {
-  font-size: .95rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.10rem;
+  position: absolute;
+  top: 3.4rem;
+  margin-left: 1rem;
 }
 .form-navbar {
   height: 60px;
-  position: absolute;
-  right: 8.5rem;
   line-height: 60px;
-  width: 40%;
-  display: inline-block;
+  margin: 0;
+  padding: 0;
   color: #dddddd;
 }
 .form-navbar input,
 .form-navbar button {
   border-radius: 0;
 }
-.search-input {
-  width: 40%;
-  display: inline-block;
+.navbar-right {
+  margin-right: -30px;
+}
+.glosario {
+  padding-left: 0px;
+  padding-right: 12px;
+}
+#bs-example-navbar-collapse-1 > ul > li > a {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 1.40rem 0 0.7rem;
+  font-size: 1.20rem;
+  color: #565656;
+}
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+  color: #6ea939;
 }
 .search-input:focus {
   border-color: #66afe9;
   outline: none;
   box-shadow: none;
+}
+.search-input:focus {
+  border-color: #ddd !important;
 }
 .search-input::-webkit-input-placeholder {
   color: #dddddd;
@@ -6883,7 +6890,7 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 .btn-search-navbar {
   position: relative;
   left: -0.5rem;
-  bottom: .05rem;
+  bottom: 0rem;
   background: #565656;
   color: white;
 }
@@ -6893,38 +6900,49 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   outline: none;
   border: 0;
 }
-.btn-search-navbar:hover {
-  background: #565656;
-}
-.navbar-pipoca > div > ul > li > a {
-  height: 60px;
-  line-height: 60px;
-  padding: 0 1.40rem 0 0;
-  font-size: 1.20rem;
-  color: #565656;
-}
-@media screen and (max-width: 999px) {
-  .search-input {
-    width: 48%;
-  }
-  .form-navbar {
-    right: 6rem;
-  }
-}
 @media screen and (max-width: 768px) {
-  body > nav.navbar.navbar-default.navbar-pipoca > div > ul {
-    margin: 0;
-    position: absolute;
-    right: 0;
+  .navbar-right {
+    margin-right: -15px;
+  }
+  .title-header {
+    margin-left: 10px !important;
+  }
+  .comodin {
+    display: none !important;
   }
   .form-navbar {
-    right: 3rem;
-    width: 55%;
+    padding: 10px;
+    border: 0;
+    border-color: #dedede;
+  }
+  .form-navbar .form-group {
+    float: left;
+  }
+  .btn-search-navbar {
+    top: -1.3rem;
+    left: -0.1rem;
+  }
+  #bs-example-navbar-collapse-1 > ul > li > a {
+    height: auto;
+    line-height: 45px;
   }
 }
-@media screen and (max-width: 640px) {
-  .form-navbar {
-    display: none;
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  #bs-example-navbar-collapse-1 > ul > li > a {
+    height: 60px;
+    line-height: 60px;
+  }
+  .search-input {
+    margin-bottom: 2rem;
+  }
+  .btn-search-navbar {
+    top: -1rem;
+  }
+  .navbar-right {
+    margin-right: -32px;
+  }
+  .title-header {
+    margin-left: -8px !important;
   }
 }
 /*
@@ -7073,7 +7091,6 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
   width: 183px;
   position: fixed;
   top: 6.79em;
-  z-index: 9999;
   color: white;
   background: #6ea939;
 }
@@ -7590,38 +7607,6 @@ table.dataTable.cell-border thead tr th:first-child {
 .btn-collapsed-type5:focus {
   color: white;
   text-decoration: none;
-}
-legend {
-  margin: 3rem 0;
-}
-.documentation {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-}
-.documentation h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  color: #70903b;
-}
-.documentation h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  color: #70903b;
-}
-.doc-typografy {
-  list-style: none;
-  line-height: 4rem;
-}
-.content-jumb {
-  margin-bottom: 0;
-  background: white;
-  border: 2px solid #eae4e4;
-}
-.c-red {
-  color: red;
-}
-.c-blue {
-  color: blue;
 }
 table.dataTable {
   margin: 0 auto;
@@ -8495,151 +8480,6 @@ div.ColVis_catcher {
 }
 .disabled {
   color: #999;
-}
-/*
-
-Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
-
-*/
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #f0f0f0;
-  -webkit-text-size-adjust: none;
-}
-.hljs,
-.hljs-subst,
-.hljs-tag .hljs-title,
-.nginx .hljs-title {
-  color: black;
-}
-.hljs-string,
-.hljs-title,
-.hljs-constant,
-.hljs-parent,
-.hljs-tag .hljs-value,
-.hljs-rule .hljs-value,
-.hljs-preprocessor,
-.hljs-pragma,
-.hljs-name,
-.haml .hljs-symbol,
-.ruby .hljs-symbol,
-.ruby .hljs-symbol .hljs-string,
-.hljs-template_tag,
-.django .hljs-variable,
-.smalltalk .hljs-class,
-.hljs-addition,
-.hljs-flow,
-.hljs-stream,
-.bash .hljs-variable,
-.pf .hljs-variable,
-.apache .hljs-tag,
-.apache .hljs-cbracket,
-.tex .hljs-command,
-.tex .hljs-special,
-.erlang_repl .hljs-function_or_atom,
-.asciidoc .hljs-header,
-.markdown .hljs-header,
-.coffeescript .hljs-attribute {
-  color: #800;
-}
-.smartquote,
-.hljs-comment,
-.hljs-annotation,
-.diff .hljs-header,
-.hljs-chunk,
-.asciidoc .hljs-blockquote,
-.markdown .hljs-blockquote {
-  color: #888;
-}
-.hljs-number,
-.hljs-date,
-.hljs-regexp,
-.hljs-literal,
-.hljs-hexcolor,
-.smalltalk .hljs-symbol,
-.smalltalk .hljs-char,
-.go .hljs-constant,
-.hljs-change,
-.lasso .hljs-variable,
-.makefile .hljs-variable,
-.asciidoc .hljs-bullet,
-.markdown .hljs-bullet,
-.asciidoc .hljs-link_url,
-.markdown .hljs-link_url {
-  color: #080;
-}
-.hljs-label,
-.hljs-javadoc,
-.ruby .hljs-string,
-.hljs-decorator,
-.hljs-filter .hljs-argument,
-.hljs-localvars,
-.hljs-array,
-.hljs-attr_selector,
-.hljs-important,
-.hljs-pseudo,
-.hljs-pi,
-.haml .hljs-bullet,
-.hljs-doctype,
-.hljs-deletion,
-.hljs-envvar,
-.hljs-shebang,
-.apache .hljs-sqbracket,
-.nginx .hljs-built_in,
-.tex .hljs-formula,
-.erlang_repl .hljs-reserved,
-.hljs-prompt,
-.asciidoc .hljs-link_label,
-.markdown .hljs-link_label,
-.vhdl .hljs-attribute,
-.clojure .hljs-attribute,
-.asciidoc .hljs-attribute,
-.lasso .hljs-attribute,
-.coffeescript .hljs-property,
-.hljs-phony {
-  color: #88f;
-}
-.hljs-keyword,
-.hljs-id,
-.hljs-title,
-.hljs-built_in,
-.css .hljs-tag,
-.hljs-javadoctag,
-.hljs-phpdoc,
-.hljs-dartdoc,
-.hljs-yardoctag,
-.smalltalk .hljs-class,
-.hljs-winutils,
-.bash .hljs-variable,
-.pf .hljs-variable,
-.apache .hljs-tag,
-.hljs-type,
-.hljs-typename,
-.tex .hljs-command,
-.asciidoc .hljs-strong,
-.markdown .hljs-strong,
-.hljs-request,
-.hljs-status {
-  font-weight: bold;
-}
-.asciidoc .hljs-emphasis,
-.markdown .hljs-emphasis {
-  font-style: italic;
-}
-.nginx .hljs-built_in {
-  font-weight: normal;
-}
-.coffeescript .javascript,
-.javascript .xml,
-.lasso .markup,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
-.xml .hljs-cdata {
-  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

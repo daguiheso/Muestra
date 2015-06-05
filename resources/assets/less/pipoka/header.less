@@ -7,21 +7,13 @@
 	right: 0;
 	z-index: 999;
 	border: 0;
-	min-height: @height-header;
+	height: @height-header;
 	background: @color-header;
-	padding: 0 1.40rem;
 	border-radius: 0 !important;
 	font-family: @font-family-header;
 }
-.navbar-header-pipoka {
-	height: @height-header;
-	width: 100%;
-}
-.navbar-header-pipoka > ul > li > a:hover {
-	color: @color-pipoka !important;
-}
-nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
-	padding-left: 0.70rem;
+#bs-example-navbar-collapse-1 {
+	background: @color-header;
 }
 // LOGO PIPOKA
 .title-header {
@@ -32,41 +24,56 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 	height: @height-header;
 	padding: 0;
 	width: auto;
-	line-height: 65PX;
+	line-height: 65px;
+	margin-left: -4px !important;
 }
 .title-header:hover {
 	background-color: @color-header !important;
 }
-.title-header span{
-	font-family: @font-family-header;
-	font-size: 1.10rem;
-	font-weight: 100;
-}
 .by-latin {
-	font-size: .95rem;
+	font-family: @font-family-header;
+	font-weight: 100;
+	font-size: 1.10rem;
+	position: absolute;
+  top: 3.4rem;
+  margin-left: 1rem;
 }
 // BUSCADOR HEADER PIPOKA
 .form-navbar {
 	height: @height-header;
-  position: absolute;
-  right: 8.5rem;
   line-height: @height-header;
-  width: 40%;
-  display: inline-block;
+  margin: 0;
+  padding: 0;
   color: #dddddd;
 }
 .form-navbar input,
 .form-navbar button {
 	border-radius: 0;
 }
-.search-input {
-	width: 40%;
-	display: inline-block;
+.navbar-right {
+  margin-right: -30px;
+}
+.glosario {
+	padding-left: 0px;
+  padding-right: 12px;
+}
+#bs-example-navbar-collapse-1 > ul > li > a {
+  height: @height-header;
+  line-height: @height-header;
+  padding: 0 1.40rem 0 0.7rem;
+  font-size: 1.20rem;
+  color: #565656;
+}
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+	color: @color-pipoka;
 }
 .search-input:focus {
    border-color: #66afe9; 
    outline: none; 
    box-shadow: none;
+}
+.search-input:focus {
+  border-color: #ddd !important;
 }
 .search-input::-webkit-input-placeholder
 {
@@ -95,7 +102,7 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 .btn-search-navbar {
 	position: relative;
 	left: -.5rem;
-	bottom: .05rem;
+	bottom: 0rem;
 	background: #565656;
 	color: white;
 }
@@ -105,38 +112,50 @@ nav.navbar.navbar-default.navbar-pipoca > div > ul > li > a {
 	outline: none;
 	border: 0;
 }
-.btn-search-navbar:hover {
-	background: #565656;
-}
 // SESION HEADER PIPOKA 
-.navbar-pipoca > div > ul > li > a {
-	height: @height-header;
-  line-height: @height-header;
-  padding: 0 1.40rem 0 0;
-  font-size: 1.20rem;
-  color: #565656;
-}
-@media screen and (max-width: 999px) {
-	.search-input {
-	    width: 48%;
-	}
-	.form-navbar {
-	    right: 6rem;
-	}
-}
+
 @media screen and (max-width: 768px) {
-	body > nav.navbar.navbar-default.navbar-pipoca > div > ul {
-	    margin: 0;
-	    position: absolute;
-	    right: 0;
+	.navbar-right {
+	  margin-right: -15px;
+	}
+	.title-header {
+		margin-left: 10px !important;
+	}
+	.comodin {
+		display: none !important;
 	}
 	.form-navbar {
-	  right: 3rem;
-	  width: 55%;
+	  padding: 10px;
+	  border: 0;
+	  border-color: @color-header;
+	}
+	.form-navbar .form-group {
+		float: left;
+	}
+	.btn-search-navbar {
+	  top: -1.3rem;
+	  left: -0.1rem;
+	}
+	#bs-example-navbar-collapse-1 > ul > li > a {
+	  height: auto;
+	  line-height: 45px;
 	}
 }
-@media screen and (max-width: 640px) {
-	.form-navbar {
-		display: none;
+@media screen and (min-width: 768px) and (max-width: 768px) {
+	#bs-example-navbar-collapse-1 > ul > li > a {
+		height: @height-header;
+	  line-height: @height-header;
+	}
+	.search-input {
+		 margin-bottom: 2rem;
+	}
+	.btn-search-navbar {
+	  top: -1rem;
+	}
+	.navbar-right {
+	  margin-right: -32px;
+	}
+	.title-header {
+		margin-left: -8px !important;
 	}
 }

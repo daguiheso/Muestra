@@ -2,8 +2,8 @@
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 600 - margin.left - margin.right,
-    height = 350 - margin.top - margin.bottom;
+    width = 500 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
 var parseDate = d3.format('g');
 
@@ -31,7 +31,7 @@ var svg = d3.select("#body-lineChart").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("assets/data/lineChart.tsv", function(error, data) {
+d3.tsv("../../assets/data/lineChart.tsv", function(error, data) {
   data.forEach(function(d) {
     d.date = parseDate(d.date);
     d.close = +d.close;

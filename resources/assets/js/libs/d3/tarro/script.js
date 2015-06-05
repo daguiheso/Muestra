@@ -2,8 +2,8 @@
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 900 - margin.left - margin.right,
-    height = 350 - margin.top - margin.bottom;
+    width = 550 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .2);
@@ -29,7 +29,7 @@ var svg = d3.select("#body-tarro").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("assets/data/tarro.csv", function(error, data) {
+d3.csv("../../assets/data/tarro.csv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "State"; }));
 
   data.forEach(function(d) {

@@ -1,6 +1,0 @@
-(function() {
-	hljs.initHighlightingOnLoad();		
-})();
-
-
-
