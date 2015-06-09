@@ -42460,81 +42460,41 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 
 /* 
 
-	Colapsar Menu
+	Colapsar y Expandir Menu
 
 */
 	function collapsedMenu() {
-	    $main.animate({
-	    	width: "55px"
-	    });
-	    // Cambiando content al colapsar menu
-	    $content.animate({
-	    	paddingLeft: "88px"
-	    });
-	    $btnexpmain.show();
-	    $btncollapmain.hide();	    
-	    $areaCA.html("<span class='icon-info info-icon'></span>");
-	    $indicator.html("I");
-	    $stateResult.html("ER");
-	    $balanceGen.html("BG");
-	    $cashFlow.html("FC");
-	    $valCA.html("CA");
-	    $valMS.html("MS");
-	    $indicator.removeClass("submain-expand");
-	    $stateResult.removeClass("submain-expand");
-	    $balanceGen.removeClass("submain-expand");
-	    $cashFlow.removeClass("submain-expand");
-	    $valCA.removeClass("submain-expand");
-	    $valMS.removeClass("submain-expand");
+	    $main.toggleClass('collap');
+	    $content.toggleClass('contentTotal');
+	    $btncollapmain.show();	   
+        $("#main ul li a").toggleClass('collap');
 	    $showhideCatg.toggle();
-	    $iconCatg.css({
-	    	"position" : "relative",
-	    	"left" : "0px",
-	    	"top" : ".5rem",
-	    	"line-height" : "1.8rem"
-	    });
+	    $iconCatg.toggleClass('extend');
 	    $abreviators.slideToggle();
+	    if($main.hasClass('collap') === true){
+		    $btnexpmain.show();
+		    $btncollapmain.hide();	   
+		    $areaCA.html("<span class='icon-info info-icon'></span>");
+		    $indicator.html("I");
+		    $stateResult.html("ER");
+		    $balanceGen.html("BG");
+		    $cashFlow.html("FC");
+		    $valCA.html("CA");
+		    $valMS.html("MS");
+	    }
+	    else {
+		    $btnexpmain.hide();
+		    $btncollapmain.show();	   
+		    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p style='font-weight:300'>Sector: Suspendisse dui leo</p>");
+		    $indicator.html("Indicadores");
+		    $stateResult.html("Estado de Resultado");
+		    $balanceGen.html("Balance General");
+		    $cashFlow.html("Flujo de Caja");
+		    $valCA.html("Compañia Analizada");
+		    $valMS.html("Múltiplos del Sector");	
+	    }
 	    return false;
 	} 
-/* 
-
-	Expandir Menu
-	
-*/
-	function expandMenu() {  
-	    $main.animate({
-	    	width: "183px"
-	    });
-	    // Cambiando content al expandir menu
-	    $content.animate({
-	    	paddingLeft: "216px"
-	    });
-	    $btncollapmain.show();
-	    $btnexpmain.hide();	    
-	    $areaCA.html("<p>PELLENTENQUE <br> HABITAN S.A.S</p> <p style='font-weight:300'>Sector: Suspendisse dui leo</p>");
-	    $indicator.html("Indicadores");
-	    $stateResult.html("Estado de Resultado");
-	    $balanceGen.html("Balance General");
-	    $cashFlow.html("Flujo de Caja");
-	    $valCA.html("Compañia Analizada");
-	    $valMS.html("Múltiplos del Sector");	   
-	    $indicator.addClass("submain-expand");
-	    $stateResult.addClass("submain-expand");
-	    $balanceGen.addClass("submain-expand");
-	    $cashFlow.addClass("submain-expand");
-	    $valCA.addClass("submain-expand");
-	    $valMS.addClass("submain-expand");
-	    $showhideCatg.toggle();
-	    $iconCatg.css({
-	    	"position" : "absolute",
-	    	"left" : "1.2rem",
-	    	"top" : "initial",
-	    	"line-height" : "50px"
-	    });
-	    $abreviators.slideToggle();
-
-	    return false;
-	}     
 	// Colapsar y Expandir sub-menu Diagnostico
 	function collapextendDiagnostic() {
 	    if ($(".submain-val").css("display")=="block") {
@@ -42547,6 +42507,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    }
 	    else {
 		    $subMainDiag.slideToggle();
+		    // $("#btn-collapsed-diag").toggleClass('special');
 	    }
 	    return false;
 	} 	   
@@ -42580,12 +42541,26 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    }
 	    return false;
 	}
+
+	function selectI() {
+		if($indicator.hasClass('collap') === true){
+			$indicator.toggleClass('special'); 
+		}
+		$indicator.toggleClass('special');
+		return false;
+	    // $valCA.toggleClass('special');
+	    // $valMS.toggleClass('special');
+        // var fr = $(this)
+        // console.log(fr)
+        // fr.toggleClass('select');
+	}
 	//Eventos
 	$btncollapmain.click(collapsedMenu);
-	$btnexpmain.click(expandMenu);
+	$btnexpmain.click(collapsedMenu);
 	$btnCollapDiag.click(collapextendDiagnostic);
 	$btnCollapProj.click(collapextendProjection);
 	$btnCollapVal.click(collapextendValuation);
+	$("#main ul li a").click(collapsedMenu);
 })();
 (function () {
 	var $pest2 = $("#pest2"),
