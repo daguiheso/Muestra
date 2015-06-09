@@ -9,7 +9,7 @@
 /*
 	TABLA TIPO 3 - # 1 
  */
-	var table = $('#dataTable3byCompany').dataTable({
+	$('#dataTable3byCompany').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
@@ -60,14 +60,11 @@
     	"paging": false,
     	"info": false
 	});
-	new $.fn.dataTable.FixedColumns(table, {
-		leftColumns: 1,
-    	leftColumns: 2
-	});
+	
 /* 
 	TABLA TIPO 3 - # 2 
 */
-	var table2 = $('#dataTable3byYears').dataTable({
+	$('#dataTable3byYears').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -95,16 +92,12 @@
     	"scrollCollapse": true,
     	"paging": false,
     	"info": false
-	});
-	new $.fn.dataTable.FixedColumns(table2, {
-		leftColumns: 1,
-    	leftColumns: 2
-	});
+	});	
 
 /*  
 	TABLA TIPO 3 - # 3 TAB 1 
 */
-	var table3 = $('#dataTable3Tab1').dataTable({
+	$('#dataTable3Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -132,11 +125,7 @@
     	"scrollCollapse": true,
     	"paging": false,
     	"info": false
-	});
-	new $.fn.dataTable.FixedColumns(table3, {
-		leftColumns: 1,
-    	leftColumns: 2
-	});
+	});	
 
 
 	$('.tab-pipoka').on('shown.bs.tab', function (e) {
@@ -175,17 +164,20 @@
 	    	"info": false,
 	    	"destroy": true
 		});
-		// new $.fn.dataTable.FixedColumns(table3, {
-		// 	leftColumns: 1,
-	 	//  leftColumns: 2
-		// });
 	});
 
+
+
+/*
+
+	TABLA TIPO 4
+
+*/
 
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
 */
-    var table42 = $('#dataTableBg2Tab1').dataTable({
+    $('#dataTableBg2Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -208,7 +200,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 1.2
 */
-	var table422 = $('#dataTableBg2Tab1-2').dataTable({
+	$('#dataTableBg2Tab1-2').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -285,6 +277,5 @@
 	    	"destroy": true
 		});
 	});	
-
 
 })();
