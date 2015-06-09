@@ -42697,15 +42697,20 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 			]
 		},
 		"dom": 'CT<"clear">lfrtip',
-    	"oTableTools": {
+		// tableTools: {
+		// 	"aButtons": [ "xls", "pdf" ],
+		// 	"sSwfPath": "copy_csv_xls_pdf.swf"
+		// },
+		"oTableTools": {
+	        "sSwfPath": "assets/swf/copy_csv_xls_pdf.swf",
             "aButtons": [
                 {
-                    "sExtends":    "collection",
-                    "sButtonText": "Save",
-                    "aButtons":    [ "xls", "pdf" ]
+                	"sExtends": "collection",
+                    "sButtonText": "Guardar",
+                    "aButtons": [ "csv", "xls", "pdf" ]
                 }
             ]
-        },	
+        },
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -42730,15 +42735,9 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 			]
 		},
     	"dom": 'CT<"clear">lfrtip',
-    	"oTableTools": {
-            "aButtons": [
-                {
-                    "sExtends":    "collection",
-                    "sButtonText": "Save",
-                    "aButtons":    [ "xls", "pdf" ]
-                }
-            ]
-        },		
+    	tableTools: {
+			"aButtons": [ "xls", "pdf" ]
+		},
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -42763,15 +42762,9 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 			]
 		},
     	"dom": 'CT<"clear">lfrtip',
-    	"oTableTools": {
-            "aButtons": [
-                {
-                    "sExtends":    "collection",
-                    "sButtonText": "Save",
-                    "aButtons":    [ "xls", "pdf" ]
-                }
-            ]
-        },			
+    	tableTools: {
+			"aButtons": [ "xls", "pdf" ]
+		},		
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "true",
@@ -42800,15 +42793,9 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 				]
 			},
 			"dom": 'CT<"clear">lfrtip',
-	    	"oTableTools": {
-	            "aButtons": [
-	                {
-	                    "sExtends":    "collection",
-	                    "sButtonText": "Save",
-	                    "aButtons":    [ "xls", "pdf" ]
-	                }
-	            ]
-	        },			
+	    	tableTools: {
+				"aButtons": [ "xls", "pdf" ]
+			},			
 			"ordering": false,
 	    	"searching" : false,
 			"scrollX": "true",
