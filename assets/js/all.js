@@ -42696,7 +42696,16 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 				}
 			]
 		},
-    	"dom": 'C<"clear">ti',		
+		"dom": 'CT<"clear">lfrtip',
+    	"oTableTools": {
+            "aButtons": [
+                {
+                    "sExtends":    "collection",
+                    "sButtonText": "Save",
+                    "aButtons":    [ "xls", "pdf" ]
+                }
+            ]
+        },	
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -42723,7 +42732,16 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 				}				
 			]
 		},
-    	"dom": 'C<"clear">ti',		
+    	"dom": 'CT<"clear">lfrtip',
+    	"oTableTools": {
+            "aButtons": [
+                {
+                    "sExtends":    "collection",
+                    "sButtonText": "Save",
+                    "aButtons":    [ "xls", "pdf" ]
+                }
+            ]
+        },		
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -42751,7 +42769,16 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 				}				
 			]
 		},
-    	"dom": 'C<"clear">ti',		
+    	"dom": 'CT<"clear">lfrtip',
+    	"oTableTools": {
+            "aButtons": [
+                {
+                    "sExtends":    "collection",
+                    "sButtonText": "Save",
+                    "aButtons":    [ "xls", "pdf" ]
+                }
+            ]
+        },			
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "true",
@@ -42783,7 +42810,16 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 					}				
 				]
 			},
-	    	"dom": 'C<"clear">ti',		
+			"dom": 'CT<"clear">lfrtip',
+	    	"oTableTools": {
+	            "aButtons": [
+	                {
+	                    "sExtends":    "collection",
+	                    "sButtonText": "Save",
+	                    "aButtons":    [ "xls", "pdf" ]
+	                }
+	            ]
+	        },			
 			"ordering": false,
 	    	"searching" : false,
 			"scrollX": "true",
@@ -42799,22 +42835,10 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	});
 
 
-
-
-})();
-
-/*
-
-	TABLA TIPO 4 # 2 - BALANCE GENERAL
-
-*/
-(function () {
-
-
 /*
 	TABLA TIPO 4 # 2 - TAB 1.1
 */
-    var table4 = $('#dataTableBg2Tab1').dataTable({
+    var table42 = $('#dataTableBg2Tab1').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -42837,7 +42861,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 /*
 	TABLA TIPO 4 # 2 - TAB 1.2
 */
-	var table5 = $('#dataTableBg2Tab1-2').dataTable({
+	var table422 = $('#dataTableBg2Tab1-2').dataTable({
 		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -42913,7 +42937,9 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    	"info": false,
 	    	"destroy": true
 		});
-	});
+	});	
+
 
 })();
+
 //# sourceMappingURL=all.js.map
