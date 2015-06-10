@@ -12,13 +12,13 @@
         </a>
         <ul id="main-menu" class="top-nav menu clearfix">
             <li class="menu-item">
-                <a href="">Comenzando</a>
+                <a href="/html/doc/introduccion.html">Comenzando</a>
             </li>
             <li class="menu-item">
-                <a href="">Estructura CSS</a>
+                <a href="/html/doc/structure-css.html">Estructura CSS</a>
             </li>
             <li class="menu-item">
-                <a href="">Estructura JS</a>
+                <a href="/html/doc/structure-js.html">Estructura JS</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
                         <a href="">Reading</a>
@@ -41,8 +41,12 @@
                 <a href="">Componentes</a>
             </li>
         </ul>
-    </nav>  
+    </nav>      
 	<div class="container">
+        <legend>
+            <h2>Estructura JavaScript</h2>
+        </legend>
+        <br>
 		<legend>
 			<h2>Tipografia</h2>
 		</legend>
@@ -68,8 +72,8 @@
 			</code>
 		</pre>
 		<legend>
-			<h2>Tablas</h2>
-		</legend>	
+			<h2>Tablas - Sencillas</h2>
+		</legend>
 		<p>Para todas las tablas utilizadas en Pipoka se debe implementar las clases css <span class="c-red">.table .table-pipoka</span>, ademas de estar dentro de un <span class="c-blue">div</span> contenedor que lleva por clase <span class="c-red">.content-tables </span>. Estas clases css le dan un estilio limpio y recomendado a las tablas de la plantilla. Todas las caracteristticas y estilos de Bootstarp pueden ser aplicadas ya que Pipoka se basa en Bootstrap.</p>
 		<pre>
 			<code>
@@ -79,12 +83,15 @@
 	&#x9;&lt;/table&gt;
 	&lt;/div&gt;
 			</code>
-		</pre>
-        <h4>Ejemplo</h4>
+		</pre>        
+	    
+        <h3>Titulos para Filas</h3>
+        <p>Para dar estilo de Pipoka a los titulos de las filas se incluye la clase css <span class="c-red">.title-tables</span></p>
         <div class="jumbotron content-jumb">
             <div class="content-tables">
+                <br>
                 <div class="table-responsive">
-                    <table class="table table-pipoka table-bordered table striped table-condensed table-hover">
+                    <table class="table table-pipoka table-bordered table-striped table-condensed table-hover">
                         <thead>
                             <tr>
                                 <th></th>
@@ -93,121 +100,22 @@
                                 <th>2011</th>
                                 <th>2012</th>
                                 <th>2013</th>
-                                <th>Promedio 09-13</th>
+                                <th>Crecimiento <br> Promedio Anual</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Nombre de la Compañia Analizada</td>
-                                <td>nd</td>
-                                <td>8%</td>
-                                <td>84%</td>
-                                <td>-26%</td>
-                                <td>18%</td>
-                                <td>21%</td>
-                            </tr>
-                            <tr>
-                                <td>Decil</td>
-                                <td>21%</td>
-                                <td>18%</td>
-                                <td>44%</td>
-                                <td>3%</td>
-                                <td>3%</td>
-                                <td>17%</td>
-                            </tr>
-                            <tr>
-                                <td>Sector</td>
-                                <td>21%</td>
-                                <td>18%</td>
-                                <td>44%</td>
-                                <td>3%</td>
-                                <td>3%</td>
-                                <td>17%</td>
-                            </tr>
+                                <td class="title-tables">TOTAL DE ACTIVOS</td>
+                                <td>31.7</td>
+                                <td>34.1</td>
+                                <td>62.7</td>
+                                <td>46.2</td>
+                                <td>54.5</td>
+                                <td>14.6%</td>
+                            </tr>  
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-	    <pre>
-	    	<code>
- 	&lt;div class=&quot;content-tables&quot;&gt;
- 	    &lt;div class=&quot;table-responsive&quot;&gt;
- 	        &lt;table class=&quot;table table-pipoka table-bordered table striped table-condensed table-hover&quot;&gt;
- 	            &lt;thead&gt;
- 	                &lt;tr&gt;
- 	                    &lt;th&gt;&lt;/th&gt;
- 	                    &lt;th&gt;2009&lt;/th&gt;
- 	                    &lt;th&gt;2010&lt;/th&gt;
- 	                    &lt;th&gt;2011&lt;/th&gt;
- 	                    &lt;th&gt;2012&lt;/th&gt;
- 	                    &lt;th&gt;2013&lt;/th&gt;
- 	                    &lt;th&gt;Promedio 09-13&lt;/th&gt;
- 	                &lt;/tr&gt;
- 	            &lt;/thead&gt;
- 	            &lt;tbody&gt;
- 	                &lt;tr&gt;
- 	                    &lt;td&gt;Nombre de la Compa&ntilde;ia Analizada&lt;/td&gt;
- 	                    &lt;td&gt;nd&lt;/td&gt;
- 	                    &lt;td&gt;8%&lt;/td&gt;
- 	                    &lt;td&gt;84%&lt;/td&gt;
- 	                    &lt;td&gt;-26%&lt;/td&gt;
- 	                    &lt;td&gt;18%&lt;/td&gt;
- 	                    &lt;td&gt;21%&lt;/td&gt;
- 	                &lt;/tr&gt;
- 	                &lt;tr&gt;
- 	                    &lt;td&gt;Decil&lt;/td&gt;
- 	                    &lt;td&gt;21%&lt;/td&gt;
- 	                    &lt;td&gt;18%&lt;/td&gt;
- 	                    &lt;td&gt;44%&lt;/td&gt;
- 	                    &lt;td&gt;3%&lt;/td&gt;
- 	                    &lt;td&gt;3%&lt;/td&gt;
- 	                    &lt;td&gt;17%&lt;/td&gt;
- 	                &lt;/tr&gt;
- 	                &lt;tr&gt;
- 	                    &lt;td&gt;Sector&lt;/td&gt;
- 	                    &lt;td&gt;21%&lt;/td&gt;
- 	                    &lt;td&gt;18%&lt;/td&gt;
- 	                    &lt;td&gt;44%&lt;/td&gt;
- 	                    &lt;td&gt;3%&lt;/td&gt;
- 	                    &lt;td&gt;3%&lt;/td&gt;
- 	                    &lt;td&gt;17%&lt;/td&gt;
- 	                &lt;/tr&gt;
- 	            &lt;/tbody&gt;
- 	        &lt;/table&gt;
- 	    &lt;/div&gt;
- 	&lt;/div
-	    	</code>
-	    </pre>
-        <h3>Titulos para Filas</h3>
-        <p>Para dar estilo de Pipoka a los titulos de las filas se incluye la clase css <span class="c-red">.title-tables</span></p>
-        <div class="content-tables">
-            <br>
-            <div class="table-responsive">
-                <table class="table table-pipoka table-bordered table-striped table-condensed table-hover">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>2009</th>
-                            <th>2010</th>
-                            <th>2011</th>
-                            <th>2012</th>
-                            <th>2013</th>
-                            <th>Crecimiento <br> Promedio Anual</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="title-tables">TOTAL DE ACTIVOS</td>
-                            <td>31.7</td>
-                            <td>34.1</td>
-                            <td>62.7</td>
-                            <td>46.2</td>
-                            <td>54.5</td>
-                            <td>14.6%</td>
-                        </tr>  
-                    </tbody>
-                </table>
             </div>
         </div>
         <pre>
@@ -223,6 +131,11 @@
     &lt;/tr&gt;
             </code>
         </pre>
+        <h3>Ejemplos Tablas Sencillas</h3>
+        <ul class="list-dataTable">
+            <li><a href="/html/doc/tablesType1.html">Tablas tipo 1</a></li>
+            <li><a href="/html/doc/tablesType2.html">Tablas tipo 2</a></li>
+        </ul>
     </div>
     <script src="../../assets/js/all.js"></script>
 </body>
