@@ -6,14 +6,29 @@
 	BOOTSTRAP 
 
 */
-/* GENERAL */
-/* FONTS - GENERAL */
-/* TABLAS */
+/* 
+
+	PIPOKA
+
+*/
+/*
+	GENERAL 
+ */
+/* 	
+	COMPONENTES 	
+*/
 /* MENU PIPOKA */
-/* HEADER */
+/* HEADER PIPOKA */
 /* DATA-TABLES- PIPOKA  */
-/* VISTAS  */
+/*	
+	VISTAS  		
+*/
 /* HOME */
+/* 	
+	ICONFONTS Y TIPOGRAFIA 		
+*/
+/* TITULOS PIPOKA */
+/* HGROUP PIPOKA */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1526,27 +1541,27 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 24px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 16px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 12px;
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 11px;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 10px;
 }
 p {
   margin: 0 0 10px;
@@ -6832,7 +6847,7 @@ table.dataTable thead td:active {
 table.dataTable thead th {
   font-weight: bold;
   padding: 10px 18px;
-  border-bottom: 1px solid #0f5003;
+  border-bottom: 1px solid whitesmoke;
 }
 table.dataTable thead td {
   padding: 10px 18px;
@@ -6937,7 +6952,7 @@ table.dataTable.hover tbody tr.even:hover,
 table.dataTable.display tbody tr:hover,
 table.dataTable.display tbody tr.odd:hover,
 table.dataTable.display tbody tr.even:hover {
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
 }
 table.dataTable.hover tbody tr:hover.selected,
 table.dataTable.hover tbody tr.odd:hover.selected,
