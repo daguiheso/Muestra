@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 /*
 
 	BOOTSTRAP 
@@ -8491,5 +8492,293 @@ svg text.percent {
 #body-tarro .x.axis path {
   display: none;
 }
+/* DOC  */
+legend {
+  margin: 3rem 0;
+}
+.documentation {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.documentation h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #70903b;
+}
+.documentation h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  color: #70903b;
+}
+.doc-typografy {
+  list-style: none;
+  line-height: 4rem;
+}
+.content-jumb {
+  margin-bottom: 0;
+  background: white;
+  border: 2px solid #eae4e4;
+}
+.c-red {
+  color: red;
+}
+.c-blue {
+  color: blue;
+}
+/****
+SETUP
+****/
+/************
+THE REAL DEAL
+************/
+.documentation {
+  background: #ddc;
+  font-family: 'Quattrocento Sans', Helmet, Freesans, Tahoma, Geneva, sans-serif;
+}
+.documentation nav a {
+  transition: color 800ms ease-in-out, background 800ms ease-in-out;
+}
+.documentation nav ul li a {
+  transition: color 800ms ease-in-out, background 800ms ease-in-out;
+}
+.navDoc {
+  padding: 2em 0;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.navDoc .menu-toggle {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 0;
+  padding: 0.5em 0;
+  background-color: #ddc;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4em;
+  color: #333;
+}
+.navDoc .menu-toggle:hover,
+.navDoc .menu-toggle:focus {
+  color: #eee;
+  background-color: #2e2e2e;
+}
+.navDoc .menu-toggle-text {
+  font-size: 0.55em;
+  display: block;
+}
+.no-js .navDoc .menu-toggle {
+  display: none;
+}
+.navDoc .expanded-menu-toggle {
+  color: #eeeeaa;
+  background-color: #2e2e2e;
+}
+.no-fontface .navDoc .icon-menu:before {
+  display: none;
+}
+.menu {
+  position: relative;
+  z-index: 1;
+  background-color: #333;
+  border: 0;
+  margin: -1px auto;
+  overflow: hidden;
+  padding: 0;
+  max-height: 1px;
+  min-height: 0;
+  clip: rect(0 0 0 0);
+  box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  transition: max-height 600ms ease-out, min-height 600ms ease-in, padding 600ms ease-in;
+}
+.menu li a {
+  display: block;
+  padding: 10px 0;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  color: #eee;
+  border-radius: 2px;
+}
+.menu li a:hover,
+.menu li a:focus {
+  color: #eeeeaa;
+  background: #4d4d4d;
+}
+.menu li ul.sub-menu,
+.menu li ul.children {
+  display: none;
+}
+/* end .menu */
+.no-js .menu,
+.expanded-mobile-menu {
+  transition: max-height 800ms ease-in, min-height 500ms ease-out, padding 400ms ease-in;
+  /*min/max heights allow me to css transition to height auto for WordPress menus with unknown number of items*/
+  clip: auto;
+  min-height: 8em;
+  max-height: 100em;
+  padding: 0.5em 0;
+}
+@media only screen and (min-width: 30.1em) {
+  /*481 ish px*/
+  .menu li {
+    float: left;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .navDoc .menu-toggle {
+    display: none;
+  }
+  .menu,
+  .no-js .menu,
+  .expanded-mobile-menu {
+    /* no longer hidden by default! */
+    margin: 0;
+    min-height: 0;
+    max-height: 999em;
+    border-radius: 0;
+    overflow: visible;
+    padding: 0.7em 0;
+    background: #333;
+    box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    /* end .menu ul li */
+  }
+  .menu li,
+  .no-js .menu li,
+  .expanded-mobile-menu li {
+    float: none;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    /* DROP DOWNS */
+    /* showing sub-menus */
+  }
+  .lt-ie8 .menu li,
+  .lt-ie8 .no-js .menu li,
+  .lt-ie8 .expanded-mobile-menu li {
+    /* inline-block fix for old ie (relevant if they're served larger media queries in an IE stylesheet or something similar...*/
+    display: inline;
+    zoom: 1;
+  }
+  .menu li a,
+  .no-js .menu li a,
+  .expanded-mobile-menu li a {
+    padding: 0.3em 1em;
+    color: #eee;
+  }
+  .menu li a:hover,
+  .menu li a:focus,
+  .no-js .menu li a:hover,
+  .no-js .menu li a:focus,
+  .expanded-mobile-menu li a:hover,
+  .expanded-mobile-menu li a:focus {
+    color: #eeeeaa;
+    background: #383838;
+  }
+  .menu li ul.sub-menu,
+  .menu li ul.children,
+  .no-js .menu li ul.sub-menu,
+  .no-js .menu li ul.children,
+  .expanded-mobile-menu li ul.sub-menu,
+  .expanded-mobile-menu li ul.children {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    transition: max-height 400ms ease-out, min-height 500ms ease-in, padding 500ms ease-out, opacity 500ms ease-in;
+    background: #383838;
+    text-align: left;
+    border-radius: 0 4px 4px 4px;
+    /* visually hidden */
+    opacity: 0;
+    border: 0;
+    margin: -1px 0;
+    overflow: hidden;
+    padding: 0;
+    max-height: 1px;
+    min-height: 0;
+  }
+  .menu li ul.sub-menu li,
+  .menu li ul.children li,
+  .no-js .menu li ul.sub-menu li,
+  .no-js .menu li ul.children li,
+  .expanded-mobile-menu li ul.sub-menu li,
+  .expanded-mobile-menu li ul.children li {
+    display: block;
+    padding: 0.2em 0.4em 0;
+    /* could go deeper here... */
+  }
+  .menu li ul.sub-menu li a,
+  .menu li ul.children li a,
+  .no-js .menu li ul.sub-menu li a,
+  .no-js .menu li ul.children li a,
+  .expanded-mobile-menu li ul.sub-menu li a,
+  .expanded-mobile-menu li ul.children li a {
+    font-size: 1em;
+    padding: 0.2em 0.5em 0.2em 0.8em;
+    display: block;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    background: transparent;
+  }
+  .menu li ul.sub-menu li a:hover,
+  .menu li ul.sub-menu li a:focus,
+  .menu li ul.children li a:hover,
+  .menu li ul.children li a:focus,
+  .no-js .menu li ul.sub-menu li a:hover,
+  .no-js .menu li ul.sub-menu li a:focus,
+  .no-js .menu li ul.children li a:hover,
+  .no-js .menu li ul.children li a:focus,
+  .expanded-mobile-menu li ul.sub-menu li a:hover,
+  .expanded-mobile-menu li ul.sub-menu li a:focus,
+  .expanded-mobile-menu li ul.children li a:hover,
+  .expanded-mobile-menu li ul.children li a:focus {
+    background: #3d3d3d;
+  }
+  .menu li ul.sub-menu li:last-child a,
+  .menu li ul.children li:last-child a,
+  .no-js .menu li ul.sub-menu li:last-child a,
+  .no-js .menu li ul.children li:last-child a,
+  .expanded-mobile-menu li ul.sub-menu li:last-child a,
+  .expanded-mobile-menu li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  .menu li:hover ul,
+  .menu li.focused ul,
+  .no-js .menu li:hover ul,
+  .no-js .menu li.focused ul,
+  .expanded-mobile-menu li:hover ul,
+  .expanded-mobile-menu li.focused ul {
+    transition: max-height 800ms ease-in, min-height 500ms ease-out, padding 500ms ease-out, opacity 800ms ease-out;
+    /* again using min/max heights to deal with unknown length of lists */
+    min-height: 8em;
+    max-height: 100em;
+    padding: 0.4em 0;
+    opacity: 1;
+  }
+  .menu li:hover ul ul,
+  .menu li.focused ul ul,
+  .no-js .menu li:hover ul ul,
+  .no-js .menu li.focused ul ul,
+  .expanded-mobile-menu li:hover ul ul,
+  .expanded-mobile-menu li.focused ul ul {
+    min-height: 0;
+    padding: 0;
+  }
+  .menu li:hover > a,
+  .no-js .menu li:hover > a,
+  .expanded-mobile-menu li:hover > a {
+    background: #383838;
+  }
+  /* end .menu */
+}
+/* end media query*/
 
 /*# sourceMappingURL=style.css.map */
