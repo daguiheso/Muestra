@@ -47,75 +47,10 @@
             </div>
         </div>
     </nav>
-<!-- 
-
-    NAV-BAR - MAIN GLOBAL
-                 
--->
-    <nav id="main" class="main">
-        <div class="main-content-btn">
-            <span id="btn-exp-main" class="glyphicon glyphicon-menu-hamburger btn-main"></span>
-            <span id="btn-collap-main" class="glyphicon glyphicon-menu-hamburger btn-main"></span>
-        </div>
-        <div id="CA" class="associate-company">
-            <p>PELLENTENQUE <br> HABITAN S.A.S</p>
-            <p style='font-weight:300'>Sector: Suspendisse dui leo</p>
-        </div>
-        <div id="btn-collapsed-diag" class="main-category">
-            <span class="icon-category icon-line-graph"></span>
-            <p class="title-category title-diag">DIAGNÓSTICO</p>
-        </div>
-        <ul class="nav nav-pills nav-stacked nav-latleft submain-diag">
-            <li>
-                <a class="indicator" href="javascript:void(0);">Indicadores</a>
-            </li>
-            <li>
-                <a class="state-result" href="javascript:void(0);">Estado de Resultados</a>
-            </li>
-            <li>
-                <a class="balance-gen" href="javascript:void(0);">Balance General</a>
-            </li>
-            <li>
-                <a class="cash-flow" href="javascript:void(0);">Flujo de Caja</a>
-            </li>
-        </ul> 
-        <div id="btn-collapsed-proj" class="main-category">
-            <span class="icon-category icon-graph"></span>
-            <p class="title-category title-proj">PROYECCIÓN CA</p>
-        </div>
-        <ul class="nav nav-pills nav-stacked nav-latleft submain-proj">
-            <li>
-                <a class="indicator" href="javascript:void(0);">Indicadores</a>
-            </li>
-            <li>
-                <a class="state-result" href="javascript:void(0);">Estado de Resultados</a>
-            </li>
-            <li>
-                <a class="balance-gen" href="javascript:void(0);">Balance General</a>
-            </li>
-            <li>
-                <a class="cash-flow" href="javascript:void(0);">Flujo de Caja</a>
-            </li>
-        </ul>
-        <div id="btn-collapsed-val" class="main-category">
-            <span class="icon-category icon-coin-dollar"></span>
-            <p class="title-category title-val">VALORACIÓN</p>
-        </div>
-        <ul class="nav nav-pills nav-stacked nav-latleft submain-val">
-            <li>
-                <a class="val-ca" href="javascript:void(0);">Compañia Analizada</a>
-            </li>
-            <li>
-                <a class="val-ms" href="javascript:void(0);">Múltiplos del Sector</a>
-            </li>
-        </ul>  
-        <div id="abreviators" class="abreviators">
-            CA: Compañoa Analizada<br>S: Sector<br>SD: Sector Decil<br>CS: Compañias Seleccionadas
-        </div>
-    </nav>
 
 
-    <div id="content">        
+
+    <div class="container">        
        
 
 <!-- 
@@ -1266,6 +1201,401 @@
             </table>
         </div>
         <br>
+        <h2>Code</h2>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-T3-2" aria-controls="#CodeJS-T3-2" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-T3-2" aria-controls="#CodeHTML-T3-2" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-T3-2" aria-controls="#CodeCSS-T3-2" role="tab" data-toggle="tab">CSS</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-T3-2">
+                <pre>
+                    <code>
+    $('#dataTable3byYears').dataTable({     
+        colVis: {
+            "buttonText": "Mostrar/Ocultar Años",
+            exclude: ['all'],
+            groups: [               
+                {
+                    title: "2019 - 2023",
+                    columns: [ 9, 10, 11, 12, 13 ]
+                }               
+            ]
+        },
+        "dom": 'CT<"clear">lfrtip',
+        tableTools: {
+            "aButtons": [ "xls", "pdf" ]
+        },
+        "ordering": false,
+        "searching" : false,
+        "scrollX": "100%",
+        "scrollCollapse": true,
+        "paging": false,
+        "info": false
+    }); 
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-T3-2">
+            <pre>
+                <code>
+    &lt;div class=&quot;content-tables&quot;&gt;
+        &lt;table id=&quot;dataTable3byYears&quot; class=&quot;table display cell-border compact table-pipoka&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;th&gt;Und.&lt;/th&gt;
+                    &lt;th&gt;Promedio&lt;br&gt;Ult. 5 a&ntilde;os&lt;/th&gt;
+                    &lt;th&gt;2013&lt;/th&gt;
+                    &lt;th&gt;2014&lt;/th&gt;
+                    &lt;th&gt;2015&lt;/th&gt;
+                    &lt;th&gt;2016&lt;/th&gt;
+                    &lt;th&gt;2017&lt;/th&gt;
+                    &lt;th&gt;2018&lt;/th&gt;
+                    &lt;th&gt;2019&lt;/th&gt;
+                    &lt;th&gt;2020&lt;/th&gt;
+                    &lt;th&gt;2021&lt;/th&gt;
+                    &lt;th&gt;2022&lt;/th&gt;
+                    &lt;th&gt;2023&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;title-tables&quot;&gt;INDICADORES DE DESEMPE&Ntilde;O&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Crecimiento anual de los ingresos&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;N/D&lt;/td&gt;
+                    &lt;td&gt;18%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ingresos / Activos&lt;/td&gt;
+                    &lt;td&gt;Veces&lt;/td&gt;
+                    &lt;td&gt;2.8&lt;/td&gt;
+                    &lt;td&gt;2.2&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Activos / Patrimonio&lt;/td&gt;
+                    &lt;td&gt;Veces&lt;/td&gt;
+                    &lt;td&gt;10.5&lt;/td&gt;
+                    &lt;td&gt;4.9&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;(Disponoble + Inversiones temporales) / Activos&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;4%&lt;/td&gt;
+                    &lt;td&gt;5%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td class=&quot;title-tables&quot;&gt;INDICADORES DE RENTABILIDAD&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Margen EBITDA&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;7%&lt;/td&gt;
+                    &lt;td&gt;8%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Margen Neto&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;1%&lt;/td&gt;
+                    &lt;td&gt;4%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;ROA (Rentabilidad del Activo)&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;2%&lt;/td&gt;
+                    &lt;td&gt;8%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;ROE(Rentabilidad sobre el Patrimonio)&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;3%&lt;/td&gt;
+                    &lt;td&gt;37%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;title-tables&quot;&gt;INDICADORES DE CAPACIDAD &lt;br&gt; DE GENERACI&Oacute;N DE EFECTIVO&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Flujo de Caja Libre Ingresos&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;1%&lt;/td&gt;
+                    &lt;td&gt;-7%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ciclo Operacional&lt;/td&gt;
+                    &lt;td&gt;Dias&lt;/td&gt;
+                    &lt;td&gt;44&lt;/td&gt;
+                    &lt;td&gt;75&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;CAPEX/Ingresos&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;-1%&lt;/td&gt;
+                    &lt;td&gt;-3%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Flujode Caja Libre Operacional/Utilidad Neta&lt;/td&gt;
+                    &lt;td&gt;Veces&lt;/td&gt;
+                    &lt;td&gt;1.0&lt;/td&gt;
+                    &lt;td&gt;-0.9%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+
+                &lt;tr&gt;
+                    &lt;td class=&quot;title-tables&quot;&gt;INDICADORES DE ENDEUDAMIENTO&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Pasivo Financiero/Activo&lt;/td&gt;
+                    &lt;td&gt;%&lt;/td&gt;
+                    &lt;td&gt;20%&lt;/td&gt;
+                    &lt;td&gt;29%&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;EBITDA/Intereses&lt;/td&gt;
+                    &lt;td&gt;Veces&lt;/td&gt;
+                    &lt;td&gt;2.7&lt;/td&gt;
+                    &lt;td&gt;3.6&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Flujo de Caja Libre/Intereses&lt;/td&gt;
+                    &lt;td&gt;Veces&lt;/td&gt;
+                    &lt;td&gt;0.8&lt;/td&gt;
+                    &lt;td&gt;N/A&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Pasivo Financiero/EBITDA&lt;/td&gt;
+                    &lt;td&gt;Veces&lt;/td&gt;
+                    &lt;td&gt;1.1&lt;/td&gt;
+                    &lt;td&gt;1.7&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt; 
+                </code>
+            </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-T3-2">
+            <pre>
+                <code>
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../../assets/css/style.css&quot;&gt;
+                </code>
+            </pre>
+            </div>
+        </div>
 <!-- 
 
     TIPO 3 - # 3
@@ -1718,7 +2048,537 @@
                 </div>
             </div>
         </div>
+        <h2>Code</h2>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-T3-3" aria-controls="#CodeJS-T3-3" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-T3-3" aria-controls="#CodeHTML-T3-3" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-T3-3" aria-controls="#CodeCSS-T3-3" role="tab" data-toggle="tab">CSS</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-T3-3">
+                <pre>
+                    <code>
+    $('#dataTable3Tab1').dataTable({        
+        colVis: {
+            "buttonText": "Mostrar/Ocultar Años",
+            exclude: ['all'],
+            groups: [
+                {
+                    title: "2019 - 2023",
+                    columns: [ 7, 8, 9, 10, 11 ]
+                }               
+            ]
+        },
+        "dom": 'CT<"clear">lfrtip',
+        tableTools: {
+            "aButtons": [ "xls", "pdf" ]
+        },      
+        "ordering": false,
+        "searching" : false,
+        "scrollX": "true",
+        "scrollCollapse": true,
+        "paging": false,
+        "info": false
+    }); 
+
+
+
+    $('.tab-pipoka').on('shown.bs.tab', function (e) {
+        e.target 
+        e.relatedTarget 
         
+        $('#dataTable3Tab2').dataTable({
+            colVis: {
+                "buttonText": "Mostrar/Ocultar Años",
+                exclude: ['all'],
+                groups: [               
+                    {
+                        title: "2019 - 2023",
+                        columns: [ 9, 10, 11, 12, 13 ]
+                    }               
+                ]
+            },
+            "dom": 'CT<"clear">lfrtip',
+            tableTools: {
+                "aButtons": [ "xls", "pdf" ]
+            },          
+            "ordering": false,
+            "searching" : false,
+            "scrollX": "true",
+            "scrollCollapse": true,
+            "paging": false,
+            "info": false,
+            "destroy": true
+        });
+    });
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-T3-3">
+                <pre>
+                    <code>
+    &lt;!-- Nav tabs --&gt;
+    &lt;ul class=&quot;nav nav-tabs nav-tabs-pipoka&quot; role=&quot;tablist&quot;&gt;
+        &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#pest1&quot; aria-controls=&quot;pest1&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Cifras en Miles de Millones&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;presentation&quot;&gt;&lt;a class=&quot;tab-pipoka&quot; href=&quot;#pest2&quot; aria-controls=&quot;pest2&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;Base 100 Activos&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+        &lt;!-- Tab panes 1 --&gt;
+        &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;pest1&quot;&gt;
+            &lt;div class=&quot;content-tables&quot;&gt;
+                &lt;br&gt;
+                &lt;table id=&quot;dataTable3Tab1&quot; class=&quot;table display cell-border compact table-pipoka&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                            &lt;th&gt;2013&lt;/th&gt;
+                            &lt;th&gt;2014&lt;/th&gt;
+                            &lt;th&gt;2015&lt;/th&gt;
+                            &lt;th&gt;2016&lt;/th&gt;
+                            &lt;th&gt;2017&lt;/th&gt;
+                            &lt;th&gt;2018&lt;/th&gt;
+                            &lt;th&gt;2019&lt;/th&gt;
+                            &lt;th&gt;2020&lt;/th&gt;
+                            &lt;th&gt;2021&lt;/th&gt;
+                            &lt;th&gt;2022&lt;/th&gt;
+                            &lt;th&gt;2023&lt;/th&gt;
+                            &lt;th&gt;2024&lt;/th&gt;
+                            &lt;th&gt;Crecimiento &lt;br&gt; Promedio Anual&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Ingresos&lt;/td&gt;
+                            &lt;td&gt;31.7&lt;/td&gt;
+                            &lt;td&gt;34.1&lt;/td&gt;
+                            &lt;td&gt;62.7&lt;/td&gt;
+                            &lt;td&gt;46.2&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;14.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Costo de Ventas&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;(57.2)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;13.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO BRUTO&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;2.6&lt;/td&gt;
+                            &lt;td&gt;5.5&lt;/td&gt;
+                            &lt;td&gt;7.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;21.3%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Gastos de Administraci&oacute;n&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;(57.2)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;13.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Gastos de Ventas&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Otros Operacionales&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO OPERACIONAL&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;2.6&lt;/td&gt;
+                            &lt;td&gt;5.5&lt;/td&gt;
+                            &lt;td&gt;7.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;21.3%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Resultado No Operacional&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;(57.2)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;18.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Gastos por Interes&lt;/td&gt;
+                            &lt;td&gt;(1.5)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(2.0)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;-5.2%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO ANTES DE IMPUESTOS&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;2.6&lt;/td&gt;
+                            &lt;td&gt;5.5&lt;/td&gt;
+                            &lt;td&gt;7.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;124,1%%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Impuestos&lt;/td&gt;
+                            &lt;td&gt;(1.5)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(2.0)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;39.2%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO NETO&lt;/td&gt;
+                            &lt;td&gt;(1.5)&lt;/td&gt;
+                            &lt;td&gt;0.1&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;0.9&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Tab panes 2 --&gt;
+        &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;pest2&quot;&gt;
+            &lt;div class=&quot;content-tables&quot;&gt;
+                &lt;br&gt;
+                &lt;table id=&quot;dataTable3Tab2&quot; class=&quot;table display cell-border compact table-pipoka&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                            &lt;th&gt;2012&lt;/th&gt;
+                            &lt;th&gt;2014&lt;/th&gt;
+                            &lt;th&gt;2015&lt;/th&gt;
+                            &lt;th&gt;2016&lt;/th&gt;
+                            &lt;th&gt;2017&lt;/th&gt;
+                            &lt;th&gt;2018&lt;/th&gt;
+                            &lt;th&gt;2019&lt;/th&gt;
+                            &lt;th&gt;2020&lt;/th&gt;
+                            &lt;th&gt;2021&lt;/th&gt;
+                            &lt;th&gt;2022&lt;/th&gt;
+                            &lt;th&gt;2023&lt;/th&gt;
+                            &lt;th&gt;2024&lt;/th&gt;
+                            &lt;th&gt;Crecimiento &lt;br&gt; Promedio Anual&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Ingresos&lt;/td&gt;
+                            &lt;td&gt;31.7&lt;/td&gt;
+                            &lt;td&gt;34.1&lt;/td&gt;
+                            &lt;td&gt;62.7&lt;/td&gt;
+                            &lt;td&gt;46.2&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;54.5&lt;/td&gt;
+                            &lt;td&gt;14.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Costo de Ventas&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;(57.2)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;13.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO BRUTO&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;2.6&lt;/td&gt;
+                            &lt;td&gt;5.5&lt;/td&gt;
+                            &lt;td&gt;7.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;21.3%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Gastos de Administraci&oacute;n&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;(57.2)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;13.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Gastos de Ventas&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Otros Operacionales&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO OPERACIONAL&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;2.6&lt;/td&gt;
+                            &lt;td&gt;5.5&lt;/td&gt;
+                            &lt;td&gt;7.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;21.3%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Resultado No Operacional&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;(57.2)&lt;/td&gt;
+                            &lt;td&gt;(38.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;18.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Gastos por Interes&lt;/td&gt;
+                            &lt;td&gt;(1.5)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(2.0)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;-5.2%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO ANTES DE IMPUESTOS&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;2.6&lt;/td&gt;
+                            &lt;td&gt;5.5&lt;/td&gt;
+                            &lt;td&gt;7.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;124,1%%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Impuestos&lt;/td&gt;
+                            &lt;td&gt;(1.5)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;(2.0)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;(1.2)&lt;/td&gt;
+                            &lt;td&gt;39.2%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;title-tables&quot;&gt;RESULTADO NETO&lt;/td&gt;
+                            &lt;td&gt;(1.5)&lt;/td&gt;
+                            &lt;td&gt;0.1&lt;/td&gt;
+                            &lt;td&gt;(0.8)&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;1.9&lt;/td&gt;
+                            &lt;td&gt;0.9&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-T3-3">
+                <pre>
+                    <code>
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../../assets/css/style.css&quot;&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+
+
+
     </div>
     <script src="../../assets/js/all.js"></script>
 </body>
