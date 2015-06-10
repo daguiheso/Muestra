@@ -82,7 +82,8 @@
 		<p>DataTables es una biblioteca externa que añade funcionalidades de interacción avanzadas a cualquier tabla HTML. DataTables ofrece una documentación y ejemplos en su <a href="https://datatables.net" target="_black">página web</a></p>
 		<h3>Empezando</h3>
 		<h5>Dependencias</h5>
-		<p>Lo primero es importar los archivos JavaScript y CSS correspondientes a DataTables en nuestro gulpfile.js y compilar.</p>
+		<p>Lo primero es importar los archivos JavaScript y CSS correspondientes para DataTables en nuestro gulpfile.js y compilar.</p>
+		<p>Es importante el orden de las dependencias, siempre se debe mantener el orden mostrado a continuación (1. jQuery 2. bootstrap.js ...)</p>
 		<pre>
 			<code>
 	var elixir = require('laravel-elixir');
@@ -101,8 +102,15 @@
 			</code>
 		</pre>
 		<h5>JavaScript</h5>
-		<p>Una vez compilado con Gulp.js </p>
-
+		<p>Una vez compilado con Gulp.js con las dependencias, es necesario inicializar las tablascon DataTable. </p>
+		<h4>Ejemplos DataTables</h4>
+		<ul>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
 	</div>
 <script src="assets/js/all.js"></script>
 </body>
