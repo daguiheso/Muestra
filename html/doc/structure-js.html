@@ -77,9 +77,18 @@
 			</code>
         </pre>
         <legend>
+            <h2>Tables</h2>
+        </legend>
+        <p>Tablas basadas en bootstrap que no tienen funcionalidades avanzadas. Estas aplican para tabla tipo 4 #1 (Balance general) y tabla tipo 5 (Valoración).</p>
+        <p>DataTables aplica para las siguientes tablas.</p>
+        <ul class="list-dataTable">
+            <li><a href="/html/doc/tableType4-1.html">Tabla tipo 4 #1</a></li>
+            <li><a href="/html/doc/tablesType5.html">Tabla tipo 5</a></li>
+        </ul>
+        <legend>
 			<h2>DataTables</h2>
 		</legend>
-		<p>DataTables es una biblioteca externa que añade funcionalidades de interacción avanzadas a cualquier tabla HTML. DataTables ofrece una documentación y ejemplos en su <a href="https://datatables.net" target="_black">página web</a></p>
+		<p>DataTables es una biblioteca externa que añade funcionalidades de interacción avanzada a cualquier tabla HTML. DataTables ofrece una documentación y ejemplos en su <a href="https://datatables.net" target="_black">página web.</a></p>
 		<h3>Empezando</h3>
 		<h5>Dependencias</h5>
 		<p>Lo primero es importar los archivos JavaScript y CSS correspondientes para DataTables en nuestro gulpfile.js y compilar.</p>
@@ -97,16 +106,29 @@
 	    	"libs/bootstrap/bootstrap.js",
 	    	"libs/datatable/jquery.dataTables.js",
 	    ], "assets/js", "resources/assets/js");
-
 	});
 			</code>
 		</pre>
+        <h3>Extensiones para DataTables</h3>
+
+        <p>Existen una serie de <a href="https://www.datatables.net/extensions/index">extensiones para DataTables</a>, en esta plantilla utlilizamos solo las siguientes.</p>
+        <ul class="list-extensions">
+            <li>
+                <a href="https://www.datatables.net/extensions/tabletools/">TableTools</a>
+                <p>Esta extension provee las opciones de guardar los DataTables en formato CSV, PDF y Excel</p>
+            </li>
+            <li>
+                <a href="https://www.datatables.net/extensions/fixedcolumns/">FixedColumns</a>
+                <p>Esta extension permite el posicionamiento fijo de las columnas de un DataTable.</p>
+            </li>
+        </ul>
 		<h5>JavaScript</h5>
 		<p>Una vez compilado con Gulp.js con las dependencias, es necesario inicializar las tablascon DataTable. </p>
-		<h4>Ejemplos DataTables</h4>
-		<ul>
-			<li><a href="/html/doc/tablesType3.html">dataTables tipo 3 - </a></li>
-			<li><a href="/html/doc/tablesType4.html">dataTables tipo 4 - </a></li>
+		<h3>Ejemplos DataTables</h3>
+        <p>DataTables aplica para las siguientes tablas.</p>
+		<ul class="list-dataTable">
+			<li><a href="/html/doc/tablesType3.html">Tablas tipo 3</a></li>
+			<li><a href="/html/doc/tablesType4.html">Tablas tipo 4</a></li>
 		</ul>
 	</div>
 	<script src="../../assets/js/all.js"></script>

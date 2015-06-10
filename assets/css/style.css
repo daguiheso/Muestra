@@ -8143,7 +8143,7 @@ body {
 }
 /*
 
-	DATA-TABLES - PIPOKA
+	DATA-TABLES Y TABLES- PIPOKA
 
 */
 .table-pipoka {
@@ -8524,6 +8524,9 @@ legend {
 }
 .c-blue {
   color: blue;
+}
+.list-dataTable li {
+  list-style: none;
 }
 /****
 SETUP
