@@ -9,8 +9,7 @@
 /*
 	TABLA TIPO 3 - # 1 
  */
-	$('#dataTable3byCompany').dataTable({
-		
+	$('#dataTable3byCompany').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
 			"bRestore": true,
@@ -44,20 +43,10 @@
 			]
 		},
 		"dom": 'CT<"clear">lfrtip',
-		// tableTools: {
-		// 	"aButtons": [ "xls", "pdf" ],
-		// 	"sSwfPath": "copy_csv_xls_pdf.swf"
-		// },
-		"oTableTools": {
-	        "sSwfPath": "assets/swf/copy_csv_xls_pdf.swf",
-            "aButtons": [
-                {
-                	"sExtends": "collection",
-                    "sButtonText": "Guardar",
-                    "aButtons": [ "csv", "xls", "pdf" ]
-                }
-            ]
-        },
+		tableTools: {
+			"aButtons": [ "xls", "pdf" ],
+			"sSwfPath": "copy_csv_xls_pdf.swf"
+		},
 		"ordering": false,
     	"searching" : false,
 		"scrollX": "100%",
@@ -69,8 +58,7 @@
 /* 
 	TABLA TIPO 3 - # 2 
 */
-	$('#dataTable3byYears').dataTable({
-		
+	$('#dataTable3byYears').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			exclude: ['all'],
@@ -96,8 +84,7 @@
 /*  
 	TABLA TIPO 3 - # 3 TAB 1 
 */
-	$('#dataTable3Tab1').dataTable({
-		
+	$('#dataTable3Tab1').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			exclude: ['all'],
@@ -187,8 +174,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 1.2
 */
-	$('#dataTableBg2Tab1-2').dataTable({
-		
+	$('#dataTableBg2Tab1-2').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
 			exclude: ['all'],
@@ -242,8 +228,7 @@
 /*
 	TABLA TIPO 4 # 2 - TAB 2.2
 */
-	    $('#dataTableBg2Tab2-2').dataTable({
-		
+	    $('#dataTableBg2Tab2-2').dataTable({		
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
 				exclude: ['all'],
