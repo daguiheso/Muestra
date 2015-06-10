@@ -1,5 +1,46 @@
+/*
+
+	BOOTSTRAP 
+
+*/
 @import "bootstrap.less";
-@import "d3.less";
-@import "pipoka.less";
-// Documentacion
-@import "datatables.less";
+/*
+
+	DATATABLES 
+
+*/
+@import "libs/datatable/jquery.datatables.less";
+@import "libs/datatable/dataTables.tableTools.less";
+@import "libs/datatable/dataTables.colVis.less";
+/*
+
+	PIPOKA
+
+*/
+
+/* VARIABLES */
+@import "shared/variables.less";
+
+/* COMPONENTES */
+@import "pipoka/pipoka.less";
+@import "pipoka/header.less";
+@import "pipoka/main.less";
+@import "pipoka/footer.less";
+@import "pipoka/search.less";
+@import "pipoka/datatable.pipoka.less";
+
+/* VISTAS */
+@import "pipoka/home.less";
+@import "pipoka/select-companies.less";
+@import "pipoka/selected-company.less";
+
+/* UTILIDADES */
+@import "pipoka/clases.less";
+
+/* ICONFONTS Y TIPOGRAFIA */
+@import "pipoka/fonts.less";
+
+/* GRAFICAS */
+@import "libs/d3/pie.less";
+@import "libs/d3/lineChart.less";
+@import "libs/d3/tarro.less";
