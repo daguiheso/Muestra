@@ -42435,7 +42435,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 
 })();
 (function() {
-	// Variables Cerrar / Expandir Menu
+	/* VARIBALES ABRIR Y CERRAR MENU */
 	var $main = $("#main"),
 	    $content = $("#content"),
 	    $btnexpmain = $("#btn-exp-main"),
@@ -42450,7 +42450,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    $showhideCatg = $(".title-category"),
 	    $iconCatg = $(".icon-category");
 	    $abreviators = $("#abreviators");
-	// Variables Efecto acordion Menu
+	/* VARIABLES ABRIR Y CERRAR SUBMENUS */
 	var	$btnCollapDiag = $("#btn-collapsed-diag"),
 		$btnCollapProj = $("#btn-collapsed-proj"),
 		$btnCollapVal = $("#btn-collapsed-val"),
@@ -42458,11 +42458,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 		$subMainProj = $(".submain-proj"),
 		$subMainVal = $(".submain-val");
 
-/* 
-
-	Colapsar y Expandir Menu
-
-*/
+	/* COLAPSAR Y EXPANDIR MENU */
 	function collapsedMenu() {
 	    $main.toggleClass('collap');
 	    $content.toggleClass('contentTotal');
@@ -42495,7 +42491,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    }
 	    return false;
 	} 
-	// Colapsar y Expandir sub-menu Diagnostico
+	/* COLAPSAR Y EXPANDIR SUB-MENU DIAGNOSTICO */
 	function collapextendDiagnostic() {
 	    if ($(".submain-val").css("display")=="block") {
 	    	$subMainVal.slideToggle();
@@ -42507,11 +42503,10 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    }
 	    else {
 		    $subMainDiag.slideToggle();
-		    // $("#btn-collapsed-diag").toggleClass('special');
 	    }
 	    return false;
 	} 	   
-	// Colapsar y Expandir sub-menu Proyección
+	/* COLAPSAR Y EXPANDIR SUB-MENU PROYECCION*/	
 	function collapextendProjection() {
 		if ($(".submain-val").css("display")=="block") {
 		    $subMainVal.slideToggle();
@@ -42526,7 +42521,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    }
 	    return false;
 	}
-	// Colapsar y Expandir sub-menu Valoración
+	/* COLAPSAR Y EXPANDIR SUB-MENU VALORACION*/
 	function collapextendValuation() {
 		if ($(".submain-proj").css("display")=="block") {
 		    $subMainProj.slideToggle();
@@ -42541,19 +42536,6 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    }
 	    return false;
 	}
-
-	function selectI() {
-		if($indicator.hasClass('collap') === true){
-			$indicator.toggleClass('special'); 
-		}
-		$indicator.toggleClass('special');
-		return false;
-	    // $valCA.toggleClass('special');
-	    // $valMS.toggleClass('special');
-        // var fr = $(this)
-        // console.log(fr)
-        // fr.toggleClass('select');
-	}
 	//Eventos
 	$btncollapmain.click(collapsedMenu);
 	$btnexpmain.click(collapsedMenu);
@@ -42563,25 +42545,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	$("#main ul li a").click(collapsedMenu);
 })();
 (function () {
-	var $pest2 = $("#pest2"),
-		$linkPest2 = $("#linkpest2");
-
-	// $pest2.addClass("visible");
-		// $pest2.removeClass("active");
-	
-	// function changes () {
-		// $pest2.css("display", "block");
-		// $pest2.removeClass("active");
-		// $pest2.removeClass("visible");
-		// return false;
-	// }
-
-	// $linkPest2.click(changes);
-
-	
-
-})();
-(function () {
+	// MOSTRAR/OCULTAR FILAS Y COLUMNAS
 	var $btnCollapsed = $("#btn-collapsed-tableValoration"),
 		$showHide = $('.tr-Valoration');
 
@@ -42593,7 +42557,8 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	$btnCollapsed.click(collapsedElements);
 })();
 (function () {
-	// Efecto acordion Tablas 
+	// OCULTAR/MOSTRAR  FILAS
+
 	var $btnCollapsedBg1Tab1 = $("#btn-collapsed-bg1Tab1"),
 		$showHideBg1Tab1 = $(".tr-bg1-tab1"),	
 		$btnCollapsedBg1Tab2 = $("#btn-collapsed-bg1Tab2"),
@@ -42627,13 +42592,13 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	$btnCollapsedBg2Tab2.click(collapsedElementsBg2Tab2);
 })();
 (function () {
-	// Add Companies - Compare
+	// ADD COMPANIES - COMPARE
 	var cont = 0;
 	var $formAdd = $(".form-addCompany").first(),
 		$inputAdd = $(".input-add-company"),
 		$list = $("#companies-select"),
 		$btnAddCompany = $(".add-company");
-
+	// VALIDACIONES
 	function addForm(){ 
 		if ($inputAdd.val() === "") {
 			alert("Ingrese Compañia")
@@ -42657,11 +42622,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 
 */
 (function () {
-
-
-/*
-	TABLA TIPO 3 - # 1 
- */
+/*TABLA TIPO 3 - # 1  */
 	$('#dataTable3byCompany').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
@@ -42708,9 +42669,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
     	"info": false
 	});
 	
-/* 
-	TABLA TIPO 3 - # 2 
-*/
+/* TABLA TIPO 3 - # 2 */
 	$('#dataTable3byYears').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -42734,9 +42693,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
     	"info": false
 	});	
 
-/*  
-	TABLA TIPO 3 - # 3 TAB 1 
-*/
+/* TABLA TIPO 3 - # 3 TAB 1 */
 	$('#dataTable3Tab1').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -42765,9 +42722,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 		e.target 
 	    e.relatedTarget 
 	    
-/*  
-	TABLA TIPO 3 - # 3 TAB 2
-*/
+/* TABLA TIPO 3 - # 3 TAB 2 */
 	    $('#dataTable3Tab2').dataTable({
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -42801,9 +42756,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 
 */
 
-/*
-	TABLA TIPO 4 # 2 - TAB 1.1
-*/
+/* TABLA TIPO 4 # 2 - TAB 1.1 */
     $('#dataTableBg2Tab1').dataTable({
 		
 		colVis: {
@@ -42824,9 +42777,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
     	"paging": false,
     	"info": false
 	});
-/*
-	TABLA TIPO 4 # 2 - TAB 1.2
-*/
+/* TABLA TIPO 4 # 2 - TAB 1.2 */
 	$('#dataTableBg2Tab1-2').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -42849,14 +42800,12 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 
 
 
-// Evento que detecta cambio de pestaña 
+	// Evento que detecta cambio de pestaña 
 	$('.tab-pipoka').on('shown.bs.tab', function (e) {
 	   e.target 
 	   e.relatedTarget 
 
-/*
-	TABLA TIPO 4 # 2 - TAB 2.1
-*/
+/* TABLA TIPO 4 # 2 - TAB 2.1 */
 	    $('#dataTableBg2Tab2').dataTable({ 
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -42878,9 +42827,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
 	    	"destroy": true
 	    });
 	    
-/*
-	TABLA TIPO 4 # 2 - TAB 2.2
-*/
+/* TABLA TIPO 4 # 2 - TAB 2.2 */
 	    $('#dataTableBg2Tab2-2').dataTable({		
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",

@@ -1,5 +1,5 @@
 (function() {
-	// Variables Cerrar / Expandir Menu
+	/* VARIBALES ABRIR Y CERRAR MENU */
 	var $main = $("#main"),
 	    $content = $("#content"),
 	    $btnexpmain = $("#btn-exp-main"),
@@ -14,7 +14,7 @@
 	    $showhideCatg = $(".title-category"),
 	    $iconCatg = $(".icon-category");
 	    $abreviators = $("#abreviators");
-	// Variables Efecto acordion Menu
+	/* VARIABLES ABRIR Y CERRAR SUBMENUS */
 	var	$btnCollapDiag = $("#btn-collapsed-diag"),
 		$btnCollapProj = $("#btn-collapsed-proj"),
 		$btnCollapVal = $("#btn-collapsed-val"),
@@ -22,11 +22,7 @@
 		$subMainProj = $(".submain-proj"),
 		$subMainVal = $(".submain-val");
 
-/* 
-
-	Colapsar y Expandir Menu
-
-*/
+	/* COLAPSAR Y EXPANDIR MENU */
 	function collapsedMenu() {
 	    $main.toggleClass('collap');
 	    $content.toggleClass('contentTotal');
@@ -59,7 +55,7 @@
 	    }
 	    return false;
 	} 
-	// Colapsar y Expandir sub-menu Diagnostico
+	/* COLAPSAR Y EXPANDIR SUB-MENU DIAGNOSTICO */
 	function collapextendDiagnostic() {
 	    if ($(".submain-val").css("display")=="block") {
 	    	$subMainVal.slideToggle();
@@ -71,11 +67,10 @@
 	    }
 	    else {
 		    $subMainDiag.slideToggle();
-		    // $("#btn-collapsed-diag").toggleClass('special');
 	    }
 	    return false;
 	} 	   
-	// Colapsar y Expandir sub-menu Proyección
+	/* COLAPSAR Y EXPANDIR SUB-MENU PROYECCION*/	
 	function collapextendProjection() {
 		if ($(".submain-val").css("display")=="block") {
 		    $subMainVal.slideToggle();
@@ -90,7 +85,7 @@
 	    }
 	    return false;
 	}
-	// Colapsar y Expandir sub-menu Valoración
+	/* COLAPSAR Y EXPANDIR SUB-MENU VALORACION*/
 	function collapextendValuation() {
 		if ($(".submain-proj").css("display")=="block") {
 		    $subMainProj.slideToggle();
@@ -104,19 +99,6 @@
 		    $subMainVal.slideToggle();
 	    }
 	    return false;
-	}
-
-	function selectI() {
-		if($indicator.hasClass('collap') === true){
-			$indicator.toggleClass('special'); 
-		}
-		$indicator.toggleClass('special');
-		return false;
-	    // $valCA.toggleClass('special');
-	    // $valMS.toggleClass('special');
-        // var fr = $(this)
-        // console.log(fr)
-        // fr.toggleClass('select');
 	}
 	//Eventos
 	$btncollapmain.click(collapsedMenu);

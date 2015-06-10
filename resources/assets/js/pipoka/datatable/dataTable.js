@@ -4,11 +4,7 @@
 
 */
 (function () {
-
-
-/*
-	TABLA TIPO 3 - # 1 
- */
+/*TABLA TIPO 3 - # 1  */
 	$('#dataTable3byCompany').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Compañias",
@@ -55,9 +51,7 @@
     	"info": false
 	});
 	
-/* 
-	TABLA TIPO 3 - # 2 
-*/
+/* TABLA TIPO 3 - # 2 */
 	$('#dataTable3byYears').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -81,9 +75,7 @@
     	"info": false
 	});	
 
-/*  
-	TABLA TIPO 3 - # 3 TAB 1 
-*/
+/* TABLA TIPO 3 - # 3 TAB 1 */
 	$('#dataTable3Tab1').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -112,9 +104,7 @@
 		e.target 
 	    e.relatedTarget 
 	    
-/*  
-	TABLA TIPO 3 - # 3 TAB 2
-*/
+/* TABLA TIPO 3 - # 3 TAB 2 */
 	    $('#dataTable3Tab2').dataTable({
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -148,9 +138,7 @@
 
 */
 
-/*
-	TABLA TIPO 4 # 2 - TAB 1.1
-*/
+/* TABLA TIPO 4 # 2 - TAB 1.1 */
     $('#dataTableBg2Tab1').dataTable({
 		
 		colVis: {
@@ -171,9 +159,7 @@
     	"paging": false,
     	"info": false
 	});
-/*
-	TABLA TIPO 4 # 2 - TAB 1.2
-*/
+/* TABLA TIPO 4 # 2 - TAB 1.2 */
 	$('#dataTableBg2Tab1-2').dataTable({		
 		colVis: {
 			"buttonText": "Mostrar/Ocultar Años",
@@ -196,14 +182,12 @@
 
 
 
-// Evento que detecta cambio de pestaña 
+	// Evento que detecta cambio de pestaña 
 	$('.tab-pipoka').on('shown.bs.tab', function (e) {
 	   e.target 
 	   e.relatedTarget 
 
-/*
-	TABLA TIPO 4 # 2 - TAB 2.1
-*/
+/* TABLA TIPO 4 # 2 - TAB 2.1 */
 	    $('#dataTableBg2Tab2').dataTable({ 
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",
@@ -225,9 +209,7 @@
 	    	"destroy": true
 	    });
 	    
-/*
-	TABLA TIPO 4 # 2 - TAB 2.2
-*/
+/* TABLA TIPO 4 # 2 - TAB 2.2 */
 	    $('#dataTableBg2Tab2-2').dataTable({		
 			colVis: {
 				"buttonText": "Mostrar/Ocultar Años",

@@ -1,11 +1,11 @@
 (function () {
-	// Add Companies - Compare
+	// ADD COMPANIES - COMPARE
 	var cont = 0;
 	var $formAdd = $(".form-addCompany").first(),
 		$inputAdd = $(".input-add-company"),
 		$list = $("#companies-select"),
 		$btnAddCompany = $(".add-company");
-
+	// VALIDACIONES
 	function addForm(){ 
 		if ($inputAdd.val() === "") {
 			alert("Ingrese Compañia")

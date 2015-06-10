@@ -1,5 +1,6 @@
 (function () {
-	// Efecto acordion Tablas 
+	// OCULTAR/MOSTRAR  FILAS
+
 	var $btnCollapsedBg1Tab1 = $("#btn-collapsed-bg1Tab1"),
 		$showHideBg1Tab1 = $(".tr-bg1-tab1"),	
 		$btnCollapsedBg1Tab2 = $("#btn-collapsed-bg1Tab2"),

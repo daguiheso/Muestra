@@ -20,7 +20,6 @@ elixir(function(mix) {
         "libs/d3/lineChart/script.js",
         "libs/d3/tarro/script.js",
         "pipoka/main.js",
-        "pipoka/tables/tables.js",
         "pipoka/tables/table-valoracion.js",
         "pipoka/tables/table-balance-general.js",
         "pipoka/companies/addCompany.js",

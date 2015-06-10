@@ -1,4 +1,5 @@
 (function () {
+	// MOSTRAR/OCULTAR FILAS Y COLUMNAS
 	var $btnCollapsed = $("#btn-collapsed-tableValoration"),
 		$showHide = $('.tr-Valoration');
 
