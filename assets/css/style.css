@@ -8143,7 +8143,7 @@ body {
 }
 /*
 
-	DATA-TABLES - PIPOKA
+	DATA-TABLES Y TABLAS- PIPOKA
 
 */
 .table-pipoka {
@@ -8193,6 +8193,35 @@ table.dataTable {
 table.dataTable.cell-border > tbody > tr:nth-child(1) td {
   border-top: 0 !important;
 }
+table.dataTable thead td {
+  border-bottom: 3px solid #0de32a !important;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: 1px solid #dddddd !important;
+}
+table.dataTable.no-footer,
+table.dataTable thead th {
+  border-bottom: 0 !important;
+}
+table.dataTable.cell-border tbody th,
+table.dataTable.cell-border tbody td,
+table.dataTable.cell-border thead th {
+  border-top: 1px solid #dddddd !important;
+  border-right: 1px solid #dddddd !important;
+}
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child,
+table.dataTable.cell-border thead tr th:first-child {
+  border-left: 1px solid #dddddd !important;
+}
+#dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
+  border-left: 0 !important;
+}
+/*
+
+	SOBREESCRITURA DE CLASES PARA EXTENSIONES DE DATATABLES
+
+*/
 div.ColVis {
   float: initial !important;
 }
@@ -8235,30 +8264,6 @@ ul.ColVis_collection li span {
 }
 .DTTT {
   float: right;
-}
-table.dataTable thead td {
-  border-bottom: 3px solid #0de32a !important;
-}
-.dataTables_wrapper.no-footer .dataTables_scrollBody {
-  border-bottom: 1px solid #dddddd !important;
-}
-table.dataTable.no-footer,
-table.dataTable thead th {
-  border-bottom: 0 !important;
-}
-table.dataTable.cell-border tbody th,
-table.dataTable.cell-border tbody td,
-table.dataTable.cell-border thead th {
-  border-top: 1px solid #dddddd !important;
-  border-right: 1px solid #dddddd !important;
-}
-table.dataTable.cell-border tbody tr th:first-child,
-table.dataTable.cell-border tbody tr td:first-child,
-table.dataTable.cell-border thead tr th:first-child {
-  border-left: 1px solid #dddddd !important;
-}
-#dataTable_wrapper > div.DTFC_ScrollWrapper > div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr:nth-child(2) > th:nth-child(1) {
-  border-left: 0 !important;
 }
 /* VISTAS */
 .home {

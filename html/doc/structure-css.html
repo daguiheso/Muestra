@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 </head>
 <body class="documentation">
+<!--
+
+    MENU
+
+-->
     <nav role="navigation" class="navDoc">
         <a class="menu-toggle" href="#head-nav">
             <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span><span class="menu-toggle-text"> menu</span>
@@ -16,24 +21,29 @@
             </li>
             <li class="menu-item">
                 <a href="/html/doc/structure-css.html">Estructura CSS</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#tipografia">Tipografia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tabla-sencilla">Tablas Sencillas</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu-item">
                 <a href="/html/doc/structure-js.html">Estructura JS</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
-                        <a href="">Reading</a>
+                        <a href="#estructure-js">Estructura JS</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Writing</a>
+                        <a href="#tabla-sencilla">Tabla Sencilla</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Arithmatic</a>
+                        <a href="#table-dataTable">Tabla con DataTable</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Something Long</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="">Something Else</a>
+                        <a href="">Menu</a>
                     </li>
                 </ul>
             </li>
@@ -41,14 +51,20 @@
                 <a href="">Componentes</a>
             </li>
         </ul>
-    </nav>      
+    </nav>  
+
 	<div class="container">
         <legend>
-            <h2>Estructura JavaScript</h2>
+            <h2>CSS</h2>
         </legend>
         <br>
+<!--
+
+    TIPOGRAFIA
+    
+-->
 		<legend>
-			<h2>Tipografia</h2>
+			<h2 id="tipografia">Tipografia</h2>
 		</legend>
 		<p>Ademas de los estilos de Bootstrap, Pipoka tiene opciones adicionales.</p>
 		<div class="jumbotron content-jumb">
@@ -71,8 +87,13 @@
 	&lt;h6 class=&quot;title-h6&quot;&gt;Esto es un H6&lt;/h6&gt;
 			</code>
 		</pre>
+<!--
+
+    TABLAS SENCILLAS
+    
+-->
 		<legend>
-			<h2>Tablas - Sencillas</h2>
+			<h2 id="tabla-sencilla">Tabla - Sencilla</h2>
 		</legend>
 		<p>Para todas las tablas utilizadas en Pipoka se debe implementar las clases css <span class="c-red">.table .table-pipoka</span>, ademas de estar dentro de un <span class="c-blue">div</span> contenedor que lleva por clase <span class="c-red">.content-tables </span>. Estas clases css le dan un estilio limpio y recomendado a las tablas de la plantilla. Todas las caracteristticas y estilos de Bootstarp pueden ser aplicadas ya que Pipoka se basa en Bootstrap.</p>
 		<pre>
@@ -84,7 +105,12 @@
 	&lt;/div&gt;
 			</code>
 		</pre>        
-	    
+        <p>Ademas de las clases perzonalizadas de Pipoka es posible y recomendable utilizar las clases CSS ofrecidas por Bootstrap para las tablas.</p>
+            <pre>
+                <code>
+    &lt;table class=&quot;table table-pipoka table-bordered table-striped table-condensed table-hover&quot;&gt;                
+                </code>                
+            </pre>
         <h3>Titulos para Filas</h3>
         <p>Para dar estilo de Pipoka a los titulos de las filas se incluye la clase css <span class="c-red">.title-tables</span></p>
         <div class="jumbotron content-jumb">
@@ -131,6 +157,55 @@
     &lt;/tr&gt;
             </code>
         </pre>
+        <h3>Subtitulos para Cabeceras de Tablas con filas y columnas combinadas</h3>
+        <p>Los subtitulos para tablas con este tipo de cabecera se les aplica la clase css <span class="c-red">.subtitle-table-pipoka</span>. Este estilo le da una suavidad al peso de la fuente con respecto a los titulos.</p>
+        <div class="jumbotron content-jumb">
+            <div class="content-tables">
+                <div class="table-responsive">
+                    <table class="table table-pipoka table-bordered table striped table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th rowspan="2"></th>
+                                <th rowspan="2">Und.</th>
+                                <th colspan="2">PELLENTENQUE HABITAN</th>
+                                <th colspan="2">SECTOR</th>
+                                <tr> 
+                                    <th class="subtitle-table-pipoka">Promedio <br> Ult. 5 años</th>
+                                    <th class="subtitle-table-pipoka">2013</th>
+                                    <th class="subtitle-table-pipoka">Promedio <br> Ult. 5 años</th>
+                                    <th class="subtitle-table-pipoka">2013</th>
+                                </tr>                        
+                            </tr>
+                        </thead>            
+                    </table>
+                </div>
+            </div>
+        </div>
+        <pre>
+            <code>
+    &lt;div class=&quot;content-tables&quot;&gt;
+        &lt;div class=&quot;table-responsive&quot;&gt;
+            &lt;table class=&quot;table table-pipoka table-bordered table striped table-condensed table-hover&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th rowspan=&quot;2&quot;&gt;&lt;/th&gt;
+                        &lt;th rowspan=&quot;2&quot;&gt;Und.&lt;/th&gt;
+                        &lt;th colspan=&quot;2&quot;&gt;PELLENTENQUE HABITAN&lt;/th&gt;
+                        &lt;th colspan=&quot;2&quot;&gt;SECTOR&lt;/th&gt;
+                        &lt;tr&gt; 
+                            &lt;th class=&quot;subtitle-table-pipoka&quot;&gt;Promedio &lt;br&gt; Ult. 5 a&ntilde;os&lt;/th&gt;
+                            &lt;th class=&quot;subtitle-table-pipoka&quot;&gt;2013&lt;/th&gt;
+                            &lt;th class=&quot;subtitle-table-pipoka&quot;&gt;Promedio &lt;br&gt; Ult. 5 a&ntilde;os&lt;/th&gt;
+                            &lt;th class=&quot;subtitle-table-pipoka&quot;&gt;2013&lt;/th&gt;
+                        &lt;/tr&gt;                        
+                    &lt;/tr&gt;
+                &lt;/thead&gt;            
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+            </code>
+        </pre>
+        <p><strong>Nota:</strong> En las tablas de tipo DataTable no es recomendable aplicar clases CSS de Bootstrap, ya que se presentaria una sobreescritura de clases entre librerias. DataTable ofrece sus propias clases y estilos CSS.</p>
         <h3>Ejemplos Tablas Sencillas</h3>
         <ul class="list-dataTable">
             <li><a href="/html/doc/tablesType1.html">Tablas tipo 1</a></li>

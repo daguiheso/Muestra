@@ -4,8 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Structure JS</title>
 	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <style type="text/css">
+        .is-Inactive {
+          display: none;
+        }
+        .btn-collapsedExample {
+          background: #6ea939;
+          border-radius: 3px;
+          padding: .5rem;
+          color: white;
+          font-size: 1.40rem;
+          margin: .5rem;
+          text-decoration: none;
+          position: relative;
+          top: -1.5rem;
+          left: -0.5rem;
+        }
+    </style>
 </head>
 <body class="documentation">
+<!--
+
+    MENU
+
+-->
 	<nav role="navigation" class="navDoc">
         <a class="menu-toggle" href="#head-nav">
             <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span><span class="menu-toggle-text"> menu</span>
@@ -16,24 +38,29 @@
             </li>
             <li class="menu-item">
                 <a href="/html/doc/structure-css.html">Estructura CSS</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#tipografia">Tipografia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tabla-sencilla">Tablas Sencillas</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu-item">
                 <a href="/html/doc/structure-js.html">Estructura JS</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
-                        <a href="">Reading</a>
+                        <a href="#estructure-js">Estructura JS</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Writing</a>
+                        <a href="#tabla-sencilla">Tabla Sencilla</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Arithmatic</a>
+                        <a href="#table-dataTable">Tabla con DataTable</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Something Long</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="">Something Else</a>
+                        <a href="">Menu</a>
                     </li>
                 </ul>
             </li>
@@ -41,12 +68,21 @@
                 <a href="">Componentes</a>
             </li>
         </ul>
-    </nav>      
+    </nav>  
 	<div class="container">
+
+        <legend>
+            <h2>JavaScript</h2>
+        </legend>
+        <p></p>
+<!--
+
+    ESTRUCTURA JS
+
+-->
 		<legend>
-			<h2>Estructura JavaScript</h2>
+			<h2 id="estructure-js">Estructura JavaScript</h2>
 		</legend>
-		<p></p>
 		<pre>
 			<code class="html">
 └── resources/
@@ -76,17 +112,178 @@
                 └──  // archivos js de pipoca
 			</code>
         </pre>
+<!--
+
+    TABLAS CON JS
+
+-->
         <legend>
-            <h2>Tables</h2>
+            <h2 id="tabla-sencilla">Tabla Sencilla con JavaScript</h2>
         </legend>
-        <p>Tablas basadas en bootstrap que no tienen funcionalidades avanzadas. Estas aplican para tabla tipo 4 #1 (Balance general) y tabla tipo 5 (Valoración).</p>
-        <p>DataTables aplica para las siguientes tablas.</p>
+        <p>Tablas basadas en bootstrap que por medio de JavaScript permiten ampliar o reducir una tabla, esto a través de la aparición y ocultamiento de filas.</p>
+        <br>
+        <p>En este ejemplo se le asigna la clase css <span class="c-red">.showHide</span> a los elementos del DOM  <span class="c-blue">&lt;tr&gt;</span> que representan las filas que alternaran entre <span class="c-blue"> display:block;</span> y <span class="c-blue"> display:none;</span>Por defecto todos los elementos del DOM tienen <span class="c-blue"> display:block;</span>. Por ende si se quiere cambiar este comportamiento se debe asignar la propiedad css <span class="c-blue"> display:none;</span>al elemento deseado. <br>Siguiendo con el ejemplo, a una fila de la tabla se le asigna la clase css <span class="c-red">.is-Inactive</span> que aplica la propiedad <span class="c-blue"> display:none;</span> Lo cual provoca que por defecto esta fila este oculta y al detectar el evento <span class="c-red">.click</span> se muestre.</p>
+        <div class="jumbotron content-jumb">
+            <a id="btn-collapsed-Example" class="btn-collapsedExample" href="">Show/Hide Example</a>
+            <div class="content-tables">
+                <div class="table-responsive">
+                    <table class="table table-pipoka table-bordered table-striped table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>2009</th>
+                                <th>2010</th>
+                                <th>Crecimiento <br> Promedio Anual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="showHide">
+                                <td>Fila 1</td>
+                                <td>(28.0)</td>
+                                <td>(31.5)</td>
+                                <td>13.6%</td>
+                            </tr>
+                            <tr class="showHide">
+                                <td>Fila 2</td>
+                                <td>(28.0)</td>
+                                <td>(46.6)</td>
+                                <td>13.6%</td>
+                            </tr>
+                            <!-- FILA POR DEFECTO OCULTA -->
+                            <tr class="is-Inactive showHide">
+                                <td>Fila 1 + Fila 2</td>
+                                <td>-00</td>
+                                <td>-00</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr class="">
+                                <td>Fila ...</td>
+                                <td>3.6</td>
+                                <td>7.9</td>
+                                <td>21.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <h3>Code</h3>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-Examp1" aria-controls="#CodeJS-Examp1" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-Examp1" aria-controls="#CodeHTML-Examp1" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-Examp1" aria-controls="#CodeCSS-Examp1" role="tab" data-toggle="tab">CSS</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-Examp1">
+                <pre>
+                    <code>
+        // DECLARANDO VARIABLES HACIENDO REFERENCIAS A ELEMENTOS DEL DOM
+
+        var $btnCollapsedExample = $("#btn-collapsed-Example"),  // ==> BOTON DEL DOM CON ID btn-collapsed-Example
+            $showHideBg1Tab1 = $(".showHide");  // ELEMENTOS DEL DOM CON LA CLASE .showHide
+
+
+        // FUNCION MOSTRAR OCULTAR ELEMENTOS
+
+        function showHide() {
+            $showHideBg1Tab1.toggle();  // METODO .toggle() PARA ALTERNAR ENTRE show Y hide.
+            return false; // EVITA EL COMPORTAMIENTO POR DEFECTO DEL EVENTO
+        } 
+
+        // EVENTO CLICK
+
+        $btnCollapsedExample.click(showHide);  // AL DETECTAR EVENTO CLICK EJECUTA FUNCION showhide
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-Examp1">
+                <pre>
+                    <code>
+        &lt;a id=&quot;btn-collapsed-Example&quot; class=&quot;btn-collapsedExample&quot; href=&quot;&quot;&gt;Ampliar/Reducir Balance General&lt;/a&gt;
+        &lt;div class=&quot;content-tables&quot;&gt;
+            &lt;div class=&quot;table-responsive&quot;&gt;
+                &lt;table class=&quot;table table-pipoka table-bordered table-striped table-condensed table-hover&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;&lt;/th&gt;
+                            &lt;th&gt;2009&lt;/th&gt;
+                            &lt;th&gt;2010&lt;/th&gt;
+                            &lt;th&gt;Crecimiento &lt;br&gt; Promedio Anual&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr class=&quot;showHide&quot;&gt;
+                            &lt;td&gt;Fila 1&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(31.5)&lt;/td&gt;
+                            &lt;td&gt;13.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr class=&quot;showHide&quot;&gt;
+                            &lt;td&gt;Fila 2&lt;/td&gt;
+                            &lt;td&gt;(28.0)&lt;/td&gt;
+                            &lt;td&gt;(46.6)&lt;/td&gt;
+                            &lt;td&gt;13.6%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;!-- FILA POR DEFECTO OCULTA --&gt;
+                        &lt;tr class=&quot;is-Inactive showHide&quot;&gt;
+                            &lt;td&gt;Fila 1 + Fila 2&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;-00&lt;/td&gt;
+                            &lt;td&gt;N/A&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr class=&quot;&quot;&gt;
+                            &lt;td&gt;Fila ...&lt;/td&gt;
+                            &lt;td&gt;3.6&lt;/td&gt;
+                            &lt;td&gt;7.9&lt;/td&gt;
+                            &lt;td&gt;21.3%&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;    
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-Examp1">
+                <pre>
+                    <code>
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;../../assets/css/style.css&quot;&gt;
+
+        .is-Inactive {
+            display: none;
+        }
+
+        .btn-collapsedExample {
+          background: #6ea939;
+          border-radius: 3px;
+          padding: .5rem;
+          color: white;
+          font-size: 1.40rem;
+          margin: .5rem;
+          text-decoration: none;
+          position: relative;
+          top: -1.5rem;
+          left: -0.5rem;
+        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <h3>Ejemplos Tablas Sencillas con JavaScript</h3>
+        <p>Tablas de la Plantilla Pipoka que aplican :</p>
         <ul class="list-dataTable">
             <li><a href="/html/doc/tableType4-1.html">Tabla tipo 4 #1</a></li>
             <li><a href="/html/doc/tablesType5.html">Tabla tipo 5</a></li>
         </ul>
+        <br>
+<!--
+
+    TABLAS CON DATATABLE
+
+-->
         <legend>
-			<h2>DataTables</h2>
+			<h2 id="table-dataTable">Tabla con DataTables</h2>
 		</legend>
 		<p>DataTables es una biblioteca externa que añade funcionalidades de interacción avanzada a cualquier tabla HTML. DataTables ofrece una documentación y ejemplos en su <a href="https://datatables.net" target="_black">página web.</a></p>
 		<h3>Empezando</h3>
@@ -125,12 +322,30 @@
 		<h5>JavaScript</h5>
 		<p>Una vez compilado con Gulp.js con las dependencias, es necesario inicializar las tablascon DataTable. </p>
 		<h3>Ejemplos DataTables</h3>
-        <p>DataTables aplica para las siguientes tablas.</p>
+        <p>Tablas de la Plantilla Pipoka que aplican :</p>
 		<ul class="list-dataTable">
 			<li><a href="/html/doc/tablesType3.html">Tablas tipo 3</a></li>
 			<li><a href="/html/doc/tablesType4.html">Tablas tipo 4</a></li>
 		</ul>
 	</div>
 	<script src="../../assets/js/all.js"></script>
+    <script type="text/javascript">
+        
+        // DECLARANDO VARIABLES HACIENDO REFERENCIAS A ELEMENTOS DEL DOM
+
+        var $btnCollapsedExample = $("#btn-collapsed-Example"),  // ==> BOTON DEL DOM CON ID btn-collapsed-Example
+            $showHideBg1Tab1 = $(".showHide");  // ELEMENTOS DEL DOM CON LA CLASE .showHide
+
+        // FUNCION MOSTRAR OCULTAR ELEMENTOS
+
+        function showHide() {
+            $showHideBg1Tab1.toggle();  // METODO .toggle() PARA ALTERNAR ENTRE show Y hide.
+            return false; // EVITA EL COMPORTAMIENTO POR DEFECTO DEL EVENTO
+        } 
+
+        // EVENTO CLICK
+
+        $btnCollapsedExample.click(showHide); // AL DETECTAR EVENTO CLICK EJECUTA FUNCION showhide
+    </script>
 </body>
 </html>

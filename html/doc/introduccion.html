@@ -6,6 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 </head>
 <body class="documentation">
+<!--
+
+    MENU
+
+-->
     <nav role="navigation" class="navDoc">
         <a class="menu-toggle" href="#head-nav">
             <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span><span class="menu-toggle-text"> menu</span>
@@ -16,24 +21,29 @@
             </li>
             <li class="menu-item">
                 <a href="/html/doc/structure-css.html">Estructura CSS</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#tipografia">Tipografia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tabla-sencilla">Tablas Sencillas</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu-item">
                 <a href="/html/doc/structure-js.html">Estructura JS</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
-                        <a href="">Reading</a>
+                        <a href="#estructure-js">Estructura JS</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Writing</a>
+                        <a href="#tabla-sencilla">Tabla Sencilla</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Arithmatic</a>
+                        <a href="#table-dataTable">Tabla con DataTable</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Something Long</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="">Something Else</a>
+                        <a href="">Menu</a>
                     </li>
                 </ul>
             </li>
@@ -41,18 +51,20 @@
                 <a href="">Componentes</a>
             </li>
         </ul>
-    </nav>      
-<!--  =======================================
-      INTRODUCCION
-      =======================================
+    </nav>  
+<!--  
+
+    INTRODUCCION
+      
 --> 
 	<div class="container">  
 		<legend> 
 			<h2>Introducción</h2>
 		</legend>
-<!--  =======================================
-      ESTRUCTURA GENERAL
-      =======================================
+<!--  
+
+    ESTRUCTURA GENERAL
+      
 --> 
 		<legend>
 			<h2>Estructura General</h2>
@@ -61,23 +73,24 @@
 		<p>PIPOKA requiere una hoja de estilos CSS y las importaciones de Javascript. Copie el código de abajo para empezar en su proyecto.</p>
 		<pre>
 			<code class="html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;MENU&lt;/title&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1,maximum-scale=1&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;script src=&quot;assets/js/all.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;title&gt;MENU&lt;/title&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1,maximum-scale=1&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script src=&quot;assets/js/all.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
 			</code>
 		</pre>
-<!--  =======================================
-      BODY
-      =======================================
+<!--  
+
+    BODY
+      
 --> 
 		<legend> 
 			<h2>Body</h2>
@@ -86,20 +99,21 @@
 		<p>La estructura de la plantilla general es la misma en toda la plantilla. Esta es la estructura general</p>
 		<pre>
 			<code>
-&lt;nav&gt;
- ~ Contenido del header va Aqui ~
-&lt;/nav&gt;
-&lt;nav&gt;
- ~ Contenido del menu  va Aqui ~
-&lt;/nav&gt;
-&lt;div id=&quot;content&quot;&gt;   
- ~ Contenido de la vista va Aqui ~
-&lt;/div&gt;    				
+    &lt;nav&gt;
+     ~ Contenido del header va Aqui ~
+    &lt;/nav&gt;
+    &lt;nav&gt;
+     ~ Contenido del menu  va Aqui ~
+    &lt;/nav&gt;
+    &lt;div id=&quot;content&quot;&gt;   
+     ~ Contenido de la vista va Aqui ~
+    &lt;/div&gt;    				
 			</code>
 		</pre>
-<!--  =======================================
-      ESTRUCTURA DEL HEADER
-      =======================================
+<!--  
+
+    ESTRUCTURA DEL HEADER
+      
 --> 
 		<legend> 
 			<h2>Estructura del Header </h2>
@@ -107,104 +121,106 @@
 		<p>El header contiene el logotipo, una barra de búsqueda y el estado de sección</p>
 		<pre>
 			<code>
-&lt;nav class=&quot;navbar navbar-default navbar-pipoca&quot;&gt;
-    &lt;div class=&quot;navbar-header navbar-header-pipoka&quot;&gt;
-        &lt;a class=&quot;navbar-brand title-header&quot; href=&quot;#&quot;&gt;
-            PIPOKA &lt;span class=&quot;by-latin&quot;&gt;by Latinvestco&lt;/span&gt;
-            &lt;!-- &lt;img alt=&quot;Pipoka&quot; src=&quot;assets/images/pipoca.png&quot;&gt; --&gt;
-        &lt;/a&gt;
-      
-        &lt;form class=&quot;navbar-left form-navbar&quot; role=&quot;search&quot;&gt;
-            &lt;input type=&quot;text&quot; class=&quot;form-control search-input&quot; placeholder=&quot;Buscar Nueva Compa&ntilde;ia&quot;&gt;
-            &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-search-navbar&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
-        &lt;/form&gt;
-        &lt;ul class=&quot;nav navbar-nav navbar-right inline-block&quot;&gt;
-            &lt;li class=&quot;dropdown&quot;&gt;
-                &lt;a class=&quot;nav-ul-li-global&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Bienvenid@ Maria Paula&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-                &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Editar Perfil&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Salida segura&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;
+    &lt;nav class=&quot;navbar navbar-default navbar-pipoca&quot;&gt;
+        &lt;div class=&quot;navbar-header navbar-header-pipoka&quot;&gt;
+            &lt;a class=&quot;navbar-brand title-header&quot; href=&quot;#&quot;&gt;
+                PIPOKA &lt;span class=&quot;by-latin&quot;&gt;by Latinvestco&lt;/span&gt;
+                &lt;!-- &lt;img alt=&quot;Pipoka&quot; src=&quot;assets/images/pipoca.png&quot;&gt; --&gt;
+            &lt;/a&gt;
+          
+            &lt;form class=&quot;navbar-left form-navbar&quot; role=&quot;search&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control search-input&quot; placeholder=&quot;Buscar Nueva Compa&ntilde;ia&quot;&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-search-navbar&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;/form&gt;
+            &lt;ul class=&quot;nav navbar-nav navbar-right inline-block&quot;&gt;
+                &lt;li class=&quot;dropdown&quot;&gt;
+                    &lt;a class=&quot;nav-ul-li-global&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Bienvenid@ Maria Paula&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Editar Perfil&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Salida segura&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
 			</code>
 		</pre>
-<!--  =======================================
-      ESTRUCTURA DEL MENU
-      =======================================
+<!-- 
+
+    ESTRUCTURA DEL MENU
+
 --> 
 		<legend> 
 			<h2>Estructura del Menu</h2>
 		</legend>
 		<pre>
 			<code>
-&lt;nav id=&quot;main&quot; class=&quot;main&quot;&gt;
-    &lt;div class=&quot;main-content-btn&quot;&gt;
-        &lt;span id=&quot;btn-collap-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
-        &lt;span id=&quot;btn-exp-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;CA&quot; class=&quot;associate-company&quot;&gt;
-        CA
-    &lt;/div&gt;
-    &lt;div id=&quot;btn-collapsed-diag&quot; class=&quot;main-category&quot;&gt;
-        &lt;span class=&quot;icon-category icon-line-graph line-graph-icon&quot;&gt;&lt;/span&gt;
-        &lt;p class=&quot;title-category title-diag&quot;&gt;DIAGN&Oacute;STICO&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-diag&quot;&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt; 
-    &lt;div id=&quot;btn-collapsed-proj&quot; class=&quot;main-category&quot;&gt;
-        &lt;span class=&quot;icon-category icon-graph graph-icon&quot;&gt;&lt;/span&gt;
-        &lt;p class=&quot;title-category title-proj&quot;&gt;PROYECCI&Oacute;N CA&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-proj&quot;&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div id=&quot;btn-collapsed-val&quot; class=&quot;main-category&quot;&gt;
-        &lt;span class=&quot;icon-category icon-coin-dollar coin-dollar-icon&quot;&gt;&lt;/span&gt;
-        &lt;p class=&quot;title-category title-val&quot;&gt;VALORACI&Oacute;N&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-val&quot;&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;val-ca&quot; href=&quot;&quot;&gt;CA&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a class=&quot;val-ms&quot; href=&quot;&quot;&gt;MS&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;  
-    &lt;div id=&quot;abreviators&quot; class=&quot;abreviators&quot;&gt;
-        CA: Compa&ntilde;oa Analizada&lt;br&gt;S: Sector&lt;br&gt;SD: Sector Decil&lt;br&gt;CS: Compa&ntilde;ias Seleccionadas
-    &lt;/div&gt;
-&lt;/nav&gt;				
+    &lt;nav id=&quot;main&quot; class=&quot;main&quot;&gt;
+        &lt;div class=&quot;main-content-btn&quot;&gt;
+            &lt;span id=&quot;btn-collap-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
+            &lt;span id=&quot;btn-exp-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;CA&quot; class=&quot;associate-company&quot;&gt;
+            CA
+        &lt;/div&gt;
+        &lt;div id=&quot;btn-collapsed-diag&quot; class=&quot;main-category&quot;&gt;
+            &lt;span class=&quot;icon-category icon-line-graph line-graph-icon&quot;&gt;&lt;/span&gt;
+            &lt;p class=&quot;title-category title-diag&quot;&gt;DIAGN&Oacute;STICO&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-diag&quot;&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt; 
+        &lt;div id=&quot;btn-collapsed-proj&quot; class=&quot;main-category&quot;&gt;
+            &lt;span class=&quot;icon-category icon-graph graph-icon&quot;&gt;&lt;/span&gt;
+            &lt;p class=&quot;title-category title-proj&quot;&gt;PROYECCI&Oacute;N CA&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-proj&quot;&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div id=&quot;btn-collapsed-val&quot; class=&quot;main-category&quot;&gt;
+            &lt;span class=&quot;icon-category icon-coin-dollar coin-dollar-icon&quot;&gt;&lt;/span&gt;
+            &lt;p class=&quot;title-category title-val&quot;&gt;VALORACI&Oacute;N&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-val&quot;&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;val-ca&quot; href=&quot;&quot;&gt;CA&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;val-ms&quot; href=&quot;&quot;&gt;MS&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;  
+        &lt;div id=&quot;abreviators&quot; class=&quot;abreviators&quot;&gt;
+            CA: Compa&ntilde;oa Analizada&lt;br&gt;S: Sector&lt;br&gt;SD: Sector Decil&lt;br&gt;CS: Compa&ntilde;ias Seleccionadas
+        &lt;/div&gt;
+    &lt;/nav&gt;				
 			</code>
 		</pre>
-<!--  =======================================
+<!--  
+
       ESTRUCTURA LESS
-      =======================================
+
 --> 
 		<legend> 
 		    <h2>Estructura Less</h2>
@@ -212,42 +228,42 @@
 
 			<pre>
 				<code class="html">
-└── resources/
-    └── assets/
-        └── less/           
-            │               
-            ├── libs/
-            │   ├── // archivos less para  librerias añadidas
-            │   │  
-            │   ├── bootstrap/
-            │   │   └── // archivos less de bootstrap sin modificar
-            │   │
-            │   ├── d3/
-            │   │   └── // archivos less para graficas de libreria d3
-            │   │
-            │   ├── datatables/
-            │   │   └── // archivos less para libreria datatable
-            │   │
-            │   ├── highlight/
-            │   │   └── // archivos less para libreria highlight
-            │   │
-            │   └── ...ADDONS
-            │
-            ├── pipoca/
-            │   └──  // archivos less de pipoca
-            │          
-            ├── shared/                 
-            │   └── variables.less
-            │
-            ├── bootstrap.less
-            └── style.less
+    └── resources/
+        └── assets/
+            └── less/           
+                │               
+                ├── libs/
+                │   ├── // archivos less para  librerias añadidas
+                │   │  
+                │   ├── bootstrap/
+                │   │   └── // archivos less de bootstrap sin modificar
+                │   │
+                │   ├── d3/
+                │   │   └── // archivos less para graficas de libreria d3
+                │   │
+                │   ├── datatables/
+                │   │   └── // archivos less para libreria datatable
+                │   │
+                │   ├── highlight/
+                │   │   └── // archivos less para libreria highlight
+                │   │
+                │   └── ...ADDONS
+                │
+                ├── pipoca/
+                │   └──  // archivos less de pipoca
+                │          
+                ├── shared/                 
+                │   └── variables.less
+                │
+                ├── bootstrap.less
+                └── style.less
 				</code>
             </pre>
             <legend>
                 <h2>Compilación</h2>
             </legend>
         <p>
-            Pipoka plantilla utiliza Gulp.js con Laravel-elixir para fines de compilacion de Less y JavaScript. 
+            Pipoka plantilla utiliza Gulp.js con <a href="http://laravel.com/docs/5.0/elixir">Laravel-elixir</a> para fines de compilacion de Less y JavaScript. 
             <br>
             <br> 
             Gulp.js es un build system(sistema de construcción) que permite automatizar tareas comunes de desarrollo, tales como la minificación de código JavaScript, recarga del navegador, compresión de imágenes, validación de sintaxis de código y un sin fin de tareas más. 
@@ -261,8 +277,8 @@
         </ul>
         <pre>
             <code>
-                > gulp  ==> Compila
-                > gulp watch ==> Compila y se mantiene escuchando cambios
+    > gulp  ==> Compila
+    > gulp watch ==> Compila y se mantiene escuchando cambios
             </code>
         </pre>
     </div>
