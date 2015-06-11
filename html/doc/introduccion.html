@@ -48,7 +48,18 @@
                 </ul>
             </li>
             <li class="menu-item">
-                <a href="">Componentes</a>
+                <a href="">Vistas</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="/html/pages/home.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/pages/select-companies.html">Selección Compañias</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/pages/selected-company.html">Compañia Seleccionada</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>  
@@ -122,25 +133,38 @@
 		<pre>
 			<code>
     &lt;nav class=&quot;navbar navbar-default navbar-pipoca&quot;&gt;
-        &lt;div class=&quot;navbar-header navbar-header-pipoka&quot;&gt;
-            &lt;a class=&quot;navbar-brand title-header&quot; href=&quot;#&quot;&gt;
-                PIPOKA &lt;span class=&quot;by-latin&quot;&gt;by Latinvestco&lt;/span&gt;
-                &lt;!-- &lt;img alt=&quot;Pipoka&quot; src=&quot;assets/images/pipoca.png&quot;&gt; --&gt;
-            &lt;/a&gt;
-          
-            &lt;form class=&quot;navbar-left form-navbar&quot; role=&quot;search&quot;&gt;
-                &lt;input type=&quot;text&quot; class=&quot;form-control search-input&quot; placeholder=&quot;Buscar Nueva Compa&ntilde;ia&quot;&gt;
-                &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-search-navbar&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
-            &lt;/form&gt;
-            &lt;ul class=&quot;nav navbar-nav navbar-right inline-block&quot;&gt;
-                &lt;li class=&quot;dropdown&quot;&gt;
-                    &lt;a class=&quot;nav-ul-li-global&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Bienvenid@ Maria Paula&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-                    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Editar Perfil&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Salida segura&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+            &lt;div class=&quot;navbar-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+                    &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;a class=&quot;navbar-brand title-header&quot; href=&quot;#&quot;&gt;NONIO&lt;/a&gt;
+                &lt;span class=&quot;by-latin&quot;&gt;by Latinvestco&lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+                &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                    &lt;form class=&quot;navbar-form navbar-left form-navbar&quot; role=&quot;search&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control search-input&quot; placeholder=&quot;Buscar Nueva Compa&ntilde;ia&quot;&gt;
+                        &lt;/div&gt;
+                        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-search-navbar&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+                    &lt;/form&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Metodologia&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;comodin&quot;&gt;&lt;a href=&quot;#&quot;&gt;|&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class=&quot;glosario&quot; href=&quot;#&quot;&gt;Glosario&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                        &lt;a class=&quot;nav-ul-li-global&quot; href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Bienvenid@ Maria Paula&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Editar perfil&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;&quot;&gt;Salida segura&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/nav&gt;
 			</code>
@@ -157,69 +181,90 @@
 			<code>
     &lt;nav id=&quot;main&quot; class=&quot;main&quot;&gt;
         &lt;div class=&quot;main-content-btn&quot;&gt;
-            &lt;span id=&quot;btn-collap-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
             &lt;span id=&quot;btn-exp-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
+            &lt;span id=&quot;btn-collap-main&quot; class=&quot;glyphicon glyphicon-menu-hamburger btn-main&quot;&gt;&lt;/span&gt;
         &lt;/div&gt;
         &lt;div id=&quot;CA&quot; class=&quot;associate-company&quot;&gt;
-            CA
+            &lt;p&gt;PELLENTENQUE &lt;br&gt; HABITAN S.A.S&lt;/p&gt;
+            &lt;p style=&apos;font-weight:300&apos;&gt;Sector: Suspendisse dui leo&lt;/p&gt;
         &lt;/div&gt;
         &lt;div id=&quot;btn-collapsed-diag&quot; class=&quot;main-category&quot;&gt;
-            &lt;span class=&quot;icon-category icon-line-graph line-graph-icon&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-category icon-line-graph&quot;&gt;&lt;/span&gt;
             &lt;p class=&quot;title-category title-diag&quot;&gt;DIAGN&Oacute;STICO&lt;/p&gt;
         &lt;/div&gt;
         &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-diag&quot;&gt;
             &lt;li&gt;
-                &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
+                &lt;a class=&quot;indicator&quot; href=&quot;javascript:void(0);&quot;&gt;Indicadores&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
+                &lt;a class=&quot;state-result&quot; href=&quot;javascript:void(0);&quot;&gt;Estado de Resultados&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
+                &lt;a class=&quot;balance-gen&quot; href=&quot;javascript:void(0);&quot;&gt;Balance General&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
+                &lt;a class=&quot;cash-flow&quot; href=&quot;javascript:void(0);&quot;&gt;Flujo de Caja&lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt; 
         &lt;div id=&quot;btn-collapsed-proj&quot; class=&quot;main-category&quot;&gt;
-            &lt;span class=&quot;icon-category icon-graph graph-icon&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-category icon-graph&quot;&gt;&lt;/span&gt;
             &lt;p class=&quot;title-category title-proj&quot;&gt;PROYECCI&Oacute;N CA&lt;/p&gt;
         &lt;/div&gt;
         &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-proj&quot;&gt;
             &lt;li&gt;
-                &lt;a class=&quot;indicator&quot; href=&quot;&quot;&gt;I&lt;/a&gt;
+                &lt;a class=&quot;indicator&quot; href=&quot;javascript:void(0);&quot;&gt;Indicadores&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;state-result&quot; href=&quot;&quot;&gt;ER&lt;/a&gt;
+                &lt;a class=&quot;state-result&quot; href=&quot;javascript:void(0);&quot;&gt;Estado de Resultados&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;balance-gen&quot; href=&quot;&quot;&gt;BG&lt;/a&gt;
+                &lt;a class=&quot;balance-gen&quot; href=&quot;javascript:void(0);&quot;&gt;Balance General&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;cash-flow&quot; href=&quot;&quot;&gt;FC&lt;/a&gt;
+                &lt;a class=&quot;cash-flow&quot; href=&quot;javascript:void(0);&quot;&gt;Flujo de Caja&lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
         &lt;div id=&quot;btn-collapsed-val&quot; class=&quot;main-category&quot;&gt;
-            &lt;span class=&quot;icon-category icon-coin-dollar coin-dollar-icon&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-category icon-coin-dollar&quot;&gt;&lt;/span&gt;
             &lt;p class=&quot;title-category title-val&quot;&gt;VALORACI&Oacute;N&lt;/p&gt;
         &lt;/div&gt;
         &lt;ul class=&quot;nav nav-pills nav-stacked nav-latleft submain-val&quot;&gt;
             &lt;li&gt;
-                &lt;a class=&quot;val-ca&quot; href=&quot;&quot;&gt;CA&lt;/a&gt;
+                &lt;a class=&quot;val-ca&quot; href=&quot;javascript:void(0);&quot;&gt;Compa&ntilde;ia Analizada&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a class=&quot;val-ms&quot; href=&quot;&quot;&gt;MS&lt;/a&gt;
+                &lt;a class=&quot;val-ms&quot; href=&quot;javascript:void(0);&quot;&gt;M&uacute;ltiplos del Sector&lt;/a&gt;
             &lt;/li&gt;
         &lt;/ul&gt;  
         &lt;div id=&quot;abreviators&quot; class=&quot;abreviators&quot;&gt;
             CA: Compa&ntilde;oa Analizada&lt;br&gt;S: Sector&lt;br&gt;SD: Sector Decil&lt;br&gt;CS: Compa&ntilde;ias Seleccionadas
         &lt;/div&gt;
-    &lt;/nav&gt;				
+    &lt;/nav&gt;			
 			</code>
 		</pre>
 <!--  
 
-      ESTRUCTURA LESS
+    FOOTER
+
+-->
+        <legend> 
+            <h2>Estructura del Footer</h2>
+        </legend>
+        <pre>
+            <code>
+    &lt;footer class=&quot;footer-global&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&amp;copy; NONIO by LATINVESTCO 2015&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;FAQ | &lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt; Glosario&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;| Metodolog&iacute;a&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/footer&gt;
+            </code>
+        </pre>
+<!--  
+
+    ESTRUCTURA LESS
 
 --> 
 		<legend> 
@@ -259,6 +304,11 @@
                 └── style.less
 				</code>
             </pre>
+<!--  
+
+    COMPILANDO
+
+--> 
             <legend>
                 <h2>Compilación</h2>
             </legend>
