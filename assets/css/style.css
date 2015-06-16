@@ -8533,6 +8533,9 @@ legend {
 .list-dataTable li {
   list-style: none;
 }
+.list-d3 li {
+  list-style: none;
+}
 /****
 SETUP
 ****/

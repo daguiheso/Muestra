@@ -153,7 +153,7 @@
                             <tr class="is-Inactive showHide">
                                 <td>Fila 1 + Fila 2</td>
                                 <td>-00</td>
-                                <td>-00</td>
+                                <td>-0.1</td>
                                 <td>N/A</td>
                             </tr>
                             <tr class="">
@@ -327,6 +327,40 @@
 			<li><a href="/html/doc/tablesType3.html">Tablas tipo 3</a></li>
 			<li><a href="/html/doc/tablesType4.html">Tablas tipo 4</a></li>
 		</ul>
+<!--
+
+    GRAFICAS
+
+-->
+    <legend>
+        <h2 id="graphic">Graficas</h2>
+    </legend>
+    <p><a href="http://d3js.org/">D3</a> es una libreria JavaScript para la manipulación de documentos basados en datos. D3 facilita el render de datos usando HTML, SVG y CSS. Combina componentes de visualización de gran alcance y un enfoque basado en datos de la manipulación del DOM.</p>
+    <h3>Empezando</h3>
+    <h5>Dependencias</h5>
+    <p>Lo primero es importar los archivos JavaScript y CSS correspondientes para D3 en nuestro gulpfile.js y compilar.</p>
+    <p>Es importante el orden de las dependencias, siempre se debe mantener el orden mostrado a continuación (1. jQuery 2. bootstrap.js ...)</p>
+    <pre>
+        <code>
+    var elixir = require('laravel-elixir');
+
+
+    elixir(function(mix) {
+        mix.less("style.less", "assets/css");
+
+        mix.scripts([
+            "libs/jquery/jquery.js",
+            "libs/bootstrap/bootstrap.js",
+            "libs/d3/d3.js",
+        ], "assets/js", "resources/assets/js");
+    });
+        </code>
+    </pre>
+    <ul class="list-d3">
+        <li><a href="/html/doc/tableType4-1.html">Radial con Marcadores</a></li>
+        <li><a href="/html/doc/tablesType5.html">Tabla tipo 5</a></li>
+    </ul>
+
 	</div>
 	<script src="../../assets/js/all.js"></script>
     <script type="text/javascript">
