@@ -20,30 +20,30 @@
                 <a href="/html/doc/introduccion.html">Comenzando</a>
             </li>
             <li class="menu-item">
-                <a href="/html/doc/structure-css.html">Estructura CSS</a>
+                <a href="/html/doc/structure-css.html">CSS</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
-                        <a href="#tipografia">Tipografia</a>
+                        <a href="/html/doc/structure-css.html#tipografia">Tipografia</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#tabla-sencilla">Tablas Sencillas</a>
+                        <a href="/html/doc/structure-css.html#tabla-sencilla">Tablas Sencillas</a>
                     </li>
                 </ul>
             </li>
             <li class="menu-item">
-                <a href="/html/doc/structure-js.html">Estructura JS</a>
+                <a href="/html/doc/structure-js.html">Java Script</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
-                        <a href="#estructure-js">Estructura JS</a>
+                        <a href="/html/doc/structure-js.html#estructure-js">Estructura JS</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#tabla-sencilla">Tabla Sencilla</a>
+                        <a href="/html/doc/structure-js.html#tabla-sencilla">Tabla Sencilla</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#table-dataTable">Tabla con DataTable</a>
+                        <a href="/html/doc/structure-js.html#table-dataTable">Tabla con DataTable</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Menu</a>
+                        <a href="/html/doc/structure-js.html#graphic">Graficas</a>
                     </li>
                 </ul>
             </li>
@@ -63,15 +63,8 @@
             </li>
         </ul>
     </nav>  
-<!--  
-
-    INTRODUCCION
-      
---> 
 	<div class="container">  
-		<legend> 
-			<h2>Introducción</h2>
-		</legend>
+
 <!--  
 
     ESTRUCTURA GENERAL
@@ -111,13 +104,13 @@
 		<pre>
 			<code>
     &lt;nav&gt;
-     ~ Contenido del header va Aqui ~
+       ~ Contenido del header va Aqui ~
     &lt;/nav&gt;
     &lt;nav&gt;
-     ~ Contenido del menu  va Aqui ~
+       ~ Contenido del menu  va Aqui ~
     &lt;/nav&gt;
     &lt;div id=&quot;content&quot;&gt;   
-     ~ Contenido de la vista va Aqui ~
+       ~ Contenido de la vista va Aqui ~
     &lt;/div&gt;    				
 			</code>
 		</pre>
@@ -277,6 +270,9 @@
         └── assets/
             └── less/           
                 │               
+                ├── doc/
+                │   └── // archivos less para  la documentación
+                │            
                 ├── libs/
                 │   ├── // archivos less para  librerias añadidas
                 │   │  
@@ -284,24 +280,32 @@
                 │   │   └── // archivos less de bootstrap sin modificar
                 │   │
                 │   ├── d3/
-                │   │   └── // archivos less para graficas de libreria d3
+                │   │   └── // archivos less para cada graficas de la libreria d3
                 │   │
-                │   ├── datatables/
-                │   │   └── // archivos less para libreria datatable
-                │   │
-                │   ├── highlight/
-                │   │   └── // archivos less para libreria highlight
-                │   │
-                │   └── ...ADDONS
+                │   └── datatables/
+                │       └── // archivos less para libreria datatable
+                │   
                 │
-                ├── pipoca/
-                │   └──  // archivos less de pipoca
-                │          
+                ├── pipoka/
+                │   ├──  // archivos less de pipoca
+                │   │
+                │   ├── clases.less                 // utilidades 
+                │   ├── datatable.pipoka.less       // personalizacion de datatables 
+                │   ├── fonts.less                  // iconfonts y tipografia
+                │   ├── footer.less                 // footer pipoka
+                │   ├── header.less                 // header pipoka
+                │   ├── home.less                   // vista del home de pipoka
+                │   ├── main.less                   // menu pipoka
+                │   ├── pipoka.less                 // componentes de pipoka
+                │   ├── search.less                 // buscador grande de pipoka 
+                │   ├── select-companies.less       // vista de seleccion de compañias
+                │   └── selected-company.less       // vista de compañia seleccionada
+                │
                 ├── shared/                 
-                │   └── variables.less
+                │   └── variables.less              // variables para customizar plantilla
                 │
-                ├── bootstrap.less
-                └── style.less
+                ├── bootstrap.less                  // bootstrap version less
+                └── style.less                      // pipoka version less
 				</code>
             </pre>
 <!--  
@@ -321,6 +325,8 @@
             <br>
             Laravel Elixir hace aun mas facil el trabajo de Gulp, soportando varios archivos CSS comunes y pre-procesadores de JavaScript.
         </p>
+        <p>Mas funcionalidades de Gulp.js <a href="https://platzi.com/blog/automatizacion-gulp-js/">aqui</a>.</p>
+        <h3>Pasos para compilar</h3>
         <ul>
             <li>Acceder a folder de la plantilla pipoka desde la consola</li>
             <li>Ejecutar comando: gulp </li>
