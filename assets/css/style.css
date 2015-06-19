@@ -7880,6 +7880,7 @@ body {
   color: white;
   background: #6ea939;
   transition: .4s;
+  z-index: 99999;
 }
 .main.collap {
   width: 55px;

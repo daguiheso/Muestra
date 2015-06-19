@@ -8,18 +8,12 @@ var salesData=[
 
 var svg = d3.select("#body2").append("svg").attr("width",590).attr("height",300);
 
-//svg.append("g").attr("id","salesDonut");
 svg.append("g").attr("id","quotesDonut");
 
-//Donut3D.draw("salesDonut", randomData(), 150, 150, 130, 100, 30, 0.4);
-Donut3D.draw("quotesDonut", randomData(), 450, 150, 130, 100, 30, 0);
-	
-// function changeData(){
-// 	Donut3D.transition("salesDonut", randomData(), 130, 100, 30, 0.4);
-// 	Donut3D.transition("quotesDonut", randomData(), 130, 100, 30, 0);
-// }
+Donut3D.draw("quotesDonut", randomData(), 150, 150, 130, 100, 30, 0);
 
 function randomData(){
 	return salesData.map(function(d){ 
-		return {label:d.label, value:1000*Math.random(), color:d.color};});
+		return {label:d.label, value:1000*Math.random(), color:d.color};
+	});
 }

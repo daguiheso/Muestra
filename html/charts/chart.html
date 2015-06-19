@@ -6,47 +6,65 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 </head>
-<body>
+<body class="documentation">
 <!-- 
 
   NAV-BAR - HEADER GLOBAL
      
 -->
-    <nav class="navbar navbar-default navbar-pipoca">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand title-header" href="#">NONIO</a>
-                <span class="by-latin">by Latinvestco</span>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-left form-navbar" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
-                        </div>
-                        <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
-                    </form>
-                    <li><a href="#">Metodologia</a></li>
-                    <li class="comodin"><a href="#">|</a></li>
-                    <li><a class="glosario" href="#">Glosario</a></li>
-                    <li class="dropdown">
-                        <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="">Editar perfil</a></li>
-                            <li><a href="">Salida segura</a></li>
-                        </ul>
+    <nav role="navigation" class="navDoc">
+        <a class="menu-toggle" href="#head-nav">
+            <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span><span class="menu-toggle-text"> menu</span>
+        </a>
+        <ul id="main-menu" class="top-nav menu clearfix">
+            <li class="menu-item">
+                <a href="/html/doc/introduccion.html">Comenzando</a>
+            </li>
+            <li class="menu-item">
+                <a href="/html/doc/structure-css.html">Estructura CSS</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#tipografia">Tipografia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tabla-sencilla">Tablas Sencillas</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </li>
+            <li class="menu-item">
+                <a href="/html/doc/structure-js.html">Estructura JS</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="#estructure-js">Estructura JS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tabla-sencilla">Tabla Sencilla</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#table-dataTable">Tabla con DataTable</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Menu</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="">Vistas</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="/html/pages/home.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/pages/select-companies.html">Selección Compañias</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/pages/selected-company.html">Compañia Seleccionada</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>  
+    <div class="container">
 <!--  
     
     GRAFICAS 
@@ -74,29 +92,243 @@
                 </tr>
             </tbody>
         </table>
+
+        <h3>Code</h3>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-RM" aria-controls="#CodeJS-RM" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-RM" aria-controls="#CodeHTML-RM" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-RM" aria-controls="#CodeCSS-RM" role="tab" data-toggle="tab">CSS</a></li>
+            <li role="presentation"><a href="#CodeJSON-RM" aria-controls="#CodeJSON-RM" role="tab" data-toggle="tab">JSON</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-RM">
+                <pre>
+
+        /resources/assets/js/libs/d3/radial/RadarCharts.js <br>
+        /resources/assets/js/libs/d3/radial/script.js
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-RM">
+                <pre>
+                    <code>
+        &lt;div id=&quot;body&quot;&gt;
+            &lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;   
+
+        &lt;table  class=&quot;table&quot;&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th class=&quot;left-text&quot;&gt;Data&lt;/th&gt;
+                    &lt;th class=&quot;&quot;&gt;CA&lt;/th&gt;
+                    &lt;th class=&quot;&quot;&gt;Sector&lt;/th&gt;
+                    &lt;th class=&quot;&quot;&gt;Empresa 1&lt;/th&gt;
+                    &lt;th class=&quot;&quot;&gt;Empresa 2&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td class=&quot;left-text&quot;&gt;&lt;input id=&quot;a&quot; type=&quot;checkbox&quot; onclick=&quot;new_radar_data()&quot; value=&quot;true&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;left-text&quot;&gt;&lt;input id=&quot;b&quot; type=&quot;checkbox&quot; onclick=&quot;new_radar_data()&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;left-text&quot;&gt;&lt;input id=&quot;c&quot; type=&quot;checkbox&quot; onclick=&quot;new_radar_data()&quot;&gt;&lt;/td&gt;
+                    &lt;td class=&quot;left-text&quot;&gt;&lt;input id=&quot;d&quot; type=&quot;checkbox&quot; onclick=&quot;new_radar_data()&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-RM">
+                <pre>
+                    <code>
+        Para esta grafica los estilos los trae en el JS
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeJSON-RM">
+                <pre>
+                    <code>
+        {
+            "info_a" : [ 
+                {
+                    "axis": "ve/ebitda",
+                    "value": 11.8 
+                },
+                {
+                    "axis": "vp/libros",
+                    "value": 8.7
+                },
+                {
+                    "axis": "ve/activos",
+                    "value": 2
+                },
+                {
+                    "axis": "ve/ventas",
+                    "value": 0.9
+                }
+            ],
+            "info_b" : [ 
+                {
+                    "axis": "ve/ebitda",
+                    "value": 10 
+                },
+                {
+                    "axis": "vp/libros",
+                    "value": 5
+                },
+                {
+                    "axis": "ve/activos",
+                    "value": 4
+                },
+                {
+                    "axis": "ve/ventas",
+                    "value": 2
+                }
+            ],
+            "info_c" : [ 
+                {
+                    "axis": "ve/ebitda",
+                    "value": 9 
+                },
+                {
+                    "axis": "vp/libros",
+                    "value": 6
+                },
+                {
+                    "axis": "ve/activos",
+                    "value": 5
+                },
+                {
+                    "axis": "ve/ventas",
+                    "value": 3
+                } 
+            ],
+            "info_d" : [ 
+                {
+                    "axis": "ve/ebitda",
+                    "value": 3
+                }, 
+                {
+                    "axis": "vp/libros",
+                    "value": 7
+                }, 
+                {
+                    "axis": "ve/activos",
+                    "value": 2
+                }, 
+                {
+                    "axis": "ve/ventas",
+                    "value": 4
+                } 
+            ]
+        }  
+                    </code>
+                </pre>
+            </div>
+        </div>
         <legend>Graficas - Libreria D3 - PIE</legend>
-        <div class="content-pie relative">
+        <div class="content-pie">
             <div id="body2"></div>
         </div>
+        <h3>Code</h3>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-PIE" aria-controls="#CodeJS-PIE" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-PIE" aria-controls="#CodeHTML-PIE" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-PIE" aria-controls="#CodeCSS-PIE" role="tab" data-toggle="tab">CSS</a></li>
+            <li role="presentation"><a href="#CodeJSON-PIE" aria-controls="#CodeJSON-PIE" role="tab" data-toggle="tab">JSON</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-PIE">
+                <pre>
+
+        /resources/assets/js/libs/d3/pie/donut3d.js <br>
+        /resources/assets/js/libs/d3/pie/script.js
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-PIE">
+                <pre>
+                    <code>
+        &lt;div class=&quot;content-pie relative&quot;&gt;
+            &lt;div id=&quot;body2&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;       
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-PIE">
+                <pre>
+                    <code>
+        /resources/assets/less/libs/d3/pie.less
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeJSON-PIE">
+                <pre>
+                    <code>
+
+                    </code>
+                </pre>
+            </div>
+        </div>
         <legend>Graficas - Libreria D3 - LINE CHART</legend>
-        <div id="body-lineChart">
+        <div id="body-lineChart"></div>
+        <h3>Code</h3>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-LN" aria-controls="#CodeJS-LN" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-LN" aria-controls="#CodeHTML-LN" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-LN" aria-controls="#CodeCSS-LN" role="tab" data-toggle="tab">CSS</a></li>
+            <li role="presentation"><a href="#CodeJSON-LN" aria-controls="#CodeJSON-LN" role="tab" data-toggle="tab">JSON</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-LN">
+                <pre>
+
+        /resources/assets/js/libs/d3/lineChart/script.js
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-LN">
+                <pre>
+                    <code>
+        &lt;div id=&quot;body-lineChart&quot;&gt;&lt;/div&gt;            
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-LN">
+                <pre>
+                    <code>
+
+        /resources/assets/less/libs/d3/lineChart.less
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeJSON-LN">
+                <pre>
+                    <code>
+        [
+            {
+                "date": 2013,
+                "close": 582.13
+            },
+            {
+                "date": 2014,
+                "close": 583.98
+            },
+            {
+                "date": 2015,
+                "close": 603
+            },
+            {
+                "date": 2016,
+                "close": 607.7
+            },
+            {
+                "date": null
+            }
+        ]
+                    </code>
+                </pre>
+            </div>
         </div>
         <legend>Graficas - Libreria D3 - TARRO</legend>
         <div id="body-tarro"></div>
     </div>
-<!--  
-    
-    FOOTER 
-          
--->
-    <footer class="footer-global">
-        <ul>
-            <li><a href="">&copy; NONIO by LATINVESTCO 2015</a></li>
-            <li><a href="">FAQ | </a></li>
-            <li><a href=""> Glosario</a></li>
-            <li><a href="">| Metodología</a></li>
-        </ul>
-    </footer>
     <script src="../../assets/js/all.js"></script>
 </body>
 </html>

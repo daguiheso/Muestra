@@ -41829,16 +41829,6 @@ else if ( jQuery ) {
   if (typeof define === "function" && define.amd) define(d3); else if (typeof module === "object" && module.exports) module.exports = d3;
   this.d3 = d3;
 }();
-//Practically all this code comes from https://github.com/alangrafu/radar-chart-d3
-//I only made some additions and aesthetic adjustments to make the chart look better 
-//(of course, that is only my point of view)
-//Such as a better placement of the titles at each line end, 
-//adding numbers that reflect what each circular level stands for
-//Not placing the last level and slight differences in color
-//
-//For a bit of extra information check the blog about it:
-//http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html
-
 var RadarChart = {
   draw: function(id, d, options){
   var cfg = {
@@ -42256,20 +42246,14 @@ var salesData=[
 
 var svg = d3.select("#body2").append("svg").attr("width",590).attr("height",300);
 
-//svg.append("g").attr("id","salesDonut");
 svg.append("g").attr("id","quotesDonut");
 
-//Donut3D.draw("salesDonut", randomData(), 150, 150, 130, 100, 30, 0.4);
-Donut3D.draw("quotesDonut", randomData(), 450, 150, 130, 100, 30, 0);
-	
-// function changeData(){
-// 	Donut3D.transition("salesDonut", randomData(), 130, 100, 30, 0.4);
-// 	Donut3D.transition("quotesDonut", randomData(), 130, 100, 30, 0);
-// }
+Donut3D.draw("quotesDonut", randomData(), 150, 150, 130, 100, 30, 0);
 
 function randomData(){
 	return salesData.map(function(d){ 
-		return {label:d.label, value:1000*Math.random(), color:d.color};});
+		return {label:d.label, value:1000*Math.random(), color:d.color};
+	});
 }
 
 (function () {
@@ -42392,10 +42376,10 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 1)
+      .attr("y", 9)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("%");
+      .text("holas");
 
   var state = svg.selectAll(".state")
       .data(data)

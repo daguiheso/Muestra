@@ -53,10 +53,10 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 1)
+      .attr("y", 9)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("%");
+      .text("holas");
 
   var state = svg.selectAll(".state")
       .data(data)
