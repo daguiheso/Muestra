@@ -2,7 +2,7 @@
 MOBILE MENU
 **********/
 (function () {
-  // hljs.initHighlightingOnLoad();   
+  hljs.initHighlightingOnLoad();   
   $('.menu-toggle').click(function(e){
     if (!(e.which > 1 || e.shiftKey || e.altKey || e.metaKey)) {
       e.preventDefault();

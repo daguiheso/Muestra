@@ -24,7 +24,8 @@ elixir(function(mix) {
         "pipoka/tables/table-balance-general.js",
         "pipoka/companies/addCompany.js",
         "pipoka/datatable/dataTable.js",
-        "doc/doc.js",
+        "doc/hljs.js",
+        "doc/doc.js"
     ], "assets/js", "resources/assets/js");
 
 });
