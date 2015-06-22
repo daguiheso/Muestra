@@ -12,41 +12,61 @@
   NAV-BAR - HEADER GLOBAL
      
 -->
-    <nav class="navbar navbar-default navbar-pipoca">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand title-header" href="#">NONIO</a>
-                <span class="by-latin">by Latinvestco</span>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-left form-navbar" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control search-input" placeholder="Buscar Nueva Compañia">
-                        </div>
-                        <button type="submit" class="btn btn-default btn-search-navbar"><span class="glyphicon glyphicon-search"></span></button>
-                    </form>
-                    <li><a href="#">Metodologia</a></li>
-                    <li class="comodin"><a href="#">|</a></li>
-                    <li><a class="glosario" href="#">Glosario</a></li>
-                    <li class="dropdown">
-                        <a class="nav-ul-li-global" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bienvenid@ Maria Paula<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="">Editar perfil</a></li>
-                            <li><a href="">Salida segura</a></li>
-                        </ul>
+    <nav role="navigation" class="navDoc">
+        <a class="menu-toggle" href="#head-nav">
+            <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span><span class="menu-toggle-text"> menu</span>
+        </a>
+        <ul id="main-menu" class="top-nav menu clearfix">
+            <li class="menu-item">
+                <a href="/html/doc/introduccion.html">Comenzando</a>
+            </li>
+            <li class="menu-item">
+                <a href="/html/doc/structure-css.html">CSS</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-css.html#tipografia">Tipografia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-css.html#tabla-sencilla">Tabla Sencilla</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-css.html#customize">Personalización</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </li>
+            <li class="menu-item">
+                <a href="/html/doc/structure-js.html">Java Script</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-js.html#estructure-js">Estructura JS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-js.html#tabla-sencilla">Tabla Sencilla</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-js.html#table-dataTable">Tabla con DataTable</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/doc/structure-js.html#graphic">Graficas</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="">Vistas</a>
+                <ul class="sub-menu">
+                    <li class="menu-item">
+                        <a href="/html/pages/home.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/pages/select-companies.html">Selección Compañias</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/html/pages/selected-company.html">Compañia Seleccionada</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>  
     <div class="container">
 <!-- 
 
