@@ -315,9 +315,22 @@
     COMPILANDO
 
 --> 
-            <legend>
-                <h2>Compilación</h2>
-            </legend>
+        <legend>
+            <h2>Compilación</h2>
+        </legend>
+        <p>Lo primero es instalar globalmente el paquete http-server para crear un servidor local.</p>
+        <pre>
+            <code>
+    npm install -g http-server
+            </code>
+        </pre>
+        <p>Una vez instalado, se debe abrir el proyecto (plantilla Pipoka) desde la consola y ejecutar el comando:</p>
+        <pre>
+            <code>
+    http-server
+            </code>
+        </pre>
+        <p>Este comando mantendra un servidor en la maquina local, para efectos de desarrollo.</p>
         <p>
             Pipoka plantilla utiliza Gulp.js con <a href="http://laravel.com/docs/5.0/elixir">Laravel-elixir</a> para fines de compilacion de Less y JavaScript. 
             <br>
@@ -327,7 +340,7 @@
             <br>
             Laravel Elixir hace aun mas facil el trabajo de Gulp, soportando varios archivos CSS comunes y pre-procesadores de JavaScript.
         </p>
-        <p>Mas funcionalidades de Gulp.js <a href="https://platzi.com/blog/automatizacion-gulp-js/">aqui</a>.</p>
+        <p>Mas funcionalidades de Gulp.js <a href="https://platzi.com/blog/automatizacion-gulp-js/">aqui (Tutorial)</a>.</p>
         <h3>Pasos para compilar</h3>
         <ul>
             <li>Acceder a folder de la plantilla pipoka desde la consola</li>
