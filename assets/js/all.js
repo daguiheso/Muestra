@@ -42329,7 +42329,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
     height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .2);
+    .rangeRoundBands([10, width], .2);
 
 var y = d3.scale.linear()
     .rangeRound([height, 0]);
@@ -42379,7 +42379,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("y", 9)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("holas");
+      .text("%");
 
   var state = svg.selectAll(".state")
       .data(data)
