@@ -42325,7 +42325,7 @@ d3.tsv("../../assets/data/lineChart.tsv", function(error, data) {
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 550 - margin.left - margin.right,
+    width = 600 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
@@ -42394,6 +42394,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("y", function(d) { return y(d.y1); })
       .attr("height", function(d) { return y(d.y0) - y(d.y1); })
       .style("fill", function(d) { return color(d.name); });
+  
 
   var legend = svg.selectAll(".legend")
       .data(color.domain().slice().reverse())
@@ -42414,6 +42415,10 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .style("text-anchor", "end")
       .text(function(d) { return d; });
 
+  state.append("text")
+    .attr("dy", "-.5em")
+    .attr("dx", ".5em")
+    .text(function(d){ return (d.Titulo2 + "%") })
 });
 
 
