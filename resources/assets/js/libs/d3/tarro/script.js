@@ -2,8 +2,8 @@
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 900 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    width = 550 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([10, width], .2);
@@ -70,7 +70,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.y1); })
       .attr("height", function(d) { return y(d.y0) - y(d.y1); })
-      .style("fill", function(d) { return color(d.name); });
+      .style("fill", function(d) { console.log(color()); return color(d.name); });
   
 
   var legend = svg.selectAll(".legend")
@@ -78,19 +78,6 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-  legend.append("rect")
-      .attr("x", width - 18)
-      .attr("width", 18)
-      .attr("height", 18)
-      .style("fill", color);
-
-  legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text(function(d) { return d; });
 
   state.append("text")
     .attr("dy", "-.5em")
