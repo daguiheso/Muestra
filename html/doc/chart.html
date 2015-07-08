@@ -331,6 +331,98 @@
         </div>
         <legend>Graficas - Libreria D3 - TARRO</legend>
         <div id="body-tarro"></div>
+        <h3>Code</h3>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#CodeJS-T" aria-controls="#CodeJS-T" role="tab" data-toggle="tab">JS</a></li>
+            <li role="presentation"><a href="#CodeHTML-T" aria-controls="#CodeHTML-T" role="tab" data-toggle="tab">HTML</a></li>
+            <li role="presentation"><a href="#CodeCSS-T" aria-controls="#CodeCSS-T" role="tab" data-toggle="tab">CSS</a></li>
+            <li role="presentation"><a href="#CodeJSON-T" aria-controls="#CodeJSON-T" role="tab" data-toggle="tab">JSON</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="CodeJS-T">
+                <pre>
+
+        /resources/assets/js/libs/d3/tarro/script.js
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeHTML-T">
+                <pre>
+                    <code>
+        &lt;div id=&quot;body-tarro&quot;&gt;&lt;/div&gt;            
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeCSS-T">
+                <pre>
+                    <code>
+
+        /resources/assets/less/libs/d3/tarro.less
+                    </code>
+                </pre>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="CodeJSON-T">
+                <pre>
+                    <code>
+        [
+            {
+                "State": "Ing",
+                "Titulo1": "0",
+                "Titulo2": "100"
+            },
+            {
+                "State": "Cost",
+                "Titulo1": "21",
+                "Titulo2": "79"
+            },
+            {
+                "State": "G Oper",
+                "Titulo1": "15.6",
+                "Titulo2": "5.4"
+            },
+            {
+                "State": "EBITDA",
+                "Titulo1": "0",
+                "Titulo2": "15.6"
+            },
+            {
+                "State": "Imp",
+                "Titulo1": "13.1",
+                "Titulo2": "2.5"
+            },
+            {
+                "State": "Cap Trab",
+                "Titulo1": "11.1",
+                "Titulo2": "2.0"
+            },
+            {
+                "State": "Otros",
+                "Titulo1": "10.1",
+                "Titulo2": "1.0"
+            },
+            {
+                "State": "CAPEX",
+                "Titulo1": "6.4",
+                "Titulo2": "4.0"
+            },
+            {
+                "State": "FCL",
+                "Titulo1": "0",
+                "Titulo2": "6.1"
+            }
+        ]
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <p><strong>Nota:</strong>La grafica de tarro por defecto trae un tamaño de 550 x 300, al modificar estos valores en el script.js correspondiente, se hace necesario ajustar los siguientes valores para el posicionamiento de los %.</p>
+        <pre>
+            <code>
+        state.append("text")
+          .attr("dx", "1%")    //  Centrado horizontalmente de los %
+          .attr("y", "96.5%")  //  Posicion vertical de los %
+          .text(function(d){ return (d.Titulo2 + "%") })
+            </code>
+        </pre>
     </div>
     <script src="../../assets/js/all.js"></script>
 </body>

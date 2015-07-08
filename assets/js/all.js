@@ -42040,7 +42040,7 @@ var RadarChart = {
 			   .style('font-size', '13px');
   }
 };
-var w = 300,
+var w = 250,
 	h = 300;
 
 var colorscale = d3.scale.category10();
@@ -42105,7 +42105,7 @@ function new_radar_data() {
         ToRight: 10,
         TranslateX: 80,
         TranslateY: 30,
-        ExtraWidthX: 300
+        ExtraWidthX: 200
     }
 
     //Call function to draw the Radar chart
@@ -42244,7 +42244,7 @@ var salesData=[
 	{label:"Delux", color:"#990099"}
 ];
 
-var svg = d3.select("#body2").append("svg").attr("width",590).attr("height",300);
+var svg = d3.select("#body2").append("svg").attr("width",390).attr("height",300);
 
 svg.append("g").attr("id","quotesDonut");
 
@@ -42260,8 +42260,8 @@ function randomData(){
 
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 500 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 400 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
 
 var parseDate = d3.format('g');
 
@@ -42325,7 +42325,7 @@ d3.tsv("../../assets/data/lineChart.tsv", function(error, data) {
 
 
 var margin = {top: 10, right: 20, bottom: 40, left: 40},
-    width = 550 - margin.left - margin.right,
+    width = 450 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
@@ -42393,7 +42393,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.y1); })
       .attr("height", function(d) { return y(d.y0) - y(d.y1); })
-      .style("fill", function(d) { console.log(color()); return color(d.name); });
+      .style("fill", function(d) { return color(d.name); });
   
 
   var legend = svg.selectAll(".legend")
@@ -42403,8 +42403,8 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   state.append("text")
-    .attr("dx", ".5em")
-    .attr("y", "96%")
+    .attr("dx", "1%")
+    .attr("y", "96.5%")
     .text(function(d){ return (d.Titulo2 + "%") })
 });
 

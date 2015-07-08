@@ -6,7 +6,7 @@ var salesData=[
 	{label:"Delux", color:"#990099"}
 ];
 
-var svg = d3.select("#body2").append("svg").attr("width",590).attr("height",300);
+var svg = d3.select("#body2").append("svg").attr("width",390).attr("height",300);
 
 svg.append("g").attr("id","quotesDonut");
 

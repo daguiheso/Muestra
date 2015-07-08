@@ -1,4 +1,4 @@
-var w = 300,
+var w = 250,
 	h = 300;
 
 var colorscale = d3.scale.category10();
@@ -63,7 +63,7 @@ function new_radar_data() {
         ToRight: 10,
         TranslateX: 80,
         TranslateY: 30,
-        ExtraWidthX: 300
+        ExtraWidthX: 200
     }
 
     //Call function to draw the Radar chart

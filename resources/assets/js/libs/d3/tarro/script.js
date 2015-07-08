@@ -2,7 +2,7 @@
 
 
 var margin = {top: 10, right: 20, bottom: 40, left: 40},
-    width = 550 - margin.left - margin.right,
+    width = 450 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
@@ -70,7 +70,7 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.y1); })
       .attr("height", function(d) { return y(d.y0) - y(d.y1); })
-      .style("fill", function(d) { console.log(color()); return color(d.name); });
+      .style("fill", function(d) { return color(d.name); });
   
 
   var legend = svg.selectAll(".legend")
@@ -80,8 +80,8 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   state.append("text")
-    .attr("dx", ".5em")
-    .attr("y", "96%")
+    .attr("dx", "1%")
+    .attr("y", "96.5%")
     .text(function(d){ return (d.Titulo2 + "%") })
 });
 
