@@ -2,8 +2,8 @@
 
 
 var margin = {top: 10, right: 20, bottom: 40, left: 40},
-    width = 510 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 1000 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([10, width], .2);
@@ -12,7 +12,7 @@ var y = d3.scale.linear()
     .rangeRound([height, 0]);
 
 var color = d3.scale.ordinal()
-    .range(["#ffd", "green"]);
+    .range(["#ffd", "#84984f"]);
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -80,8 +80,8 @@ d3.csv("../../assets/data/tarro.csv", function(error, data) {
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   state.append("text")
-    .attr("dx", "1%")
-    .attr("y", "96.5%")
+    .attr("dx", "2.6%")
+    .attr("y", "98%")
     .text(function(d){ return (d.Titulo2 + "%") })
 });
 
