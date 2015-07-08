@@ -42325,7 +42325,7 @@ d3.tsv("../../assets/data/lineChart.tsv", function(error, data) {
 
 
 var margin = {top: 10, right: 20, bottom: 40, left: 40},
-    width = 450 - margin.left - margin.right,
+    width = 510 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
